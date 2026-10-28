@@ -59,6 +59,17 @@ class AdapterTests(unittest.IsolatedAsyncioTestCase):
                         self.assertEqual(response.custom_metadata["profile"], profile)
                 self.assertEqual(server.models_reads, 1)
 
+    def test_tool_requests_exclude_json_response_format(self):
+        requests = fixed_requests()
+        for name in ("tools", "history"):
+            with self.subTest(request=name):
+                body = request_body(requests[name], "fake-model")
+                self.assertIn("tools", body)
+                self.assertNotIn("response_format", body)
+        text_body = request_body(requests["text"], "fake-model")
+        self.assertEqual(text_body["response_format"], {"type": "json_object"})
+        self.assertNotIn("tools", text_body)
+
     async def test_plain_and_streamed_outputs(self):
         for profile in KNOBS:
             for kind in ("text", "tool"):

@@ -17,6 +17,7 @@ def fixed_requests():
     user = types.Content(role="user", parts=[types.Part(text="Weather in Paris?")])
     text = LlmRequest(contents=[user], config=config)
     tools_config = config.model_copy(deep=True)
+    tools_config.response_mime_type = None
     tools_config.tools = [types.Tool(function_declarations=[declaration])]
     tools = LlmRequest(contents=[user], config=tools_config)
     history = LlmRequest(contents=[user,

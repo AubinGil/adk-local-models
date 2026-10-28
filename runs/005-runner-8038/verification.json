@@ -1,0 +1,60 @@
+{
+  "verification": "offline; no HTTP requests",
+  "exchanges": [
+    {
+      "exchange": "probe-1",
+      "status_200": true,
+      "hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "plain/exchange-1",
+      "status_200": true,
+      "hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "plain/exchange-2",
+      "status_200": true,
+      "hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "stream/exchange-1",
+      "status_200": true,
+      "hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "stream/exchange-2",
+      "status_200": true,
+      "hashes_and_lengths_match": true
+    }
+  ],
+  "metadata_and_prefix_hashes_match": true,
+  "identity_hash_matches": true,
+  "http_request_count": 5,
+  "turns": {
+    "plain": {
+      "complete": true,
+      "tool_runs_once": true,
+      "raw_to_adk_to_wire_to_session_id": "chatcmpl-tool-942fff8aace9a042",
+      "tool_result_matches": true,
+      "final_text_persisted": "The weather in Paris is 20.",
+      "session_event_count": 4,
+      "yielded_event_count": 3
+    },
+    "stream": {
+      "complete": true,
+      "tool_runs_once": true,
+      "raw_to_adk_to_wire_to_session_id": "chatcmpl-tool-8c18a7c28649ffc4",
+      "tool_result_matches": true,
+      "final_text_persisted": "The weather in Paris is 20.",
+      "session_event_count": 4,
+      "yielded_event_count": 9
+    }
+  },
+  "plain_stream_semantic_equality_excluding_metadata_and_distinct_tool_ids": true,
+  "golden_changes": {
+    "tool_and_history_files": 6,
+    "only_removed_field": "response_format",
+    "removed_bytes_per_file": 41,
+    "text_goldens_unchanged": 3
+  }
+}

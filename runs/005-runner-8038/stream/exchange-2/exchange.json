@@ -1,0 +1,614 @@
+{
+  "started_utc": "2026-10-28T15:59:57.340192+00:00",
+  "adapter_request": {
+    "model": "nemotron-3.5-bolt-e4b",
+    "contents": [
+      {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "Weather in Paris?",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "user"
+      },
+      {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": {
+              "id": "chatcmpl-tool-8c18a7c28649ffc4",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather",
+              "partial_args": null,
+              "will_continue": null
+            },
+            "function_response": null,
+            "inline_data": null,
+            "text": null,
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": {
+              "will_continue": null,
+              "scheduling": null,
+              "parts": null,
+              "id": "chatcmpl-tool-8c18a7c28649ffc4",
+              "name": "weather",
+              "response": {
+                "temperature": 20
+              }
+            },
+            "inline_data": null,
+            "text": null,
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "user"
+      }
+    ],
+    "config": {
+      "http_options": null,
+      "should_return_http_response": null,
+      "system_instruction": "Be concise. Use weather once for the requested city, then answer from its result. Do not call weather again after receiving its result.\n\nYou are an agent. Your internal name is \"local\".",
+      "temperature": 0.0,
+      "top_p": 0.9,
+      "top_k": null,
+      "candidate_count": null,
+      "max_output_tokens": 128,
+      "stop_sequences": null,
+      "response_logprobs": null,
+      "logprobs": null,
+      "presence_penalty": null,
+      "frequency_penalty": null,
+      "seed": null,
+      "response_mime_type": null,
+      "response_schema": null,
+      "response_json_schema": null,
+      "routing_config": null,
+      "model_selection_config": null,
+      "safety_settings": null,
+      "tools": [
+        {
+          "retrieval": null,
+          "computer_use": null,
+          "file_search": null,
+          "google_search": null,
+          "google_maps": null,
+          "code_execution": null,
+          "enterprise_web_search": null,
+          "function_declarations": [
+            {
+              "description": "Get weather for a city.",
+              "name": "weather",
+              "parameters": null,
+              "parameters_json_schema": {
+                "properties": {
+                  "city": {
+                    "title": "City",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "city"
+                ],
+                "title": "weatherParams",
+                "type": "object"
+              },
+              "response": null,
+              "response_json_schema": null,
+              "behavior": null
+            }
+          ],
+          "google_search_retrieval": null,
+          "parallel_ai_search": null,
+          "url_context": null,
+          "mcp_servers": null,
+          "exa_ai_search": null
+        }
+      ],
+      "tool_config": null,
+      "labels": {
+        "adk_agent_name": "local"
+      },
+      "cached_content": null,
+      "response_modalities": null,
+      "media_resolution": null,
+      "speech_config": null,
+      "audio_timestamp": null,
+      "automatic_function_calling": null,
+      "thinking_config": null,
+      "image_config": null,
+      "enable_enhanced_civic_answers": null,
+      "model_armor_config": null,
+      "service_tier": null,
+      "audio_transcription_config": null,
+      "continuation_token": null,
+      "automatic_continuation": null,
+      "generation_output_config": null,
+      "store": null
+    },
+    "live_connect_config": {
+      "http_options": null,
+      "generation_config": null,
+      "response_modalities": null,
+      "temperature": 0.0,
+      "top_p": 0.9,
+      "top_k": null,
+      "max_output_tokens": 128,
+      "media_resolution": null,
+      "seed": null,
+      "speech_config": null,
+      "thinking_config": null,
+      "enable_affective_dialog": null,
+      "system_instruction": null,
+      "tools": null,
+      "session_resumption": null,
+      "input_audio_transcription": {
+        "language_codes": null,
+        "language_auto": null,
+        "language_hints": null,
+        "custom_vocabulary": null,
+        "adaptation_phrases": null,
+        "word_timestamp": null,
+        "diarization": null,
+        "mode": null
+      },
+      "output_audio_transcription": {
+        "language_codes": null,
+        "language_auto": null,
+        "language_hints": null,
+        "custom_vocabulary": null,
+        "adaptation_phrases": null,
+        "word_timestamp": null,
+        "diarization": null,
+        "mode": null
+      },
+      "realtime_input_config": null,
+      "context_window_compression": null,
+      "proactivity": null,
+      "explicit_vad_signal": null,
+      "history_config": null,
+      "avatar_config": null,
+      "safety_settings": null,
+      "translation_config": null,
+      "labels": null
+    },
+    "cache_config": null,
+    "cache_metadata": null,
+    "cacheable_contents_token_count": null,
+    "previous_interaction_id": null,
+    "service_tier": null
+  },
+  "requested_stream": true,
+  "method": "POST",
+  "url": "http://localhost:8038/v1/chat/completions",
+  "status": 200,
+  "response_headers": {
+    "date": "Wed, 28 Oct 2026 15:59:57 GMT",
+    "server": "uvicorn",
+    "content-type": "text/event-stream; charset=utf-8",
+    "transfer-encoding": "chunked"
+  },
+  "adapter_responses": [
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "The",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "073c59d0c058bab895e0bb44d5e5a9fc11c9f9ecd33933cbb742ac69c9530482",
+        "reply_sha256": "45c6b9d36e2b8b3265bd690b99fc894a2f307ada7044e7e82c2abd3ad69a1a6d",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793203194,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-9d44c2854f10d9e8",
+                    "object": "model_permission",
+                    "created": 1793203194,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "reply_sha256": "fd8857e92581d6d243d1a3888f5956dfafe6858f911b9e0c8d2cbc79cab12241",
+          "server": "uvicorn"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": " weather",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "073c59d0c058bab895e0bb44d5e5a9fc11c9f9ecd33933cbb742ac69c9530482",
+        "reply_sha256": "8989dceabb2b27803ef7b2b2187e6e3d8fd935cb2dbd3ed221f7f810ceadbcc1",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793203194,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-9d44c2854f10d9e8",
+                    "object": "model_permission",
+                    "created": 1793203194,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "reply_sha256": "fd8857e92581d6d243d1a3888f5956dfafe6858f911b9e0c8d2cbc79cab12241",
+          "server": "uvicorn"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": " in Paris is 20.",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "073c59d0c058bab895e0bb44d5e5a9fc11c9f9ecd33933cbb742ac69c9530482",
+        "reply_sha256": "903115cf822d9fc893e76e8fe62d8528e8097d0ac44617e6c18d0bfd9b4de2ec",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793203194,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-9d44c2854f10d9e8",
+                    "object": "model_permission",
+                    "created": 1793203194,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "reply_sha256": "fd8857e92581d6d243d1a3888f5956dfafe6858f911b9e0c8d2cbc79cab12241",
+          "server": "uvicorn"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "The weather in Paris is 20.",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": false,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": "STOP",
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "073c59d0c058bab895e0bb44d5e5a9fc11c9f9ecd33933cbb742ac69c9530482",
+        "reply_sha256": "5566caa298eba235787a8b63dcf0d07dba1db25407e443e4da932ee59a5f7adb",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793203194,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-9d44c2854f10d9e8",
+                    "object": "model_permission",
+                    "created": 1793203194,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "reply_sha256": "fd8857e92581d6d243d1a3888f5956dfafe6858f911b9e0c8d2cbc79cab12241",
+          "server": "uvicorn"
+        },
+        "profile": "vllm",
+        "reply_complete": true
+      },
+      "usage_metadata": {
+        "cache_tokens_details": null,
+        "cached_content_token_count": null,
+        "candidates_token_count": 10,
+        "candidates_tokens_details": null,
+        "prompt_token_count": 129,
+        "prompt_tokens_details": null,
+        "thoughts_token_count": null,
+        "tool_use_prompt_token_count": null,
+        "tool_use_prompt_tokens_details": null,
+        "total_token_count": 139,
+        "traffic_type": null
+      },
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    }
+  ],
+  "wall_seconds": 0.5353771999944001,
+  "request_sha256": "073c59d0c058bab895e0bb44d5e5a9fc11c9f9ecd33933cbb742ac69c9530482",
+  "reply_sha256": "5566caa298eba235787a8b63dcf0d07dba1db25407e443e4da932ee59a5f7adb",
+  "request_length": 963,
+  "reply_length": 1547
+}

@@ -1,0 +1,115 @@
+{
+  "source_commit": "0a0ee39",
+  "started_utc": "2026-10-28T15:59:54.393354+00:00",
+  "base_url": "http://localhost:8038/v1",
+  "model": "nemotron-3.5-bolt-e4b",
+  "retries": 0,
+  "http_request_cap": 6,
+  "max_llm_calls_per_turn": 2,
+  "versions": {
+    "google-adk": "2.13.0",
+    "google-genai": "2.33.0",
+    "httpx": "0.28.1"
+  },
+  "thinking_source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "turns": {
+    "plain": {
+      "exchanges": [
+        {
+          "path": "runs/005-runner-8038/plain/exchange-1",
+          "wall_seconds": 0.8331423999916296,
+          "status": 200,
+          "response_count": 1
+        },
+        {
+          "path": "runs/005-runner-8038/plain/exchange-2",
+          "wall_seconds": 0.5593918000231497,
+          "status": 200,
+          "response_count": 1
+        }
+      ],
+      "tool_executions": [
+        {
+          "city": "Paris",
+          "result": {
+            "temperature": 20
+          }
+        }
+      ],
+      "error": null,
+      "wall_seconds": 1.7986915000074077,
+      "yielded_event_count": 3,
+      "session_event_count": 4,
+      "final_texts": [
+        "The weather in Paris is 20."
+      ]
+    },
+    "stream": {
+      "exchanges": [
+        {
+          "path": "runs/005-runner-8038/stream/exchange-1",
+          "wall_seconds": 0.59321320001618,
+          "status": 200,
+          "response_count": 4
+        },
+        {
+          "path": "runs/005-runner-8038/stream/exchange-2",
+          "wall_seconds": 0.5353771999944001,
+          "status": 200,
+          "response_count": 4
+        }
+      ],
+      "tool_executions": [
+        {
+          "city": "Paris",
+          "result": {
+            "temperature": 20
+          }
+        }
+      ],
+      "error": null,
+      "wall_seconds": 1.1571587000216823,
+      "yielded_event_count": 9,
+      "session_event_count": 4,
+      "final_texts": [
+        "The weather in Paris is 20."
+      ]
+    }
+  },
+  "identity": {
+    "models": {
+      "object": "list",
+      "data": [
+        {
+          "id": "nemotron-3.5-bolt-e4b",
+          "object": "model",
+          "created": 1793203194,
+          "owned_by": "vllm",
+          "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+          "parent": null,
+          "max_model_len": 16384,
+          "permission": [
+            {
+              "id": "modelperm-9d44c2854f10d9e8",
+              "object": "model_permission",
+              "created": 1793203194,
+              "allow_create_engine": false,
+              "allow_sampling": true,
+              "allow_logprobs": true,
+              "allow_search_indices": false,
+              "allow_view": true,
+              "allow_fine_tuning": false,
+              "organization": "*",
+              "group": null,
+              "is_blocking": false
+            }
+          ]
+        }
+      ]
+    },
+    "reply_sha256": "fd8857e92581d6d243d1a3888f5956dfafe6858f911b9e0c8d2cbc79cab12241",
+    "server": "uvicorn"
+  },
+  "http_requests_sent": 5,
+  "finished_utc": "2026-10-28T15:59:57.888831+00:00"
+}
