@@ -1,0 +1,2 @@
+# Preserve exact HTTP entity bytes, including SSE framing.
+*.bin -text -diff

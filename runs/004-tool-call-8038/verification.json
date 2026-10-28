@@ -1,0 +1,45 @@
+{
+  "verification": "offline; no HTTP calls",
+  "exchanges": [
+    {
+      "exchange": "omitted-plain",
+      "status_200": true,
+      "entity_hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "omitted-stream",
+      "status_200": true,
+      "entity_hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "probe-1",
+      "status_200": true,
+      "entity_hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "required-plain",
+      "status_200": true,
+      "entity_hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "required-stream",
+      "status_200": true,
+      "entity_hashes_and_lengths_match": true
+    }
+  ],
+  "identity_hash_matches": true,
+  "request_shapes_match_authorized_variants": true,
+  "all_metadata_and_partial_prefix_hashes_match": true,
+  "all_four_raw_tool_ids_preserved": true,
+  "all_four_arguments_are_objects": true,
+  "tool_name": "weather",
+  "arguments": {
+    "city": "Paris"
+  },
+  "stream_tools_only_in_final": true,
+  "pair_equality_excluding_metadata_and_distinct_server_tool_ids": {
+    "omitted": true,
+    "required": true
+  },
+  "completion_count": 4
+}
