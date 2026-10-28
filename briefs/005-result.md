@@ -95,3 +95,17 @@ partial-prefix metadata, raw-to-ADK-to-wire ID linkage, one tool execution per
 turn, persisted final text, and deliberate golden deltas. The 17 tests and
 `git diff --check` pass, including the staged diff check. No secrets supplied;
 nothing pushed.
+
+## Gate (reviewer, 2026-10-28): accepted; the adapter's live round trip holds on vLLM, the side project can rest
+
+Reproduced at 35b636e on `feature/005-runner-round-trip`. The code change is one line in `tests/requests.py`
+(JSON mode off the shared tool config), six goldens each shorter by exactly the removed field, the three text
+goldens byte-identical, and one new test; nothing under `src/` changed; `git diff --check` clean. The reviewer
+reran the suite in the delivery environment: 17 tests, OK. Every recorded hash recomputed from the raw bytes: five
+exchanges, five matches. In both modes the second request to the server carries four messages, the last a `tool`
+message whose `tool_call_id` is the id the server issued in the first reply and whose content is the function's
+result; the final text reached the session. Five requests, under the brief's six.
+
+**Bounds.** One server, one model, one tool, one short turn; the Ollama and llama-server profiles have no live
+evidence yet, since no such server was up; images, audio and reasoning content remain outside the adapter, as
+documented. As briefed, Codex touched nothing on the server and stopped.
