@@ -26,7 +26,10 @@ python -m venv .venv
 
 The only declared runtime dependency is `google-adk>=2.13.0,<3`. Tested with ADK
 2.13.0 and google-genai 2.33.0. The transport uses ADK's existing `httpx` dependency;
-tests use standard-library `unittest`. Installation does not start a server.
+tests use standard-library `unittest`. Installation does not start a server. The owner accepts the transitive
+`certifi` (MPL-2.0) and `typing_extensions` (PSF-2.0) licenses; retain their
+license and attribution notices when distributing those dependencies. See the
+[installed dependency license inventory](runs/008-release-check/licenses.md).
 
 Each example below is ten lines and assumes an already configured server.
 `base_url` is the API root **including `/v1`**, with an optional trailing slash.
