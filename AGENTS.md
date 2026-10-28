@@ -4,7 +4,7 @@ A Google ADK model adapter for local OpenAI-compatible servers (vLLM, Ollama, ll
 through LiteLLM. Parked side project of the owner (2026-10-28); harness-core stays the main track. Codex executes
 the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner types "go".
 
-**No open assignment for Codex (2026-10-28, after brief 006's gate).** The adapter is model-free tested (17 tests) and proven live on two profiles: vLLM (Nemotron 3.5 Bolt E4B) and Ollama (Gemma 4 E4B), each with text, streaming, tool calls with ids and a `Runner` round trip. Parked until the owner returns. Candidates: the `llama_server` profile live once such a server is up; reasoning-content replay; and, in harness-core rather than here, ADK as a host for the MCP checkpoint.
+**Current assignment for Codex: brief 007 (`briefs/007-native-comparison.md`).** Compare this package with ADK's own `google.adk.integrations.openai.OpenAILlm` (needs the OpenAI SDK) on the same fixtures and the same live servers, wire bodies captured on both sides, and recommend keep, reduce or retire; the owner decides.
 
 ## Why this exists
 
@@ -12,6 +12,11 @@ the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner t
   including vLLM and Ollama, is routed through the `LiteLlm` wrapper, which rewrites requests, pulls in a very
   large dependency tree, and was compromised on PyPI twice in 2026 (1.82.7/1.82.8 in March; 1.107.0 on
   October 21 with a credential stealer that ran at Python startup). LiteLLM is never installed here.
+- **Correction (2026-10-28):** ADK does ship a native OpenAI-compatible class, `OpenAILlm` under
+  `google.adk.integrations.openai` (out of labs since 2026-09-23, release v2.10.0), behind the `openai` extra, so it
+  needs the OpenAI SDK; the Python documentation page still describes only LiteLLM, which is why it was missed. The
+  package's remaining claim is narrower: no LiteLLM and no OpenAI SDK, exact request and reply bytes hashed, documented
+  per-profile knobs only. Brief 007 tests whether that claim is worth a separate package.
 - The owner's rules carry over from harness-core: request shapes come from vendor documentation, not invention;
   the exact bytes sent and received are recorded with hashes; shipped dependencies need Apache/MIT-class licenses;
   the model servers are the owner's (check, never start, stop, pull or reload without the owner's word).
