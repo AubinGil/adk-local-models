@@ -4,7 +4,7 @@ A Google ADK model adapter for local OpenAI-compatible servers (vLLM, Ollama, ll
 through LiteLLM. Parked side project of the owner (2026-10-28); harness-core stays the main track. Codex executes
 the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner types "go".
 
-**Current assignment for Codex: brief 001 (`briefs/001-adapter.md`), the model-free adapter.** Not started.
+**No open assignment for Codex (2026-10-28).** Brief 001 is delivered and gated (`briefs/001-delivery.md`); brief 002, the live smoke against the owner's servers, is not written and needs the owner's word.
 
 ## Why this exists
 
