@@ -1,0 +1,124 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://localhost:8038/v1/chat/completions",
+      "headers": {
+        "host": "localhost:8038",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "547"
+      },
+      "status": 200,
+      "response_headers": {
+        "date": "Wed, 28 Oct 2026 17:54:01 GMT",
+        "server": "uvicorn",
+        "content-type": "text/event-stream; charset=utf-8",
+        "transfer-encoding": "chunked"
+      },
+      "request_sha256": "47ea09b8ab8a26b9406905ba6027988810d119bc647a5858fc39acff27de80c2",
+      "request_length": 547,
+      "reply_sha256": "240ae6c206bdc835659978b3be14f800a1d3c255036bea03762eec5f3a9e92c0",
+      "reply_length": 1513
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "chatcmpl-tool-a518d255d21dd60d",
+              "name": "weather",
+              "will_continue": true
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "chatcmpl-tool-a518d255d21dd60d",
+              "name": "weather",
+              "partial_args": [
+                {
+                  "json_path": "$.city",
+                  "string_value": "Paris",
+                  "will_continue": true
+                }
+              ],
+              "will_continue": true
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "chatcmpl-tool-a518d255d21dd60d",
+              "name": "weather",
+              "partial_args": [
+                {
+                  "json_path": "$.city",
+                  "string_value": "",
+                  "will_continue": false
+                }
+              ],
+              "will_continue": true
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "chatcmpl-tool-a518d255d21dd60d",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": false,
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "candidates_token_count": 13,
+        "prompt_token_count": 66,
+        "thoughts_token_count": 0,
+        "total_token_count": 79
+      }
+    }
+  ],
+  "stream": true
+}

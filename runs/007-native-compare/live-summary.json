@@ -1,0 +1,42 @@
+{
+  "vllm": {
+    "advertised": [
+      "nemotron-3.5-bolt-e4b"
+    ],
+    "http_requests": 12
+  },
+  "ollama": {
+    "advertised": [
+      "gemma4:e4b",
+      "nemotron-3.5-bolt:e4b",
+      "flint:latest",
+      "minimax-m3.1-flash:cloud",
+      "gpt-oss:latest",
+      "gpt-oss:120b-cloud",
+      "d1:latest",
+      "muse-spark-open:cloud",
+      "qwen38-citation-16k:latest",
+      "gemma4:31b-cloud",
+      "mistral-large-4:cloud",
+      "glm-5.3-flash:cloud",
+      "kimi-k3:cloud",
+      "glm-5.3:cloud",
+      "deepseek-v4.1-flash:cloud",
+      "minimax-m3:cloud",
+      "kimi-k2.6:cloud",
+      "nemotron-3-super:cloud",
+      "minimax-m2.7:cloud",
+      "qwen3.5:cloud",
+      "glm-5:cloud",
+      "qwen3-coder-next:cloud",
+      "kimi-k2.5:cloud"
+    ],
+    "http_requests": 11
+  },
+  "llama_server": {
+    "skipped": {
+      "type": "ConnectError",
+      "message": "All connection attempts failed"
+    }
+  }
+}

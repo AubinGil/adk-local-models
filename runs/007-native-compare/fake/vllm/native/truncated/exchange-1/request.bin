@@ -1,0 +1,1 @@
+{"messages":[{"role":"system","content":"Be concise."},{"role":"user","content":"Weather in Paris?"}],"model":"fixture-model","max_tokens":32,"response_format":{"type":"json_object"},"stop":["END"],"stream":true,"stream_options":{"include_usage":true},"temperature":0.0,"tool_choice":null,"tools":null,"top_p":0.9}

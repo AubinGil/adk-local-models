@@ -1,0 +1,34 @@
+{
+  "method": "POST",
+  "url": "http://localhost:8038/v1/chat/completions",
+  "headers": {
+    "host": "localhost:8038",
+    "connection": "keep-alive",
+    "accept-encoding": "identity",
+    "authorization": "Bearer comparison-placeholder",
+    "accept": "application/json",
+    "content-type": "application/json",
+    "user-agent": "AsyncOpenAI/Python 2.54.0",
+    "x-stainless-lang": "python",
+    "x-stainless-package-version": "2.54.0",
+    "x-stainless-os": "Windows",
+    "x-stainless-arch": "other:amd64",
+    "x-stainless-runtime": "CPython",
+    "x-stainless-runtime-version": "3.11.9",
+    "x-stainless-async": "async:asyncio",
+    "x-stainless-retry-count": "0",
+    "x-stainless-read-timeout": "60",
+    "content-length": "493"
+  },
+  "status": 200,
+  "response_headers": {
+    "date": "Wed, 28 Oct 2026 17:54:01 GMT",
+    "server": "uvicorn",
+    "content-length": "858",
+    "content-type": "application/json"
+  },
+  "request_sha256": "4640b3e42cd03ecd491b8a03cf0246263c6c7aed9f6845d65370d622f2d8ef64",
+  "request_length": 493,
+  "reply_sha256": "03c73eb6cf7eea13955328df906189c8678e90c827c345c86cfb17549be4d5cb",
+  "reply_length": 858
+}

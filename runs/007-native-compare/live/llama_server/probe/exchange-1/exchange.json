@@ -1,0 +1,15 @@
+{
+  "method": "GET",
+  "url": "http://localhost:8080/v1/models",
+  "headers": {
+    "host": "localhost:8080",
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate",
+    "connection": "keep-alive",
+    "user-agent": "python-httpx/0.28.1"
+  },
+  "request_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "request_length": 0,
+  "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reply_length": 0
+}

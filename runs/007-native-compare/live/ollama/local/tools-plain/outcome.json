@@ -1,0 +1,206 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:11434",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1",
+        "content-type": "application/json",
+        "accept-encoding": "identity",
+        "content-length": "430"
+      },
+      "status": 200,
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Wed, 28 Oct 2026 17:47:05 GMT",
+        "content-length": "466"
+      },
+      "request_sha256": "e0c4bccd7cf7de56410b6b31884fe85adb5109782fdb15d22b542449a4f92488",
+      "request_length": 430,
+      "reply_sha256": "f55b4e18f3d23b10b9486544801db6a11688c2bf2590e12447fc1f397efaa030",
+      "reply_length": 466
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_ggk21xvq",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": false,
+      "finish_reason": "STOP",
+      "custom_metadata": {
+        "request_sha256": "e0c4bccd7cf7de56410b6b31884fe85adb5109782fdb15d22b542449a4f92488",
+        "reply_sha256": "f55b4e18f3d23b10b9486544801db6a11688c2bf2590e12447fc1f397efaa030",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": true
+      },
+      "usage_metadata": {
+        "candidates_token_count": 13,
+        "prompt_token_count": 65,
+        "total_token_count": 78
+      }
+    }
+  ],
+  "stream": false
+}

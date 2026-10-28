@@ -1,0 +1,24 @@
+{
+  "method": "POST",
+  "url": "http://localhost:8038/v1/chat/completions",
+  "headers": {
+    "host": "localhost:8038",
+    "accept": "*/*",
+    "connection": "keep-alive",
+    "user-agent": "python-httpx/0.28.1",
+    "content-type": "application/json",
+    "accept-encoding": "identity",
+    "content-length": "464"
+  },
+  "status": 200,
+  "response_headers": {
+    "date": "Wed, 28 Oct 2026 17:53:58 GMT",
+    "server": "uvicorn",
+    "content-length": "858",
+    "content-type": "application/json"
+  },
+  "request_sha256": "5853708ba23bfa39b23afd500f56b6290f85dc3d062158428fe28e1cbe04ee7e",
+  "request_length": 464,
+  "reply_sha256": "c30e00205de6ae98a0ba64b0f1e03e21bb9705555fcf3a164598f8f1fb72f7b9",
+  "reply_length": 858
+}

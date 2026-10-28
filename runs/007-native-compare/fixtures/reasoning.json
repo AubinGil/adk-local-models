@@ -1,0 +1,19 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "Hello café!"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8,
+    "completion_tokens": 3,
+    "total_tokens": 11,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2
+    }
+  }
+}

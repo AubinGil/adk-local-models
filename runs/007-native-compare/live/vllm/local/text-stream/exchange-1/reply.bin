@@ -1,0 +1,26 @@
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"role":"assistant","content":""},"logprobs":null,"finish_reason":null}],"prompt_token_ids":null,"prompt_text":null}
+
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"{\n"},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"  \"temperatu"},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"re\": \""},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"18°C\",\n  \"conditi"},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"on\": \"Clo"},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"udy\",\n  \"wi"},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"nd\": "},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"\""},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"10 "},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"km/h"},"logprobs":null,"finish_reason":"length","stop_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-8c84dd5ae50f26cb","object":"chat.completion.chunk","created":1793210038,"model":"nemotron-3.5-bolt-e4b","choices":[],"usage":{"prompt_tokens":22,"total_tokens":54,"completion_tokens":32,"completion_tokens_details":{"reasoning_tokens":0}},"system_fingerprint":"vllm-0.31.0-5ad08979"}
+
+data: [DONE]
+

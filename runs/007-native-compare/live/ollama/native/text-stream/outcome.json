@@ -1,0 +1,410 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:11434",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "337"
+      },
+      "status": 200,
+      "response_headers": {
+        "content-type": "text/event-stream",
+        "date": "Wed, 28 Oct 2026 17:47:06 GMT",
+        "transfer-encoding": "chunked"
+      },
+      "request_sha256": "c27658d554412a64a0a1591c48d0fd829aa3cf820f680cd586c03e6240135ae4",
+      "request_length": 337,
+      "reply_sha256": "23fd968643e9bc8b3fa7cbb7d2c03e4cd5555d7527ee52de8bf9655db0e06262",
+      "reply_length": 7384
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\n"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "  "
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "location"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\":"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " \""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Paris"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": ","
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " France"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\","
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\n"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "  "
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "weather"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\":"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " \""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Cloud"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "y"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " with"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " a"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " chance"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " of"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " rain"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\","
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\n"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "  "
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "temperature"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\":"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " \""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "1"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"location\": \"Paris, France\",\n  \"weather\": \"Cloudy with a chance of rain\",\n  \"temperature\": \"1"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": false,
+      "finish_reason": "MAX_TOKENS",
+      "usage_metadata": {
+        "cached_content_token_count": 16,
+        "candidates_token_count": 32,
+        "prompt_token_count": 21,
+        "total_token_count": 53
+      }
+    }
+  ],
+  "stream": true
+}

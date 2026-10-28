@@ -1,0 +1,79 @@
+{
+  "exchanges": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:58467/v1/models",
+      "headers": {
+        "host": "127.0.0.1:58467",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1",
+        "content-type": "application/json",
+        "accept-encoding": "identity"
+      },
+      "status": 200,
+      "response_headers": {
+        "server": "BaseHTTP/0.6 Python/3.11.9",
+        "date": "Wed, 28 Oct 2026 17:45:37 GMT",
+        "content-type": "application/json",
+        "content-length": "85"
+      },
+      "request_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "request_length": 0,
+      "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+      "reply_length": 85
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:58467/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:58467",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1",
+        "content-type": "application/json",
+        "accept-encoding": "identity",
+        "content-length": "292"
+      },
+      "status": 200,
+      "response_headers": {
+        "server": "BaseHTTP/0.6 Python/3.11.9",
+        "date": "Wed, 28 Oct 2026 17:45:37 GMT",
+        "content-type": "application/json",
+        "content-length": "13"
+      },
+      "request_sha256": "f4b81f375f0eef8d18139377d6cb6f061c910b9d4c640fc2922237cf26fdb938",
+      "request_length": 292,
+      "reply_sha256": "b5ccccc74784cef9ceb1f7619353efa33dbd7131245d37fc9ae90dddbc7399b6",
+      "reply_length": 13
+    }
+  ],
+  "responses": [
+    {
+      "partial": false,
+      "error_code": "INVALID_RESPONSE",
+      "error_message": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+      "custom_metadata": {
+        "request_sha256": "f4b81f375f0eef8d18139377d6cb6f061c910b9d4c640fc2922237cf26fdb938",
+        "reply_sha256": "b5ccccc74784cef9ceb1f7619353efa33dbd7131245d37fc9ae90dddbc7399b6",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "fake-model",
+                "object": "model",
+                "owned_by": "fixture"
+              }
+            ]
+          },
+          "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+          "server": "BaseHTTP/0.6 Python/3.11.9"
+        },
+        "profile": "vllm",
+        "reply_complete": true
+      }
+    }
+  ],
+  "stream": false
+}

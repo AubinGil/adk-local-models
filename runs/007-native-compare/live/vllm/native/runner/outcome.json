@@ -1,0 +1,299 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://localhost:8038/v1/chat/completions",
+      "headers": {
+        "host": "localhost:8038",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "682"
+      },
+      "status": 200,
+      "response_headers": {
+        "date": "Wed, 28 Oct 2026 17:54:02 GMT",
+        "server": "uvicorn",
+        "content-length": "858",
+        "content-type": "application/json"
+      },
+      "request_sha256": "aa6a3afe4a304d877238f4c7df62f442ec5f695881d1f80c5f98fe40eaae4c1d",
+      "request_length": 682,
+      "reply_sha256": "928b4e75f3512fafa5f25518752d59085de5ed1bf414d56e49004c544cc6b2c9",
+      "reply_length": 858
+    },
+    {
+      "method": "POST",
+      "url": "http://localhost:8038/v1/chat/completions",
+      "headers": {
+        "host": "localhost:8038",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "940"
+      },
+      "status": 200,
+      "response_headers": {
+        "date": "Wed, 28 Oct 2026 17:54:02 GMT",
+        "server": "uvicorn",
+        "content-length": "739",
+        "content-type": "application/json"
+      },
+      "request_sha256": "345a4dd9ada15bb2ded47122160d2e2f815f60ad2878806918ed166658aed566",
+      "request_length": 940,
+      "reply_sha256": "eeab513435dac4af15cd1c688954f0e1d5ab9bc7b5019e7682769f12887f796c",
+      "reply_length": 739
+    }
+  ],
+  "events": [
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "chatcmpl-tool-88f417432f9d41b6",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "candidates_token_count": 13,
+        "prompt_token_count": 100,
+        "thoughts_token_count": 0,
+        "total_token_count": 113
+      },
+      "invocation_id": "e-db819138-ff98-4568-87ad-72512de9758e",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "long_running_tool_ids": [],
+      "id": "bb8654d4-5ac3-4293-8df6-7e8dcd1fcfab",
+      "timestamp": 1793210042.817158
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_response": {
+              "id": "chatcmpl-tool-88f417432f9d41b6",
+              "name": "weather",
+              "response": {
+                "temperature": 20
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocation_id": "e-db819138-ff98-4568-87ad-72512de9758e",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "id": "ba8dcffa-47c6-430c-aff9-b6415f186f85",
+      "timestamp": 1793210043.3123374
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The weather in Paris is 20."
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "candidates_token_count": 10,
+        "prompt_token_count": 130,
+        "thoughts_token_count": 0,
+        "total_token_count": 140
+      },
+      "invocation_id": "e-db819138-ff98-4568-87ad-72512de9758e",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "id": "2591943c-7122-4b1e-895a-397641674177",
+      "timestamp": 1793210043.3123374
+    }
+  ],
+  "tool_executions": [
+    {
+      "city": "Paris",
+      "result": {
+        "temperature": 20
+      }
+    }
+  ],
+  "session_events": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Weather in Paris?"
+          }
+        ],
+        "role": "user"
+      },
+      "invocation_id": "e-db819138-ff98-4568-87ad-72512de9758e",
+      "author": "user",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": ""
+      },
+      "id": "d93c4ace-b035-427c-b020-328fcc84fb9c",
+      "timestamp": 1793210042.78456
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "chatcmpl-tool-88f417432f9d41b6",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "candidates_token_count": 13,
+        "prompt_token_count": 100,
+        "thoughts_token_count": 0,
+        "total_token_count": 113
+      },
+      "invocation_id": "e-db819138-ff98-4568-87ad-72512de9758e",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "long_running_tool_ids": [],
+      "id": "bb8654d4-5ac3-4293-8df6-7e8dcd1fcfab",
+      "timestamp": 1793210042.817158
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_response": {
+              "id": "chatcmpl-tool-88f417432f9d41b6",
+              "name": "weather",
+              "response": {
+                "temperature": 20
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocation_id": "e-db819138-ff98-4568-87ad-72512de9758e",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "id": "ba8dcffa-47c6-430c-aff9-b6415f186f85",
+      "timestamp": 1793210043.3123374
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The weather in Paris is 20."
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "candidates_token_count": 10,
+        "prompt_token_count": 130,
+        "thoughts_token_count": 0,
+        "total_token_count": 140
+      },
+      "invocation_id": "e-db819138-ff98-4568-87ad-72512de9758e",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "id": "2591943c-7122-4b1e-895a-397641674177",
+      "timestamp": 1793210043.3123374
+    }
+  ]
+}

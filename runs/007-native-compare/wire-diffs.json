@@ -1,0 +1,984 @@
+{
+  "llama_server\\local\\bad-arguments": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "llama_server\\local\\filtered": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "llama_server\\local\\history-plain": [
+    {
+      "path": "/messages/2/content",
+      "local": null,
+      "native": "<absent>"
+    },
+    {
+      "path": "/messages/2/tool_calls/0/function/arguments",
+      "local": "{\"city\":\"Paris\"}",
+      "native": "{\"city\": \"Paris\"}"
+    },
+    {
+      "path": "/messages/3/content",
+      "local": "{\"temperature\":20}",
+      "native": "{\"temperature\": 20}"
+    },
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "llama_server\\local\\history-stream": [
+    {
+      "path": "/messages/2/content",
+      "local": null,
+      "native": "<absent>"
+    },
+    {
+      "path": "/messages/2/tool_calls/0/function/arguments",
+      "local": "{\"city\":\"Paris\"}",
+      "native": "{\"city\": \"Paris\"}"
+    },
+    {
+      "path": "/messages/3/content",
+      "local": "{\"temperature\":20}",
+      "native": "{\"temperature\": 20}"
+    },
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "llama_server\\local\\http500": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "llama_server\\local\\length": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "llama_server\\local\\malformed": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "llama_server\\local\\reasoning": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "llama_server\\local\\refused": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "llama_server\\local\\text-plain": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "llama_server\\local\\text-stream": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "llama_server\\local\\tools-plain": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "llama_server\\local\\tools-stream": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "llama_server\\local\\truncated": [
+    {
+      "path": "/reasoning_format",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\bad-arguments": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\filtered": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\history-plain": [
+    {
+      "path": "/messages/2/content",
+      "local": null,
+      "native": "<absent>"
+    },
+    {
+      "path": "/messages/2/tool_calls/0/function/arguments",
+      "local": "{\"city\":\"Paris\"}",
+      "native": "{\"city\": \"Paris\"}"
+    },
+    {
+      "path": "/messages/3/content",
+      "local": "{\"temperature\":20}",
+      "native": "{\"temperature\": 20}"
+    },
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "ollama\\local\\history-stream": [
+    {
+      "path": "/messages/2/content",
+      "local": null,
+      "native": "<absent>"
+    },
+    {
+      "path": "/messages/2/tool_calls/0/function/arguments",
+      "local": "{\"city\":\"Paris\"}",
+      "native": "{\"city\": \"Paris\"}"
+    },
+    {
+      "path": "/messages/3/content",
+      "local": "{\"temperature\":20}",
+      "native": "{\"temperature\": 20}"
+    },
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "ollama\\local\\http500": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\length": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\malformed": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\reasoning": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\refused": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\text-plain": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\text-stream": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\tools-plain": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "ollama\\local\\tools-stream": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "ollama\\local\\truncated": [
+    {
+      "path": "/reasoning_effort",
+      "local": "none",
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\bad-arguments": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\filtered": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\history-plain": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/messages/2/content",
+      "local": null,
+      "native": "<absent>"
+    },
+    {
+      "path": "/messages/2/tool_calls/0/function/arguments",
+      "local": "{\"city\":\"Paris\"}",
+      "native": "{\"city\": \"Paris\"}"
+    },
+    {
+      "path": "/messages/3/content",
+      "local": "{\"temperature\":20}",
+      "native": "{\"temperature\": 20}"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "vllm\\local\\history-stream": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/messages/2/content",
+      "local": null,
+      "native": "<absent>"
+    },
+    {
+      "path": "/messages/2/tool_calls/0/function/arguments",
+      "local": "{\"city\":\"Paris\"}",
+      "native": "{\"city\": \"Paris\"}"
+    },
+    {
+      "path": "/messages/3/content",
+      "local": "{\"temperature\":20}",
+      "native": "{\"temperature\": 20}"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "vllm\\local\\http500": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\length": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\malformed": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\reasoning": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\refused": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\text-plain": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\text-stream": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\tools-plain": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "vllm\\local\\tools-stream": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "vllm\\local\\truncated": [
+    {
+      "path": "/chat_template_kwargs",
+      "local": {
+        "enable_thinking": false
+      },
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ]
+}

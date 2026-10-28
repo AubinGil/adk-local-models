@@ -1,0 +1,1175 @@
+{
+  "llama_server\\local\\bad-arguments": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "INVALID_RESPONSE",
+    "exception_type": null
+  },
+  "llama_server\\local\\filtered": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "SAFETY",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\local\\history-plain": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\local\\history-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\local\\http500": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "HTTP_500",
+    "exception_type": null
+  },
+  "llama_server\\local\\length": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "MAX_TOKENS",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\local\\malformed": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "INVALID_RESPONSE",
+    "exception_type": null
+  },
+  "llama_server\\local\\reasoning": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\local\\refused": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "TRANSPORT_ERROR",
+    "exception_type": null
+  },
+  "llama_server\\local\\text-plain": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\local\\text-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\local\\tools-plain": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\local\\tools-stream": {
+    "response_count": 4,
+    "partial_values": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\local\\truncated": {
+    "response_count": 2,
+    "partial_values": [
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "INVALID_RESPONSE",
+    "exception_type": null
+  },
+  "llama_server\\native\\bad-arguments": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "ValidationError"
+  },
+  "llama_server\\native\\filtered": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "SAFETY",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "thoughts_token_count": 2,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\native\\history-plain": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\native\\history-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\native\\http500": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "InternalServerError"
+  },
+  "llama_server\\native\\length": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "MAX_TOKENS",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "thoughts_token_count": 2,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\native\\malformed": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "JSONDecodeError"
+  },
+  "llama_server\\native\\reasoning": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "thoughts_token_count": 2,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\native\\refused": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "APIConnectionError"
+  },
+  "llama_server\\native\\text-plain": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\native\\text-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\native\\tools-plain": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\native\\tools-stream": {
+    "response_count": 4,
+    "partial_values": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 3,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "llama_server\\native\\truncated": {
+    "response_count": 2,
+    "partial_values": [
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\local\\bad-arguments": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "INVALID_RESPONSE",
+    "exception_type": null
+  },
+  "ollama\\local\\filtered": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "SAFETY",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\local\\history-plain": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\local\\history-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\local\\http500": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "HTTP_500",
+    "exception_type": null
+  },
+  "ollama\\local\\length": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "MAX_TOKENS",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\local\\malformed": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "INVALID_RESPONSE",
+    "exception_type": null
+  },
+  "ollama\\local\\reasoning": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\local\\refused": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "TRANSPORT_ERROR",
+    "exception_type": null
+  },
+  "ollama\\local\\text-plain": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\local\\text-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\local\\tools-plain": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\local\\tools-stream": {
+    "response_count": 4,
+    "partial_values": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\local\\truncated": {
+    "response_count": 2,
+    "partial_values": [
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "INVALID_RESPONSE",
+    "exception_type": null
+  },
+  "ollama\\native\\bad-arguments": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "ValidationError"
+  },
+  "ollama\\native\\filtered": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "SAFETY",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "thoughts_token_count": 2,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\native\\history-plain": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\native\\history-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\native\\http500": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "InternalServerError"
+  },
+  "ollama\\native\\length": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "MAX_TOKENS",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "thoughts_token_count": 2,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\native\\malformed": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "JSONDecodeError"
+  },
+  "ollama\\native\\reasoning": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "thoughts_token_count": 2,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\native\\refused": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "APIConnectionError"
+  },
+  "ollama\\native\\text-plain": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\native\\text-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\native\\tools-plain": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\native\\tools-stream": {
+    "response_count": 4,
+    "partial_values": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 3,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "ollama\\native\\truncated": {
+    "response_count": 2,
+    "partial_values": [
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\local\\bad-arguments": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "INVALID_RESPONSE",
+    "exception_type": null
+  },
+  "vllm\\local\\filtered": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "SAFETY",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\local\\history-plain": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\local\\history-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\local\\http500": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "HTTP_500",
+    "exception_type": null
+  },
+  "vllm\\local\\length": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "MAX_TOKENS",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\local\\malformed": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "INVALID_RESPONSE",
+    "exception_type": null
+  },
+  "vllm\\local\\reasoning": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\local\\refused": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "TRANSPORT_ERROR",
+    "exception_type": null
+  },
+  "vllm\\local\\text-plain": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\local\\text-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\local\\tools-plain": {
+    "response_count": 1,
+    "partial_values": [
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\local\\tools-stream": {
+    "response_count": 4,
+    "partial_values": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\local\\truncated": {
+    "response_count": 2,
+    "partial_values": [
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": "INVALID_RESPONSE",
+    "exception_type": null
+  },
+  "vllm\\native\\bad-arguments": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "ValidationError"
+  },
+  "vllm\\native\\filtered": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "SAFETY",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "thoughts_token_count": 2,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\native\\history-plain": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\native\\history-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\native\\http500": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "InternalServerError"
+  },
+  "vllm\\native\\length": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "MAX_TOKENS",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "thoughts_token_count": 2,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\native\\malformed": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "JSONDecodeError"
+  },
+  "vllm\\native\\reasoning": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "thoughts_token_count": 2,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\native\\refused": {
+    "response_count": 0,
+    "partial_values": [],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": "APIConnectionError"
+  },
+  "vllm\\native\\text-plain": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\native\\text-stream": {
+    "response_count": 3,
+    "partial_values": [
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\native\\tools-plain": {
+    "response_count": 1,
+    "partial_values": [
+      null
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\native\\tools-stream": {
+    "response_count": 4,
+    "partial_values": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 3,
+    "final_finish_reason": "STOP",
+    "final_usage": {
+      "candidates_token_count": 3,
+      "prompt_token_count": 8,
+      "total_token_count": 11
+    },
+    "final_error": null,
+    "exception_type": null
+  },
+  "vllm\\native\\truncated": {
+    "response_count": 2,
+    "partial_values": [
+      true,
+      false
+    ],
+    "tool_calls_on_partials": 0,
+    "final_finish_reason": null,
+    "final_usage": null,
+    "final_error": null,
+    "exception_type": null
+  }
+}

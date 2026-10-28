@@ -1,0 +1,37 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:58527/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:58527",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "260"
+      },
+      "request_sha256": "bf083e7ff4c174db056e8c85c19932eb68205c2c4692d06a885a76c49a5461b9",
+      "request_length": 260,
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reply_length": 0
+    }
+  ],
+  "responses": [],
+  "stream": false,
+  "exception": {
+    "type": "APIConnectionError",
+    "message": "Connection error."
+  }
+}

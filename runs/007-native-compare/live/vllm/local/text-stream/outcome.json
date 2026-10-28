@@ -1,0 +1,598 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://localhost:8038/v1/chat/completions",
+      "headers": {
+        "host": "localhost:8038",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1",
+        "content-type": "application/json",
+        "accept-encoding": "identity",
+        "content-length": "339"
+      },
+      "status": 200,
+      "response_headers": {
+        "date": "Wed, 28 Oct 2026 17:53:58 GMT",
+        "server": "uvicorn",
+        "content-type": "text/event-stream; charset=utf-8",
+        "transfer-encoding": "chunked"
+      },
+      "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+      "request_length": 339,
+      "reply_sha256": "11668a1b380583c75867090c7e8d721b09dc48655848b17f6a195da35b46573e",
+      "reply_length": 2992
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+        "reply_sha256": "25ec0e62d4e040550bf3ec83a8a28a279fd1819647847fe3f1778478a57083dd",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793210036,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-8454c0f0a353b717",
+                    "object": "model_permission",
+                    "created": 1793210036,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "server": "uvicorn",
+          "reply_sha256": "87b3e8f89f89134c19cc1f52b5adae4eafc31b568b0e2f7a11474cadf4b36a77"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "  \"temperatu"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+        "reply_sha256": "055e1bdb0d41785b71c9efdc43cd42606e396b1c890c4d516abbd9e6874c1941",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793210036,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-8454c0f0a353b717",
+                    "object": "model_permission",
+                    "created": 1793210036,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "server": "uvicorn",
+          "reply_sha256": "87b3e8f89f89134c19cc1f52b5adae4eafc31b568b0e2f7a11474cadf4b36a77"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "re\": \""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+        "reply_sha256": "0d01fc382b34b2585f6280af3d74551e79346092f1563a3be7814754d8dd09f4",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793210036,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-8454c0f0a353b717",
+                    "object": "model_permission",
+                    "created": 1793210036,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "server": "uvicorn",
+          "reply_sha256": "87b3e8f89f89134c19cc1f52b5adae4eafc31b568b0e2f7a11474cadf4b36a77"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "18°C\",\n  \"conditi"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+        "reply_sha256": "99fae6e4b6d7a4134f392f089e43873cbefc03884be3189e1af651a82a22fb72",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793210036,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-8454c0f0a353b717",
+                    "object": "model_permission",
+                    "created": 1793210036,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "server": "uvicorn",
+          "reply_sha256": "87b3e8f89f89134c19cc1f52b5adae4eafc31b568b0e2f7a11474cadf4b36a77"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "on\": \"Clo"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+        "reply_sha256": "d1fe16679f620aa5820e419d347b6c59057250671b9a6eb39a6e8b4b1c9405f7",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793210036,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-8454c0f0a353b717",
+                    "object": "model_permission",
+                    "created": 1793210036,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "server": "uvicorn",
+          "reply_sha256": "87b3e8f89f89134c19cc1f52b5adae4eafc31b568b0e2f7a11474cadf4b36a77"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "udy\",\n  \"wi"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+        "reply_sha256": "0fc4a288a23b188f8268ee31abfaa12d3ef1de8a15b657a57cb1643fa26719b4",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793210036,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-8454c0f0a353b717",
+                    "object": "model_permission",
+                    "created": 1793210036,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "server": "uvicorn",
+          "reply_sha256": "87b3e8f89f89134c19cc1f52b5adae4eafc31b568b0e2f7a11474cadf4b36a77"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "nd\": "
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+        "reply_sha256": "23f3e7b0b57dda8363ba2cca4259d0db726112ee6f38612b8e286ffef30414dc",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793210036,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-8454c0f0a353b717",
+                    "object": "model_permission",
+                    "created": 1793210036,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "server": "uvicorn",
+          "reply_sha256": "87b3e8f89f89134c19cc1f52b5adae4eafc31b568b0e2f7a11474cadf4b36a77"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+        "reply_sha256": "0b35f2ddb3e75b3fa76aec439b2204401d0aa5898545dbe555b97011907460b8",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793210036,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-8454c0f0a353b717",
+                    "object": "model_permission",
+                    "created": 1793210036,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "server": "uvicorn",
+          "reply_sha256": "87b3e8f89f89134c19cc1f52b5adae4eafc31b568b0e2f7a11474cadf4b36a77"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "10 "
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+        "reply_sha256": "486287b36d8800a3256ebf820a996d9b58862e14fbf337b3c34afd80b055a8f8",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793210036,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-8454c0f0a353b717",
+                    "object": "model_permission",
+                    "created": 1793210036,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "server": "uvicorn",
+          "reply_sha256": "87b3e8f89f89134c19cc1f52b5adae4eafc31b568b0e2f7a11474cadf4b36a77"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "km/h"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+        "reply_sha256": "679200916cc8b4d0b019d4833a7999c1a1a583af118c60d12d894704fd160731",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793210036,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-8454c0f0a353b717",
+                    "object": "model_permission",
+                    "created": 1793210036,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "server": "uvicorn",
+          "reply_sha256": "87b3e8f89f89134c19cc1f52b5adae4eafc31b568b0e2f7a11474cadf4b36a77"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"temperature\": \"18°C\",\n  \"condition\": \"Cloudy\",\n  \"wind\": \"10 km/h"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": false,
+      "finish_reason": "MAX_TOKENS",
+      "custom_metadata": {
+        "request_sha256": "8131389de6ed353cce3419b69a9663ce082a805905a56a697f93f21b286eef1e",
+        "reply_sha256": "11668a1b380583c75867090c7e8d721b09dc48655848b17f6a195da35b46573e",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793210036,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-8454c0f0a353b717",
+                    "object": "model_permission",
+                    "created": 1793210036,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "server": "uvicorn",
+          "reply_sha256": "87b3e8f89f89134c19cc1f52b5adae4eafc31b568b0e2f7a11474cadf4b36a77"
+        },
+        "profile": "vllm",
+        "reply_complete": true
+      },
+      "usage_metadata": {
+        "candidates_token_count": 32,
+        "prompt_token_count": 22,
+        "total_token_count": 54
+      }
+    }
+  ],
+  "stream": true
+}

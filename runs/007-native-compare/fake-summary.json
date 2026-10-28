@@ -1,0 +1,3371 @@
+{
+  "vllm/local/text-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "f4b81f375f0eef8d18139377d6cb6f061c910b9d4c640fc2922237cf26fdb938",
+          "reply_sha256": "cc9f14cfa6fbce47fbcda88f49bf588d729afb55ec3269b74c72164458d9ac9e",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/text-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "315082df4ba0af4c8cadc5594485f7482353a2e6f0e4496ccd24291cef7b96b8",
+          "reply_sha256": "cf3d4cae97d80942ff5a8e44571e1eba7adac2df7cde7ac9c2020ef94b141748",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "315082df4ba0af4c8cadc5594485f7482353a2e6f0e4496ccd24291cef7b96b8",
+          "reply_sha256": "db6d7d7f52b497e371e71b4efe6f7b589d3b10648fb8bfb03b26c7eb3a07c2b3",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "315082df4ba0af4c8cadc5594485f7482353a2e6f0e4496ccd24291cef7b96b8",
+          "reply_sha256": "a0604713cc25e573321e3a7a32a120bde4a8c7c8e51e7f8112e8f2de277849e1",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/tools-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "50a9682f1a11435cf7c551ea86fe8657e7ed50ee0f50b3309395fb56ba3da453",
+          "reply_sha256": "52e24fac0005c5b01f75e7889166823e43f45d606be998ab915e938dc15c46bf",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/tools-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "6eb67c72361b2bb42543958c2f0397af96aec3b5619da03021671fec118958fb",
+          "reply_sha256": "be369f1f8935fc04e721cacd3b2b2d47b016cf286bae05b970e464f969cf93cb",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "6eb67c72361b2bb42543958c2f0397af96aec3b5619da03021671fec118958fb",
+          "reply_sha256": "2e4b0d17a6fe181ae204d1adfbb718cc661f44fc6a04458e450be290de39e2e9",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "6eb67c72361b2bb42543958c2f0397af96aec3b5619da03021671fec118958fb",
+          "reply_sha256": "03947bce503a742dc690dc1b2e946120356b49e53e9faa74b995723cb2615281",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "6eb67c72361b2bb42543958c2f0397af96aec3b5619da03021671fec118958fb",
+          "reply_sha256": "2fa779b3e4a27a81228fcc0eb1edb763e40cd08ce31e10b5148f355009775486",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/history-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "aa6c632ce2e4a2c153884af0e623f6ef0e5440ec9ce5330fc8dbec522d82c252",
+          "reply_sha256": "cc9f14cfa6fbce47fbcda88f49bf588d729afb55ec3269b74c72164458d9ac9e",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/history-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "693e06f49824c7d3db2f092c13b8619c06220d4fb5489515fbbc27c7e548bd7c",
+          "reply_sha256": "cf3d4cae97d80942ff5a8e44571e1eba7adac2df7cde7ac9c2020ef94b141748",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "693e06f49824c7d3db2f092c13b8619c06220d4fb5489515fbbc27c7e548bd7c",
+          "reply_sha256": "db6d7d7f52b497e371e71b4efe6f7b589d3b10648fb8bfb03b26c7eb3a07c2b3",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "693e06f49824c7d3db2f092c13b8619c06220d4fb5489515fbbc27c7e548bd7c",
+          "reply_sha256": "a0604713cc25e573321e3a7a32a120bde4a8c7c8e51e7f8112e8f2de277849e1",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/http500": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "HTTP_500",
+        "error_message": "Server error '500 Internal Server Error' for url 'http://127.0.0.1:58439/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+        "custom_metadata": {
+          "request_sha256": "f4b81f375f0eef8d18139377d6cb6f061c910b9d4c640fc2922237cf26fdb938",
+          "reply_sha256": "16211e11e0c49b04c95e7e205dadeef57c8e2103501ca8b4cb8439870e53092a",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/malformed": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "INVALID_RESPONSE",
+        "error_message": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+        "custom_metadata": {
+          "request_sha256": "f4b81f375f0eef8d18139377d6cb6f061c910b9d4c640fc2922237cf26fdb938",
+          "reply_sha256": "b5ccccc74784cef9ceb1f7619353efa33dbd7131245d37fc9ae90dddbc7399b6",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/truncated": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "unfinished"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "315082df4ba0af4c8cadc5594485f7482353a2e6f0e4496ccd24291cef7b96b8",
+          "reply_sha256": "231ae5276c5e1a57bf33e93bf80b90f3733961924a7ca0977b8784fe51b6f7de",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": false
+        }
+      },
+      {
+        "partial": false,
+        "error_code": "INVALID_RESPONSE",
+        "error_message": "Incomplete SSE response",
+        "custom_metadata": {
+          "request_sha256": "315082df4ba0af4c8cadc5594485f7482353a2e6f0e4496ccd24291cef7b96b8",
+          "reply_sha256": "231ae5276c5e1a57bf33e93bf80b90f3733961924a7ca0977b8784fe51b6f7de",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/bad-arguments": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "INVALID_RESPONSE",
+        "error_message": "Function arguments must be a JSON object",
+        "custom_metadata": {
+          "request_sha256": "f4b81f375f0eef8d18139377d6cb6f061c910b9d4c640fc2922237cf26fdb938",
+          "reply_sha256": "0ab6d824036fd33b26256d2f5b4a3928b3ff042bcb54a2af8064083fb9591700",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/reasoning": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "f4b81f375f0eef8d18139377d6cb6f061c910b9d4c640fc2922237cf26fdb938",
+          "reply_sha256": "ab90f1f5143d28d608a4146adc8c39a2f7ca1a4337a8db67ae9c94cc8eb250a1",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/length": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "MAX_TOKENS",
+        "custom_metadata": {
+          "request_sha256": "f4b81f375f0eef8d18139377d6cb6f061c910b9d4c640fc2922237cf26fdb938",
+          "reply_sha256": "923ab2fc6cc3b3a45692515a15d8b57d259fa83969c3c4bbb0902afe1aa9f5b6",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/filtered": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "SAFETY",
+        "custom_metadata": {
+          "request_sha256": "f4b81f375f0eef8d18139377d6cb6f061c910b9d4c640fc2922237cf26fdb938",
+          "reply_sha256": "d40c7737c28cedaeac8c3b664a7bed487a9aa7fe3d057ae608deca31a97ae87c",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "vllm",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/local/refused": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "TRANSPORT_ERROR",
+        "error_message": "All connection attempts failed",
+        "custom_metadata": {
+          "request_sha256": "f4b81f375f0eef8d18139377d6cb6f061c910b9d4c640fc2922237cf26fdb938",
+          "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "server_identity": {
+            "error": "ConnectError"
+          },
+          "profile": "vllm",
+          "reply_complete": false
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/native/text-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/native/text-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/native/tools-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/native/tools-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "name": "weather",
+                "will_continue": true
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "name": "weather",
+                "will_continue": true
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "name": "weather",
+                "partial_args": [
+                  {
+                    "json_path": "$.city",
+                    "string_value": "Paris",
+                    "will_continue": false
+                  }
+                ],
+                "will_continue": true
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/native/history-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/native/history-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/native/http500": {
+    "responses": [],
+    "exception": {
+      "type": "InternalServerError",
+      "message": "Error code: 500 - {'error': {'message': 'fixture failure'}}"
+    }
+  },
+  "vllm/native/malformed": {
+    "responses": [],
+    "exception": {
+      "type": "JSONDecodeError",
+      "message": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+    }
+  },
+  "vllm/native/truncated": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "unfinished"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "unfinished"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false
+      }
+    ],
+    "exception": null
+  },
+  "vllm/native/bad-arguments": {
+    "responses": [],
+    "exception": {
+      "type": "ValidationError",
+      "message": "1 validation error for FunctionCall\nargs\n  Input should be a valid dictionary [type=dict_type, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/dict_type"
+    }
+  },
+  "vllm/native/reasoning": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "thoughts_token_count": 2,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/native/length": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "MAX_TOKENS",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "thoughts_token_count": 2,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/native/filtered": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "SAFETY",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "thoughts_token_count": 2,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "vllm/native/refused": {
+    "responses": [],
+    "exception": {
+      "type": "APIConnectionError",
+      "message": "Connection error."
+    }
+  },
+  "ollama/local/text-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "e39f8c41eb29247e68cf2fb5d7582a73e0a0c5b9e3c5a8e2545d4e6e605e2a3b",
+          "reply_sha256": "cc9f14cfa6fbce47fbcda88f49bf588d729afb55ec3269b74c72164458d9ac9e",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/text-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "4768f2a6f635fb69526b0b57892fe0985ed7af153b8309dc9590d05a9bc597a8",
+          "reply_sha256": "cf3d4cae97d80942ff5a8e44571e1eba7adac2df7cde7ac9c2020ef94b141748",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "4768f2a6f635fb69526b0b57892fe0985ed7af153b8309dc9590d05a9bc597a8",
+          "reply_sha256": "19d0059de6065a62dfe33e7151021f3695ce3bedc43ecbcc376b5daf8a2451f1",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "4768f2a6f635fb69526b0b57892fe0985ed7af153b8309dc9590d05a9bc597a8",
+          "reply_sha256": "a0604713cc25e573321e3a7a32a120bde4a8c7c8e51e7f8112e8f2de277849e1",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/tools-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "0d7aa73d3487b15f5e1dfaa6f4be58b1ddae05c67b1fc1fe290e07b7c257117c",
+          "reply_sha256": "52e24fac0005c5b01f75e7889166823e43f45d606be998ab915e938dc15c46bf",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/tools-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "be43d68c92bafa6a5a8babf2b3ebc120e25c1364b2b9b9559fe3020732b3d007",
+          "reply_sha256": "be369f1f8935fc04e721cacd3b2b2d47b016cf286bae05b970e464f969cf93cb",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "be43d68c92bafa6a5a8babf2b3ebc120e25c1364b2b9b9559fe3020732b3d007",
+          "reply_sha256": "2e4b0d17a6fe181ae204d1adfbb718cc661f44fc6a04458e450be290de39e2e9",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "be43d68c92bafa6a5a8babf2b3ebc120e25c1364b2b9b9559fe3020732b3d007",
+          "reply_sha256": "fcd94b856cd4e6799f99bd1761feaf0757cffa9ef3d5b209bddbb200ade1d57d",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "be43d68c92bafa6a5a8babf2b3ebc120e25c1364b2b9b9559fe3020732b3d007",
+          "reply_sha256": "2fa779b3e4a27a81228fcc0eb1edb763e40cd08ce31e10b5148f355009775486",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/history-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "2d410d3496bd015665d00e0ec7ff0a5f985ddc373a6effa2d3ebd3792eda14d0",
+          "reply_sha256": "cc9f14cfa6fbce47fbcda88f49bf588d729afb55ec3269b74c72164458d9ac9e",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/history-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "d3c70d6d66aa056bf38187908ae663d1552e72856222875e5d890e79098734de",
+          "reply_sha256": "cf3d4cae97d80942ff5a8e44571e1eba7adac2df7cde7ac9c2020ef94b141748",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "d3c70d6d66aa056bf38187908ae663d1552e72856222875e5d890e79098734de",
+          "reply_sha256": "db6d7d7f52b497e371e71b4efe6f7b589d3b10648fb8bfb03b26c7eb3a07c2b3",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "d3c70d6d66aa056bf38187908ae663d1552e72856222875e5d890e79098734de",
+          "reply_sha256": "a0604713cc25e573321e3a7a32a120bde4a8c7c8e51e7f8112e8f2de277849e1",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/http500": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "HTTP_500",
+        "error_message": "Server error '500 Internal Server Error' for url 'http://127.0.0.1:58545/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+        "custom_metadata": {
+          "request_sha256": "e39f8c41eb29247e68cf2fb5d7582a73e0a0c5b9e3c5a8e2545d4e6e605e2a3b",
+          "reply_sha256": "16211e11e0c49b04c95e7e205dadeef57c8e2103501ca8b4cb8439870e53092a",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/malformed": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "INVALID_RESPONSE",
+        "error_message": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+        "custom_metadata": {
+          "request_sha256": "e39f8c41eb29247e68cf2fb5d7582a73e0a0c5b9e3c5a8e2545d4e6e605e2a3b",
+          "reply_sha256": "b5ccccc74784cef9ceb1f7619353efa33dbd7131245d37fc9ae90dddbc7399b6",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/truncated": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "unfinished"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "4768f2a6f635fb69526b0b57892fe0985ed7af153b8309dc9590d05a9bc597a8",
+          "reply_sha256": "231ae5276c5e1a57bf33e93bf80b90f3733961924a7ca0977b8784fe51b6f7de",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": false
+        }
+      },
+      {
+        "partial": false,
+        "error_code": "INVALID_RESPONSE",
+        "error_message": "Incomplete SSE response",
+        "custom_metadata": {
+          "request_sha256": "4768f2a6f635fb69526b0b57892fe0985ed7af153b8309dc9590d05a9bc597a8",
+          "reply_sha256": "231ae5276c5e1a57bf33e93bf80b90f3733961924a7ca0977b8784fe51b6f7de",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/bad-arguments": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "INVALID_RESPONSE",
+        "error_message": "Function arguments must be a JSON object",
+        "custom_metadata": {
+          "request_sha256": "e39f8c41eb29247e68cf2fb5d7582a73e0a0c5b9e3c5a8e2545d4e6e605e2a3b",
+          "reply_sha256": "0ab6d824036fd33b26256d2f5b4a3928b3ff042bcb54a2af8064083fb9591700",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/reasoning": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "e39f8c41eb29247e68cf2fb5d7582a73e0a0c5b9e3c5a8e2545d4e6e605e2a3b",
+          "reply_sha256": "ab90f1f5143d28d608a4146adc8c39a2f7ca1a4337a8db67ae9c94cc8eb250a1",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/length": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "MAX_TOKENS",
+        "custom_metadata": {
+          "request_sha256": "e39f8c41eb29247e68cf2fb5d7582a73e0a0c5b9e3c5a8e2545d4e6e605e2a3b",
+          "reply_sha256": "923ab2fc6cc3b3a45692515a15d8b57d259fa83969c3c4bbb0902afe1aa9f5b6",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/filtered": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "SAFETY",
+        "custom_metadata": {
+          "request_sha256": "e39f8c41eb29247e68cf2fb5d7582a73e0a0c5b9e3c5a8e2545d4e6e605e2a3b",
+          "reply_sha256": "d40c7737c28cedaeac8c3b664a7bed487a9aa7fe3d057ae608deca31a97ae87c",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "ollama",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/local/refused": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "TRANSPORT_ERROR",
+        "error_message": "All connection attempts failed",
+        "custom_metadata": {
+          "request_sha256": "e39f8c41eb29247e68cf2fb5d7582a73e0a0c5b9e3c5a8e2545d4e6e605e2a3b",
+          "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "server_identity": {
+            "error": "ConnectError"
+          },
+          "profile": "ollama",
+          "reply_complete": false
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/native/text-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/native/text-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/native/tools-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/native/tools-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "name": "weather",
+                "will_continue": true
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "name": "weather",
+                "will_continue": true
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "name": "weather",
+                "partial_args": [
+                  {
+                    "json_path": "$.city",
+                    "string_value": "Paris",
+                    "will_continue": false
+                  }
+                ],
+                "will_continue": true
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/native/history-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/native/history-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/native/http500": {
+    "responses": [],
+    "exception": {
+      "type": "InternalServerError",
+      "message": "Error code: 500 - {'error': {'message': 'fixture failure'}}"
+    }
+  },
+  "ollama/native/malformed": {
+    "responses": [],
+    "exception": {
+      "type": "JSONDecodeError",
+      "message": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+    }
+  },
+  "ollama/native/truncated": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "unfinished"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "unfinished"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false
+      }
+    ],
+    "exception": null
+  },
+  "ollama/native/bad-arguments": {
+    "responses": [],
+    "exception": {
+      "type": "ValidationError",
+      "message": "1 validation error for FunctionCall\nargs\n  Input should be a valid dictionary [type=dict_type, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/dict_type"
+    }
+  },
+  "ollama/native/reasoning": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "thoughts_token_count": 2,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/native/length": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "MAX_TOKENS",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "thoughts_token_count": 2,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/native/filtered": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "SAFETY",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "thoughts_token_count": 2,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "ollama/native/refused": {
+    "responses": [],
+    "exception": {
+      "type": "APIConnectionError",
+      "message": "Connection error."
+    }
+  },
+  "llama_server/local/text-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "a341b9f3e0cf304e62dc3ef83b9cb13f99564e762ec97f0ff8c1d2bb9eacd1d9",
+          "reply_sha256": "cc9f14cfa6fbce47fbcda88f49bf588d729afb55ec3269b74c72164458d9ac9e",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/text-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "4954225d364b3605b6f344242c15f13219eb882ad9379b0b613977ac0f954ec1",
+          "reply_sha256": "cf3d4cae97d80942ff5a8e44571e1eba7adac2df7cde7ac9c2020ef94b141748",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "4954225d364b3605b6f344242c15f13219eb882ad9379b0b613977ac0f954ec1",
+          "reply_sha256": "db6d7d7f52b497e371e71b4efe6f7b589d3b10648fb8bfb03b26c7eb3a07c2b3",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "4954225d364b3605b6f344242c15f13219eb882ad9379b0b613977ac0f954ec1",
+          "reply_sha256": "a0604713cc25e573321e3a7a32a120bde4a8c7c8e51e7f8112e8f2de277849e1",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/tools-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "c225a658ae50baf8bec109e7bb6146d47cca72e80bfbdd5c9ca8acf69557e64b",
+          "reply_sha256": "52e24fac0005c5b01f75e7889166823e43f45d606be998ab915e938dc15c46bf",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/tools-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "3a9a05b74b7ae521d8eef3d846ccccb8c83449bc65ca36e698a46f383e564a06",
+          "reply_sha256": "be369f1f8935fc04e721cacd3b2b2d47b016cf286bae05b970e464f969cf93cb",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "3a9a05b74b7ae521d8eef3d846ccccb8c83449bc65ca36e698a46f383e564a06",
+          "reply_sha256": "2e4b0d17a6fe181ae204d1adfbb718cc661f44fc6a04458e450be290de39e2e9",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "3a9a05b74b7ae521d8eef3d846ccccb8c83449bc65ca36e698a46f383e564a06",
+          "reply_sha256": "fcd94b856cd4e6799f99bd1761feaf0757cffa9ef3d5b209bddbb200ade1d57d",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "3a9a05b74b7ae521d8eef3d846ccccb8c83449bc65ca36e698a46f383e564a06",
+          "reply_sha256": "2fa779b3e4a27a81228fcc0eb1edb763e40cd08ce31e10b5148f355009775486",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/history-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "aeee76463065fd479fc9435454d9e945c3f3ab92be94d67479e276e87b4b2f59",
+          "reply_sha256": "cc9f14cfa6fbce47fbcda88f49bf588d729afb55ec3269b74c72164458d9ac9e",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/history-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "ad9b6b6c526ac11e36ffb7f0172f1837498d993a951e0d1f5cd3952d10061930",
+          "reply_sha256": "cf3d4cae97d80942ff5a8e44571e1eba7adac2df7cde7ac9c2020ef94b141748",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "ad9b6b6c526ac11e36ffb7f0172f1837498d993a951e0d1f5cd3952d10061930",
+          "reply_sha256": "d381a863772bf45ee09a2d712ba88b2caae2e6fc9d859c22243bb05a6a67fcc4",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": false
+        }
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "ad9b6b6c526ac11e36ffb7f0172f1837498d993a951e0d1f5cd3952d10061930",
+          "reply_sha256": "a0604713cc25e573321e3a7a32a120bde4a8c7c8e51e7f8112e8f2de277849e1",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/http500": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "HTTP_500",
+        "error_message": "Server error '500 Internal Server Error' for url 'http://127.0.0.1:58621/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500",
+        "custom_metadata": {
+          "request_sha256": "a341b9f3e0cf304e62dc3ef83b9cb13f99564e762ec97f0ff8c1d2bb9eacd1d9",
+          "reply_sha256": "16211e11e0c49b04c95e7e205dadeef57c8e2103501ca8b4cb8439870e53092a",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/malformed": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "INVALID_RESPONSE",
+        "error_message": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+        "custom_metadata": {
+          "request_sha256": "a341b9f3e0cf304e62dc3ef83b9cb13f99564e762ec97f0ff8c1d2bb9eacd1d9",
+          "reply_sha256": "b5ccccc74784cef9ceb1f7619353efa33dbd7131245d37fc9ae90dddbc7399b6",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/truncated": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "unfinished"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true,
+        "custom_metadata": {
+          "request_sha256": "4954225d364b3605b6f344242c15f13219eb882ad9379b0b613977ac0f954ec1",
+          "reply_sha256": "231ae5276c5e1a57bf33e93bf80b90f3733961924a7ca0977b8784fe51b6f7de",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": false
+        }
+      },
+      {
+        "partial": false,
+        "error_code": "INVALID_RESPONSE",
+        "error_message": "Incomplete SSE response",
+        "custom_metadata": {
+          "request_sha256": "4954225d364b3605b6f344242c15f13219eb882ad9379b0b613977ac0f954ec1",
+          "reply_sha256": "231ae5276c5e1a57bf33e93bf80b90f3733961924a7ca0977b8784fe51b6f7de",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/bad-arguments": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "INVALID_RESPONSE",
+        "error_message": "Function arguments must be a JSON object",
+        "custom_metadata": {
+          "request_sha256": "a341b9f3e0cf304e62dc3ef83b9cb13f99564e762ec97f0ff8c1d2bb9eacd1d9",
+          "reply_sha256": "0ab6d824036fd33b26256d2f5b4a3928b3ff042bcb54a2af8064083fb9591700",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/reasoning": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "custom_metadata": {
+          "request_sha256": "a341b9f3e0cf304e62dc3ef83b9cb13f99564e762ec97f0ff8c1d2bb9eacd1d9",
+          "reply_sha256": "ab90f1f5143d28d608a4146adc8c39a2f7ca1a4337a8db67ae9c94cc8eb250a1",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/length": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "MAX_TOKENS",
+        "custom_metadata": {
+          "request_sha256": "a341b9f3e0cf304e62dc3ef83b9cb13f99564e762ec97f0ff8c1d2bb9eacd1d9",
+          "reply_sha256": "923ab2fc6cc3b3a45692515a15d8b57d259fa83969c3c4bbb0902afe1aa9f5b6",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/filtered": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "SAFETY",
+        "custom_metadata": {
+          "request_sha256": "a341b9f3e0cf304e62dc3ef83b9cb13f99564e762ec97f0ff8c1d2bb9eacd1d9",
+          "reply_sha256": "d40c7737c28cedaeac8c3b664a7bed487a9aa7fe3d057ae608deca31a97ae87c",
+          "server_identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "fake-model",
+                  "object": "model",
+                  "owned_by": "fixture"
+                }
+              ]
+            },
+            "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+            "server": "BaseHTTP/0.6 Python/3.11.9"
+          },
+          "profile": "llama_server",
+          "reply_complete": true
+        },
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/local/refused": {
+    "responses": [
+      {
+        "partial": false,
+        "error_code": "TRANSPORT_ERROR",
+        "error_message": "All connection attempts failed",
+        "custom_metadata": {
+          "request_sha256": "a341b9f3e0cf304e62dc3ef83b9cb13f99564e762ec97f0ff8c1d2bb9eacd1d9",
+          "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "server_identity": {
+            "error": "ConnectError"
+          },
+          "profile": "llama_server",
+          "reply_complete": false
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/native/text-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/native/text-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/native/tools-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/native/tools-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "name": "weather",
+                "will_continue": true
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "name": "weather",
+                "will_continue": true
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "name": "weather",
+                "partial_args": [
+                  {
+                    "json_path": "$.city",
+                    "string_value": "Paris",
+                    "will_continue": false
+                  }
+                ],
+                "will_continue": true
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "function_call": {
+                "id": "call_weather",
+                "args": {
+                  "city": "Paris"
+                },
+                "name": "weather"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/native/history-plain": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/native/history-stream": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello "
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false,
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/native/http500": {
+    "responses": [],
+    "exception": {
+      "type": "InternalServerError",
+      "message": "Error code: 500 - {'error': {'message': 'fixture failure'}}"
+    }
+  },
+  "llama_server/native/malformed": {
+    "responses": [],
+    "exception": {
+      "type": "JSONDecodeError",
+      "message": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+    }
+  },
+  "llama_server/native/truncated": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "unfinished"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": true
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "unfinished"
+            }
+          ],
+          "role": "model"
+        },
+        "partial": false
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/native/bad-arguments": {
+    "responses": [],
+    "exception": {
+      "type": "ValidationError",
+      "message": "1 validation error for FunctionCall\nargs\n  Input should be a valid dictionary [type=dict_type, input_value=[], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/dict_type"
+    }
+  },
+  "llama_server/native/reasoning": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "STOP",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "thoughts_token_count": 2,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/native/length": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "MAX_TOKENS",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "thoughts_token_count": 2,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/native/filtered": {
+    "responses": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Hello café!"
+            }
+          ],
+          "role": "model"
+        },
+        "finish_reason": "SAFETY",
+        "usage_metadata": {
+          "candidates_token_count": 3,
+          "prompt_token_count": 8,
+          "thoughts_token_count": 2,
+          "total_token_count": 11
+        }
+      }
+    ],
+    "exception": null
+  },
+  "llama_server/native/refused": {
+    "responses": [],
+    "exception": {
+      "type": "APIConnectionError",
+      "message": "Connection error."
+    }
+  }
+}

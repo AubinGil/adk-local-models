@@ -1,0 +1,3 @@
+# Preserve exact HTTP entities and generated fixture bytes across checkouts.
+*.bin binary
+fixtures/*.json -text whitespace=cr-at-eol

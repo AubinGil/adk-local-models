@@ -1,0 +1,53 @@
+# Brief 007 result — native OpenAILlm comparison
+
+Recommendation: **keep the package with a narrowed description, parked as an optional adapter**. ADK already provides a working native OpenAI-compatible integration without LiteLLM. This package is useful only where avoiding the OpenAI SDK, returning errors as ADK responses, rejecting incomplete SSE, and attaching byte hashes and server identity to responses are explicit requirements. It is not necessary merely to connect ADK to a local server. The owner decides; this brief changes no package code or dependencies.
+
+The proposed description is accurate with that qualification: “a lightweight, direct alternative for connecting Google ADK to local OpenAI-compatible servers, without LiteLLM or the OpenAI SDK.” “Lightweight” describes the incremental transport dependencies, not the whole installation: both options carry ADK's runtime closure. Do not imply that ADK lacks a direct integration or that its native integration requires LiteLLM.
+
+| Feature | ADK `OpenAILlm` | `OpenAICompatibleLlm` | Evidence |
+| --- | --- | --- | --- |
+| Basic text, system instruction, sampling, stop | Maps all fixed-request fields | Same mapped values | `runs/007-native-compare/fake/*/{native,local}/text-*`, `wire-diffs.json` |
+| JSON MIME / token limit | `json_object`, `max_tokens:32` for fixture/local model names | Same | Fixed text requests; no `max_completion_tokens` for these names |
+| Tool declaration schema | Same object/properties/required schema for weather | Same | Fixed tools requests, field-level diffs |
+| Tool history / IDs | Preserves `call_weather`; omits empty assistant content; spaces inside serialized arguments/results | Preserves ID; explicit null assistant content; compact JSON strings | Fixed history requests |
+| Tool choice default | Explicit `auto` with tools; null without tools | Omits field unless configured | Fixed requests |
+| Streaming | Text deltas plus accumulated final; tools also appear on partial responses with `will_continue` | Text/empty tool-delta partials; tool calls only on final | `response-comparison.json`, `fake/vllm/*/tools-stream/outcome.json` |
+| Non-stream partial flag | Unset (`None`), not explicitly false | Explicit `False` | Plain outcomes; native streamed final explicitly false |
+| Finish reason / basic usage | STOP, MAX_TOKENS, SAFETY; 8 prompt / 3 completion / 11 total | Same | text/tool, added length/filter fixtures |
+| Reasoning usage | Maps 2 reasoning tokens to `thoughts_token_count` | Drops reasoning-token detail | Added reasoning fixture and outcomes |
+| HTTP 500 | Raises `InternalServerError` | Returns `HTTP_500` | `fake/*/*/http500` (native retries disabled) |
+| Malformed JSON | Raises `JSONDecodeError` | Returns `INVALID_RESPONSE` | `fake/*/*/malformed` |
+| Connection refused | Raises `APIConnectionError` | Returns `TRANSPORT_ERROR` | `fake/*/*/refused` |
+| Truncated SSE | Emits `unfinished`, then a normal final with no finish reason | Emits partial, then `INVALID_RESPONSE` | `fake/*/*/truncated` |
+| Invalid tool arguments | Raises Pydantic `ValidationError` for the existing non-object fixture | Returns `INVALID_RESPONSE` | `fake/*/*/bad-arguments` |
+| Recorded bytes / identity | Possible with configured HTTP client; not attached to native responses by the class | Built-in hashes, completeness flag, cached `/models` identity | Captured request/reply bins; `verification.json` checks metadata |
+| Profile knobs | No generic extra_body property on this class; live hook injects documented fields | Documented per-profile validation and extra_body | `tools/compare007.py`, package `profiles.py` |
+| Broader features | Image parts, strict response-schema mapping, reasoning-model name normalization | Narrow text/tool/JSON MIME contract | Installed ADK source review only; these broader paths were not exercised |
+| Live local server / Runner | See live results below | Same fixture requests captured alongside native | `live/`, prior 005/006 Runner evidence |
+
+Dependency measurements (Python 3.11.9, ADK 2.13.0, GenAI 2.33.0, httpx 0.28.1; native SDK 2.54.0):
+
+| Measurement | Project `.venv` | Isolated `.cache/native-compare` |
+| --- | ---: | ---: |
+| `pip list` distributions | 52 | 54 |
+| Active ADK dependency closure, including ADK | 48 | 52 |
+| Sum of installed distribution file sizes | 113,571,489 bytes | 126,899,486 bytes |
+| OpenAI SDK importable | No | Yes |
+| LiteLLM importable | No | No |
+
+The native environment adds `openai` 2.54.0, `jiter` 0.18.0, `tqdm` 4.70.1 and Windows `colorama` 0.4.6: 13,288,195 installed bytes (12.67 MiB). Shared distribution versions match. The project environment additionally has its editable package and setuptools; the native environment has neither, which explains why the total distribution count rises by two rather than four. Installed file totals include recorded distribution files, not full environment directory usage, wheel downloads, or generated bytecode. The full inventories, requirement edges, evaluated dependency closures, licenses as declared in metadata, and pip lists are under `dependencies/`. This does not add any shipped dependency or certify licenses for a future SDK-based package.
+
+Wire differences beyond the table:
+
+- Local requests carry the profile extension in every fake case; native fake requests deliberately retain native defaults. This exposes the class's default behavior instead of silently normalizing it. Live native requests apply exactly the same `KNOBS` through an explicit request hook on a supplied `AsyncOpenAI` HTTP client. The native transport shim is part of this experiment, not a package change.
+- Non-stream native requests omit `stream`; local requests send false. Native sends null `tools`, `tool_choice`, and/or `response_format` where local omits unused fields. Both streamed paths send `stream:true` and `stream_options:{include_usage:true}`. Both map temperature 0, top_p 0.9, stop END and max_tokens 32 identically for these names.
+- Native adds placeholder Bearer authentication, `Accept:application/json`, SDK user-agent and `x-stainless-*` diagnostics. Local sends no authentication without an API key. Both are configured for identity encoding and direct connections without environment proxies. Full headers are in each exchange JSON; authentication here is an inert comparison placeholder.
+- Serialized key ordering and JSON whitespace differ; hashes intentionally identify bytes rather than normalized JSON. The nested serialized tool arguments are semantically equivalent despite different whitespace. `wire-diffs.json` recursively identifies fields and array entries, preserving missing-versus-null differences.
+
+Live results: Ollama at `127.0.0.1:11434/v1` advertised the previously used `gemma4:e4b`. Both classes returned text in plain/streamed mode (MAX_TOKENS at the fixture's deliberately small 32-token limit) and valid weather tool calls with object arguments in plain/streamed mode. The native Runner made two completion requests, executed `weather(city='Paris')` once, retained tool call/response history, and answered “The weather in Paris is 20 degrees.” Session and yielded events are saved. This is 11 HTTP requests including the shared identity probe. The local adapter reused that probe's identity rather than issuing a redundant GET. The previous local Runner comparison remains in runs 005/006; brief 007 adds the requested native round trip.
+
+After the owner switched servers, vLLM at `localhost:8038/v1` advertised `nemotron-3.5-bolt-e4b`. Both classes passed text and tool requests in plain/streamed mode; the tool requests now produced weather calls with object arguments on both paths. Both text samples reached the 32-token fixture limit. Native Runner executed weather once with Paris, submitted the matching tool result on its second request, and answered ?The weather in Paris is 20.? All requests returned HTTP 200. Total vLLM usage was exactly 12 HTTP attempts: the initial failed probe, successful identity probe, eight fixture completions, and two Runner completions. The owner explained that Ollama and vLLM cannot run simultaneously. llama-server at `localhost:8080/v1` remained unavailable (one failed identity probe), so its comparison is model-free only. No server was started, stopped, reloaded, or downloaded by the comparison harness. A separate one-line launcher repair, authorized during the server switch, changed the owner's batch file from `shift` to `shift /1` to preserve its script-directory lookup; that external file is outside this commit.
+
+Why keep rather than reduce or retire: native text/tool mapping and Runner support substantially eliminate the original motivation. Recording alone can indeed be implemented around the native HTTP client, as this experiment demonstrates, and avoiding four packages is a modest saving compared with ADK itself. However, a recording transport alone does not give the native class this package's response-level error contract, final-only tool-call contract, explicit non-stream partial flag, truncated-stream rejection, profile validation or metadata attachment. Replacing the adapter while preserving that contract would require a behavioral wrapper as well as transport recording. Keeping this small, already tested adapter as an optional, narrowly described package preserves the SDK-free choice without claiming broader feature parity. Its omitted reasoning usage and image/schema features are real limitations. This recommendation does not justify expanding the project or diverting effort from harness-core.
+
+Validation: 17 existing project unittests passed, including dependency isolation. The model-free matrix covers three fixed requests, both stream modes, three profiles and both classes, plus HTTP 500, malformed JSON, truncated SSE, connection refusal, bad tool arguments, reasoning usage and length/filter finish reasons: 84 adapter invocations. Existing fixture bytes were replayed unchanged; added reasoning/finish fixtures are under this run's `fixtures/`. `verification.json` verified 300 saved entity files, 78 fake replies, 47 complete local response metadata records and 18 plain/stream final comparisons. It independently hashes every saved entity file, compares fake replies to source fixtures, and checks complete local response hashes against transport captures. HTTP chunk framing and headers are outside the entity-byte hashes. Evidence is observational, not a throughput benchmark; one model and one native non-stream Runner round trip per reachable server are the scope.

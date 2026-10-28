@@ -1,0 +1,17 @@
+{
+  "method": "POST",
+  "url": "http://127.0.0.1:58642/v1/chat/completions",
+  "headers": {
+    "host": "127.0.0.1:58642",
+    "accept": "*/*",
+    "connection": "keep-alive",
+    "user-agent": "python-httpx/0.28.1",
+    "content-type": "application/json",
+    "accept-encoding": "identity",
+    "content-length": "269"
+  },
+  "request_sha256": "a341b9f3e0cf304e62dc3ef83b9cb13f99564e762ec97f0ff8c1d2bb9eacd1d9",
+  "request_length": 269,
+  "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reply_length": 0
+}

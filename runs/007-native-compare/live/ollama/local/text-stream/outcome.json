@@ -1,0 +1,5448 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:11434",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1",
+        "content-type": "application/json",
+        "accept-encoding": "identity",
+        "content-length": "305"
+      },
+      "status": 200,
+      "response_headers": {
+        "content-type": "text/event-stream",
+        "date": "Wed, 28 Oct 2026 17:47:04 GMT",
+        "transfer-encoding": "chunked"
+      },
+      "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+      "request_length": 305,
+      "reply_sha256": "ec670c52ea0e1168366dca50221485be9e3d2518cf3909ff718e1629a6e69b16",
+      "reply_length": 7394
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "40bd6db699d7116916dea1ccd6a228940f90ca60d8fde7391e78ed0201b434a1",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\n"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "ec212f4633f13e8da92990f34ea0e85e99be882ec3a0c4e2e2ae78bf851d07e3",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "  "
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "35493d2538a9fde913b24dfdfd05e8ec77fa4e31c4c1e959b56bc962f8f5bb3a",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "064c3ce2d15c709c6776766ebd0a84182a4488ad5d650bcd216439cdb23a1d96",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "location"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "41edf23b6047356baf5c63eecd7f5607b42af51e4a4ca68dfb14582f28ecf0de",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\":"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "6cc89996730486ddf3cf29139ba05c91b5ea6801310486bf41b47aae78e66ed2",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " \""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "88fe28e24614233fc41f6764c41a21944ae1700e84499f1184e19e5047e976b4",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Paris"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "2a634599d600b31d708259cf521dc51c5773467df5895133a2dca67add0ac247",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": ","
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "627d82c84e523406b60257f85b723649175df1c9821acbe9cd5a360572909af8",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " France"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "639bddb8d7cf0bef20b7b12ae9046f7f5a9224709b6965d272a973a0bb81c44e",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\","
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "f369f046db46ff3d2949f4dc8de3b204705fd1cdcf27b9fe3e1e227f3826bccc",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\n"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "978928fb47c406e221cbc9b2c1e2d24dac766049fce6a61bef58fc224233babf",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "  "
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "29848b202f257579d279060c11de9434fb32cb122f391110516b0a69dc9d4f76",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "11b7a05a6df34493fe5e14f1f238260ca9d27191826409e4b479cb47506be287",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "weather"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "223d4d712db48fe561e56f78eed00e1b30c3f72130c01e8cc8cbf272fc9cf27f",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\":"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "38797a94eb870280970b5eee4c5d3a7b6777b046c6401925d5f2a439a6ac6d6a",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " \""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "403add1a3f0e25982e922bf918e0bfc9f084defa4636618c0ee1cd0c052ec6b1",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Cloud"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "888e5846d9a9eac4aa1bf1a69c07a7854cd8ea23c0709b6cf17b28b7fdf6891d",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "y"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "187fff645f4e732cb417dabfb6ab8522b76fe040c4e0bf60f9d59541be828120",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " with"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "74f240edc36bb63f47950f77ee063737cc40479f0611f62537d5ee27b089abb2",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " a"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "6713d84a6a59282ecfe585dedd3808ef9ec5a39090c5a14ccd54292f80c90ca8",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " chance"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "50007c4d33f0aeb468110fadba53b0d0d0b4b5dd315670629d01cd9df8c7ecc8",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " of"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "fc05e54be41b4eeef14380930febd450352440def9ec668e07bdbbd6ef5d1b6d",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " rain"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "c1259bb980fe96cf60d0da0d4c0a6f10292a5f15384ea6ba9496a989b1ac0b70",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\","
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "987b164eab798cf4af29f72e2373ee817c30afeaa06eb2ed7122d26c84269952",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\n"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "aaf375be229ecb07925c4a8163c31259dcb6384f7c55db1ddb55c20ab2532e33",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "  "
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "1fd80bf8af9da9b05c5726d85ea669cfea8590be7c7fe9e9312d7e5fe34e54ad",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "49de6eb5d5714cfeeb43a57049db0562593373dda7e1ca94a30c4c42036e96ef",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "temperature"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "d29f07b4502ebc5b130e82e8ae7a79413c2303ab088442662afd1c352c6c2d22",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\":"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "1a074078b9068390122b2b5e288400372af5a32862443013b07bd3786ed73563",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": " \""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "64908438d0bb2911e89219b2170db586b6d91f52de2b1d0c2f7328ee4842ced4",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "1"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true,
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "8dcba16229a39d7b7538ec806a8a641d1366a83ba2c48d1eab79f88019b95514",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"location\": \"Paris, France\",\n  \"weather\": \"Cloudy with a chance of rain\",\n  \"temperature\": \"1"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": false,
+      "finish_reason": "MAX_TOKENS",
+      "custom_metadata": {
+        "request_sha256": "cc7fcf2a7b84ee74bd96a12310c4b0f2717ad8d27b667c20f51001f3b777f03e",
+        "reply_sha256": "ec670c52ea0e1168366dca50221485be9e3d2518cf3909ff718e1629a6e69b16",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "gemma4:e4b",
+                "object": "model",
+                "created": 1793057170,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3.5-bolt:e4b",
+                "object": "model",
+                "created": 1792788114,
+                "owned_by": "library"
+              },
+              {
+                "id": "flint:latest",
+                "object": "model",
+                "created": 1792723429,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3.1-flash:cloud",
+                "object": "model",
+                "created": 1792499206,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:latest",
+                "object": "model",
+                "created": 1792368120,
+                "owned_by": "library"
+              },
+              {
+                "id": "gpt-oss:120b-cloud",
+                "object": "model",
+                "created": 1792367469,
+                "owned_by": "library"
+              },
+              {
+                "id": "d1:latest",
+                "object": "model",
+                "created": 1792102975,
+                "owned_by": "library"
+              },
+              {
+                "id": "muse-spark-open:cloud",
+                "object": "model",
+                "created": 1792097018,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen38-citation-16k:latest",
+                "object": "model",
+                "created": 1791759338,
+                "owned_by": "library"
+              },
+              {
+                "id": "gemma4:31b-cloud",
+                "object": "model",
+                "created": 1791684862,
+                "owned_by": "library"
+              },
+              {
+                "id": "mistral-large-4:cloud",
+                "object": "model",
+                "created": 1791348995,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3-flash:cloud",
+                "object": "model",
+                "created": 1791167207,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k3:cloud",
+                "object": "model",
+                "created": 1790972939,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5.3:cloud",
+                "object": "model",
+                "created": 1790629687,
+                "owned_by": "library"
+              },
+              {
+                "id": "deepseek-v4.1-flash:cloud",
+                "object": "model",
+                "created": 1790348165,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m3:cloud",
+                "object": "model",
+                "created": 1782240006,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.6:cloud",
+                "object": "model",
+                "created": 1776791365,
+                "owned_by": "library"
+              },
+              {
+                "id": "nemotron-3-super:cloud",
+                "object": "model",
+                "created": 1774034506,
+                "owned_by": "library"
+              },
+              {
+                "id": "minimax-m2.7:cloud",
+                "object": "model",
+                "created": 1773872537,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3.5:cloud",
+                "object": "model",
+                "created": 1771604337,
+                "owned_by": "library"
+              },
+              {
+                "id": "glm-5:cloud",
+                "object": "model",
+                "created": 1770896104,
+                "owned_by": "library"
+              },
+              {
+                "id": "qwen3-coder-next:cloud",
+                "object": "model",
+                "created": 1770561613,
+                "owned_by": "library"
+              },
+              {
+                "id": "kimi-k2.5:cloud",
+                "object": "model",
+                "created": 1770516648,
+                "owned_by": "library"
+              }
+            ]
+          },
+          "server": null,
+          "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823"
+        },
+        "profile": "ollama",
+        "reply_complete": true
+      },
+      "usage_metadata": {
+        "candidates_token_count": 32,
+        "prompt_token_count": 21,
+        "total_token_count": 53
+      }
+    }
+  ],
+  "stream": true
+}

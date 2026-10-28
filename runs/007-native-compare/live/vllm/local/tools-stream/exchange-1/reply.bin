@@ -1,0 +1,12 @@
+data: {"id":"chatcmpl-a8b485578aa11120","object":"chat.completion.chunk","created":1793210039,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"role":"assistant","content":""},"logprobs":null,"finish_reason":null}],"prompt_token_ids":null,"prompt_text":null}
+
+data: {"id":"chatcmpl-a8b485578aa11120","object":"chat.completion.chunk","created":1793210039,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"tool_calls":[{"id":"chatcmpl-tool-86131ad527d43abf","type":"function","index":0,"function":{"name":"weather"}}]},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-a8b485578aa11120","object":"chat.completion.chunk","created":1793210039,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"tool_calls":[{"index":0,"function":{"arguments":"{\"city\": \"Paris"}}]},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-a8b485578aa11120","object":"chat.completion.chunk","created":1793210039,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"tool_calls":[{"index":0,"function":{"arguments":"\"}"}}]},"logprobs":null,"finish_reason":"tool_calls","stop_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-a8b485578aa11120","object":"chat.completion.chunk","created":1793210039,"model":"nemotron-3.5-bolt-e4b","choices":[],"usage":{"prompt_tokens":66,"total_tokens":79,"completion_tokens":13,"completion_tokens_details":{"reasoning_tokens":0}},"system_fingerprint":"vllm-0.31.0-5ad08979"}
+
+data: [DONE]
+

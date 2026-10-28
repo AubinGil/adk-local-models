@@ -1,0 +1,25 @@
+{
+  "exchanges": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:11434/v1/models",
+      "headers": {
+        "host": "127.0.0.1:11434",
+        "accept": "*/*",
+        "accept-encoding": "gzip, deflate",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1"
+      },
+      "status": 200,
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Wed, 28 Oct 2026 17:46:58 GMT",
+        "content-length": "2008"
+      },
+      "request_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "request_length": 0,
+      "reply_sha256": "e39bb388f0cd597a83e270512e3f7cac748c74e3dc39bd683a2672649c54e823",
+      "reply_length": 2008
+    }
+  ]
+}

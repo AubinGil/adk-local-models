@@ -1,0 +1,1 @@
+{"id":"chatcmpl-346","object":"chat.completion","created":1793209627,"model":"gemma4:e4b","system_fingerprint":"fp_ollama","choices":[{"index":0,"message":{"role":"assistant","content":"The weather in Paris is 20 degrees."},"finish_reason":"stop"}],"usage":{"prompt_tokens":129,"prompt_tokens_details":{"cached_tokens":94},"completion_tokens":11,"total_tokens":140}}

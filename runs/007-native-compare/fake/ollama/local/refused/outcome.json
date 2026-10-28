@@ -1,0 +1,54 @@
+{
+  "exchanges": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:58562/v1/models",
+      "headers": {
+        "host": "127.0.0.1:58562",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1",
+        "content-type": "application/json",
+        "accept-encoding": "identity"
+      },
+      "request_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "request_length": 0,
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reply_length": 0
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:58562/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:58562",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1",
+        "content-type": "application/json",
+        "accept-encoding": "identity",
+        "content-length": "269"
+      },
+      "request_sha256": "e39f8c41eb29247e68cf2fb5d7582a73e0a0c5b9e3c5a8e2545d4e6e605e2a3b",
+      "request_length": 269,
+      "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reply_length": 0
+    }
+  ],
+  "responses": [
+    {
+      "partial": false,
+      "error_code": "TRANSPORT_ERROR",
+      "error_message": "All connection attempts failed",
+      "custom_metadata": {
+        "request_sha256": "e39f8c41eb29247e68cf2fb5d7582a73e0a0c5b9e3c5a8e2545d4e6e605e2a3b",
+        "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "server_identity": {
+          "error": "ConnectError"
+        },
+        "profile": "ollama",
+        "reply_complete": false
+      }
+    }
+  ],
+  "stream": false
+}

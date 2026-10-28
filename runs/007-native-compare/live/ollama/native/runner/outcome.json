@@ -1,0 +1,297 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:11434",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "648"
+      },
+      "status": 200,
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Wed, 28 Oct 2026 17:47:07 GMT",
+        "content-length": "466"
+      },
+      "request_sha256": "84c0d6b3b29bc179c1c88808f3d595627afdea1ae492e6b2430e4f647ce3af7e",
+      "request_length": 648,
+      "reply_sha256": "48b988b376d5b6e90ce99491bf831612f641b7ec20a4c41e8d87532eefe59c97",
+      "reply_length": 466
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:11434",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "872"
+      },
+      "status": 200,
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Wed, 28 Oct 2026 17:47:07 GMT",
+        "content-length": "367"
+      },
+      "request_sha256": "8c0a5760e0d2c2374e784d34b502b57b1662555c1e91280da73bdb9ac583b2f6",
+      "request_length": 872,
+      "reply_sha256": "2e8ab3609e7b2ba3aa0d408f36c154132aea64aeca9bfdeece3e12d265ae24a5",
+      "reply_length": 367
+    }
+  ],
+  "events": [
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_zb6vhkan",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "cached_content_token_count": 0,
+        "candidates_token_count": 13,
+        "prompt_token_count": 99,
+        "total_token_count": 112
+      },
+      "invocation_id": "e-61596899-c9bd-4e19-93da-dfe4086a39a1",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "long_running_tool_ids": [],
+      "id": "4095f834-8553-4ae2-9d43-0a37109e0b71",
+      "timestamp": 1793209627.0537171
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_response": {
+              "id": "call_zb6vhkan",
+              "name": "weather",
+              "response": {
+                "temperature": 20
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocation_id": "e-61596899-c9bd-4e19-93da-dfe4086a39a1",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "id": "6bed3e55-3548-4e70-9489-0145b50c3e35",
+      "timestamp": 1793209627.165234
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The weather in Paris is 20 degrees."
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "cached_content_token_count": 94,
+        "candidates_token_count": 11,
+        "prompt_token_count": 129,
+        "total_token_count": 140
+      },
+      "invocation_id": "e-61596899-c9bd-4e19-93da-dfe4086a39a1",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "id": "008af680-3e35-4851-9e7a-28e494e8c868",
+      "timestamp": 1793209627.1658738
+    }
+  ],
+  "tool_executions": [
+    {
+      "city": "Paris",
+      "result": {
+        "temperature": 20
+      }
+    }
+  ],
+  "session_events": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Weather in Paris?"
+          }
+        ],
+        "role": "user"
+      },
+      "invocation_id": "e-61596899-c9bd-4e19-93da-dfe4086a39a1",
+      "author": "user",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": ""
+      },
+      "id": "48dd3fbb-0d4c-42b8-ae86-ebf9ab39a039",
+      "timestamp": 1793209627.023241
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_zb6vhkan",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "cached_content_token_count": 0,
+        "candidates_token_count": 13,
+        "prompt_token_count": 99,
+        "total_token_count": 112
+      },
+      "invocation_id": "e-61596899-c9bd-4e19-93da-dfe4086a39a1",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "long_running_tool_ids": [],
+      "id": "4095f834-8553-4ae2-9d43-0a37109e0b71",
+      "timestamp": 1793209627.0537171
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_response": {
+              "id": "call_zb6vhkan",
+              "name": "weather",
+              "response": {
+                "temperature": 20
+              }
+            }
+          }
+        ],
+        "role": "user"
+      },
+      "invocation_id": "e-61596899-c9bd-4e19-93da-dfe4086a39a1",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "id": "6bed3e55-3548-4e70-9489-0145b50c3e35",
+      "timestamp": 1793209627.165234
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "The weather in Paris is 20 degrees."
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "cached_content_token_count": 94,
+        "candidates_token_count": 11,
+        "prompt_token_count": 129,
+        "total_token_count": 140
+      },
+      "invocation_id": "e-61596899-c9bd-4e19-93da-dfe4086a39a1",
+      "author": "local",
+      "actions": {
+        "state_delta": {},
+        "artifact_delta": {},
+        "requested_auth_configs": {},
+        "requested_tool_confirmations": {}
+      },
+      "node_info": {
+        "path": "local@1"
+      },
+      "id": "008af680-3e35-4851-9e7a-28e494e8c868",
+      "timestamp": 1793209627.1658738
+    }
+  ]
+}

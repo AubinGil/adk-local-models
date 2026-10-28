@@ -1,0 +1,63 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:11434",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "459"
+      },
+      "status": 200,
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Wed, 28 Oct 2026 17:47:06 GMT",
+        "content-length": "467"
+      },
+      "request_sha256": "abadc48e100c56f9ae7b1b74d6c44f3c5fb1c86bc39cd1bfa775e00dbffb484f",
+      "request_length": 459,
+      "reply_sha256": "ba10f6a4f9452c4b361ef381c4ca58305155a9c1c172bffe1700d338abc3dd84",
+      "reply_length": 467
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_37b8yhvj",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "cached_content_token_count": 60,
+        "candidates_token_count": 13,
+        "prompt_token_count": 65,
+        "total_token_count": 78
+      }
+    }
+  ],
+  "stream": false
+}

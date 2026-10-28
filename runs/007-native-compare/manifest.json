@@ -1,0 +1,38 @@
+{
+  "source_commit": "8ad2ee2de0736abe4b1f13ef326a01c321586473",
+  "recorded_utc": "2026-10-28T17:47:53.961982+00:00",
+  "authorization": "Owner go for brief 007, including bounded live checks",
+  "source_sha256": {
+    "src\\adk_local_models\\llm.py": "9b2748406ad4927ea2e05f04363dda6ecf72d9d1fb8b695297f3e71743fc67bb",
+    "src\\adk_local_models\\mapping.py": "c3debdcab07ff3413212dc01c38af1250e0c1049e13e5bfc38ff95c2c8d54740",
+    "src\\adk_local_models\\profiles.py": "e3d69f85d2e2728cc10ba235f2fcc1011aa85ef587b43048d35de16afe5c4a98",
+    "src\\adk_local_models\\recording.py": "4c67ce3bc656849a337fbf4fa2b519f1ad46003f842ce1812900b0282639d0d6",
+    "src\\adk_local_models\\__init__.py": "adb6b19990488b9a864184db76caa60c5d3a8ab0251cb3624ca44fca26cc4977",
+    ".cache\\native-compare\\Lib\\site-packages\\google\\adk\\integrations\\openai\\_openai_common.py": "cd627d372ed07aa493a4ecbd866d665b98bba663e9a7cad298e678abecbfc005",
+    ".cache\\native-compare\\Lib\\site-packages\\google\\adk\\integrations\\openai\\_openai_llm.py": "b4b496edebea4b3eea9c4013c9a18be3a0e75a96904125b295715156f1b56e9d",
+    ".cache\\native-compare\\Lib\\site-packages\\google\\adk\\integrations\\openai\\_openai_responses_llm.py": "d722446cbbca58b98f5ac198503afc71fc6a7b6a7d1d26b6d225f04c623cb257",
+    ".cache\\native-compare\\Lib\\site-packages\\google\\adk\\integrations\\openai\\_openai_schema.py": "8456dd9c524a2f34d495f7d8ed27c7f28b2e45054cba641cb69c56fa9141e184",
+    ".cache\\native-compare\\Lib\\site-packages\\google\\adk\\integrations\\openai\\__init__.py": "00794b3f957135f9eb4ea411358067a540dd309efa40d39c4100485531a231f7"
+  },
+  "live_request_counts": {
+    "8038": 12,
+    "11434": 11,
+    "8080": 1
+  },
+  "retries": 0,
+  "native_live_profile_knobs": "Explicit httpx request hook applies the same documented KNOBS as the local adapter; model-free native requests use unmodified native defaults.",
+  "checks": "Project unittest: 17 passed; see verification.json for byte checks.",
+  "finished_utc": "2026-10-28T17:54:32.018703+00:00",
+  "tool_sha256": {
+    "tools\\compare007.py": "b671cd5421c98146f3091e72c2b66e67d72c089dee11715d0810bfd04bdda154",
+    "tools\\dependencies007.py": "cb9aabefb92ae01eb8f5b16a75e2b620804570190964c9708ccbf7082a596aac",
+    "tools\\verify007.py": "07a69eab3dabde88c67260877e7ee82d0a03bcf1f11d57a0419c26c7afd4c169"
+  },
+  "versions": {
+    "python": "3.11.9",
+    "google-adk": "2.13.0",
+    "google-genai": "2.33.0",
+    "httpx": "0.28.1",
+    "openai_native_only": "2.54.0"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "ollama\\local\\text-plain": [
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\text-stream": [
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "ollama\\local\\tools-plain": [
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "ollama\\local\\tools-stream": [
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "vllm\\local\\text-plain": [
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\text-stream": [
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tools",
+      "local": "<absent>",
+      "native": null
+    }
+  ],
+  "vllm\\local\\tools-plain": [
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/stream",
+      "local": false,
+      "native": "<absent>"
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ],
+  "vllm\\local\\tools-stream": [
+    {
+      "path": "/response_format",
+      "local": "<absent>",
+      "native": null
+    },
+    {
+      "path": "/tool_choice",
+      "local": "<absent>",
+      "native": "auto"
+    }
+  ]
+}

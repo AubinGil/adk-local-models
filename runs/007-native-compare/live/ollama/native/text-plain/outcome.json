@@ -1,0 +1,57 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:11434",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "283"
+      },
+      "status": 200,
+      "response_headers": {
+        "content-type": "application/json",
+        "date": "Wed, 28 Oct 2026 17:47:06 GMT",
+        "content-length": "443"
+      },
+      "request_sha256": "dffbcb5ef9ac204477f7c09462b0f7faf0f2a66829fb9cb0225620ad35fe2395",
+      "request_length": 283,
+      "reply_sha256": "e3f7b50bf159a025acf47b120c4759907a1f17aaf81d749f8c1e1f81568ec589",
+      "reply_length": 443
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"location\": \"Paris, France\",\n  \"weather\": \"Cloudy with a chance of rain\",\n  \"temperature\": \"1"
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "MAX_TOKENS",
+      "usage_metadata": {
+        "cached_content_token_count": 16,
+        "candidates_token_count": 32,
+        "prompt_token_count": 21,
+        "total_token_count": 53
+      }
+    }
+  ],
+  "stream": false
+}

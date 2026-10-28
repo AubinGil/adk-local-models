@@ -1,0 +1,86 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:11434",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "513"
+      },
+      "status": 200,
+      "response_headers": {
+        "content-type": "text/event-stream",
+        "date": "Wed, 28 Oct 2026 17:47:06 GMT",
+        "transfer-encoding": "chunked"
+      },
+      "request_sha256": "84e369805743d31ecf644f10152507d595d0dde3c7eced6101183ec56fe30561",
+      "request_length": 513,
+      "reply_sha256": "1ea6988ffdeb944547aca526b144b132679c9862f42ab262938964ec31634c91",
+      "reply_length": 1076
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_ynraxncy",
+              "name": "weather",
+              "partial_args": [
+                {
+                  "json_path": "$.city",
+                  "string_value": "Paris",
+                  "will_continue": false
+                }
+              ],
+              "will_continue": true
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_ynraxncy",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": false,
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "cached_content_token_count": 60,
+        "candidates_token_count": 13,
+        "prompt_token_count": 65,
+        "total_token_count": 78
+      }
+    }
+  ],
+  "stream": true
+}

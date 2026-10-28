@@ -1,0 +1,169 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://localhost:8038/v1/chat/completions",
+      "headers": {
+        "host": "localhost:8038",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "371"
+      },
+      "status": 200,
+      "response_headers": {
+        "date": "Wed, 28 Oct 2026 17:54:00 GMT",
+        "server": "uvicorn",
+        "content-type": "text/event-stream; charset=utf-8",
+        "transfer-encoding": "chunked"
+      },
+      "request_sha256": "e0f70c421c17e5df2fb19290ecf206eec71e5b3bcb72939327a785071a19e9dc",
+      "request_length": 371,
+      "reply_sha256": "85b15294f0e601a9f0f68b902144907dba3767001fccf459d22370c00aecef66",
+      "reply_length": 2992
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "  \"temperatu"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "re\": \""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "18°C\",\n  \"conditi"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "on\": \"Clo"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "udy\",\n  \"wi"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "nd\": "
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "\""
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "10 "
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "km/h"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"temperature\": \"18°C\",\n  \"condition\": \"Cloudy\",\n  \"wind\": \"10 km/h"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": false,
+      "finish_reason": "MAX_TOKENS",
+      "usage_metadata": {
+        "candidates_token_count": 32,
+        "prompt_token_count": 22,
+        "thoughts_token_count": 0,
+        "total_token_count": 54
+      }
+    }
+  ],
+  "stream": true
+}

@@ -1,0 +1,116 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:58661/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:58661",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "490"
+      },
+      "status": 200,
+      "response_headers": {
+        "server": "BaseHTTP/0.6 Python/3.11.9",
+        "date": "Wed, 28 Oct 2026 17:46:37 GMT",
+        "content-type": "text/event-stream",
+        "content-length": "569"
+      },
+      "request_sha256": "39f6a32c4cfd8a5fcb49a0dad26c735af58ef00e683fce7db04c87f47a7e48ab",
+      "request_length": 490,
+      "reply_sha256": "2fa779b3e4a27a81228fcc0eb1edb763e40cd08ce31e10b5148f355009775486",
+      "reply_length": 569
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_weather",
+              "name": "weather",
+              "will_continue": true
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_weather",
+              "name": "weather",
+              "will_continue": true
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_weather",
+              "name": "weather",
+              "partial_args": [
+                {
+                  "json_path": "$.city",
+                  "string_value": "Paris",
+                  "will_continue": false
+                }
+              ],
+              "will_continue": true
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_weather",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": false,
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "candidates_token_count": 3,
+        "prompt_token_count": 8,
+        "total_token_count": 11
+      }
+    }
+  ],
+  "stream": true
+}

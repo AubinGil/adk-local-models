@@ -1,0 +1,80 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:58506/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:58506",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "712"
+      },
+      "status": 200,
+      "response_headers": {
+        "server": "BaseHTTP/0.6 Python/3.11.9",
+        "date": "Wed, 28 Oct 2026 17:45:49 GMT",
+        "content-type": "text/event-stream",
+        "content-length": "347"
+      },
+      "request_sha256": "66d231c6bc641a6dfca07a05c5b7832c8e7de5bf7cd6fa8830b01f4d337f86a5",
+      "request_length": 712,
+      "reply_sha256": "a0604713cc25e573321e3a7a32a120bde4a8c7c8e51e7f8112e8f2de277849e1",
+      "reply_length": 347
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Hello "
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "café!"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": true
+    },
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Hello café!"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": false,
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "candidates_token_count": 3,
+        "prompt_token_count": 8,
+        "total_token_count": 11
+      }
+    }
+  ],
+  "stream": true
+}

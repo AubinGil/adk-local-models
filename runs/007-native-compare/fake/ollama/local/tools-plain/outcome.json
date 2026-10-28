@@ -1,0 +1,97 @@
+{
+  "exchanges": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:58535/v1/models",
+      "headers": {
+        "host": "127.0.0.1:58535",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1",
+        "content-type": "application/json",
+        "accept-encoding": "identity"
+      },
+      "status": 200,
+      "response_headers": {
+        "server": "BaseHTTP/0.6 Python/3.11.9",
+        "date": "Wed, 28 Oct 2026 17:45:58 GMT",
+        "content-type": "application/json",
+        "content-length": "85"
+      },
+      "request_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "request_length": 0,
+      "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+      "reply_length": 85
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:58535/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:58535",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1",
+        "content-type": "application/json",
+        "accept-encoding": "identity",
+        "content-length": "433"
+      },
+      "status": 200,
+      "response_headers": {
+        "server": "BaseHTTP/0.6 Python/3.11.9",
+        "date": "Wed, 28 Oct 2026 17:45:58 GMT",
+        "content-type": "application/json",
+        "content-length": "279"
+      },
+      "request_sha256": "0d7aa73d3487b15f5e1dfaa6f4be58b1ddae05c67b1fc1fe290e07b7c257117c",
+      "request_length": 433,
+      "reply_sha256": "52e24fac0005c5b01f75e7889166823e43f45d606be998ab915e938dc15c46bf",
+      "reply_length": 279
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_weather",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "partial": false,
+      "finish_reason": "STOP",
+      "custom_metadata": {
+        "request_sha256": "0d7aa73d3487b15f5e1dfaa6f4be58b1ddae05c67b1fc1fe290e07b7c257117c",
+        "reply_sha256": "52e24fac0005c5b01f75e7889166823e43f45d606be998ab915e938dc15c46bf",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "fake-model",
+                "object": "model",
+                "owned_by": "fixture"
+              }
+            ]
+          },
+          "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+          "server": "BaseHTTP/0.6 Python/3.11.9"
+        },
+        "profile": "ollama",
+        "reply_complete": true
+      },
+      "usage_metadata": {
+        "candidates_token_count": 3,
+        "prompt_token_count": 8,
+        "total_token_count": 11
+      }
+    }
+  ],
+  "stream": false
+}

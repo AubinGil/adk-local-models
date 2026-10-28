@@ -1,0 +1,63 @@
+{
+  "exchanges": [
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:58499/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:58499",
+        "connection": "keep-alive",
+        "accept-encoding": "identity",
+        "authorization": "Bearer comparison-placeholder",
+        "accept": "application/json",
+        "content-type": "application/json",
+        "user-agent": "AsyncOpenAI/Python 2.54.0",
+        "x-stainless-lang": "python",
+        "x-stainless-package-version": "2.54.0",
+        "x-stainless-os": "Windows",
+        "x-stainless-arch": "other:amd64",
+        "x-stainless-runtime": "CPython",
+        "x-stainless-runtime-version": "3.11.9",
+        "x-stainless-async": "async:asyncio",
+        "x-stainless-retry-count": "0",
+        "x-stainless-read-timeout": "60",
+        "content-length": "436"
+      },
+      "status": 200,
+      "response_headers": {
+        "server": "BaseHTTP/0.6 Python/3.11.9",
+        "date": "Wed, 28 Oct 2026 17:45:47 GMT",
+        "content-type": "application/json",
+        "content-length": "279"
+      },
+      "request_sha256": "91036942f50776b78a9894b0e7ad2ec5b1f55ff7808ceb2eaeb5739e80aa6039",
+      "request_length": 436,
+      "reply_sha256": "52e24fac0005c5b01f75e7889166823e43f45d606be998ab915e938dc15c46bf",
+      "reply_length": 279
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "function_call": {
+              "id": "call_weather",
+              "args": {
+                "city": "Paris"
+              },
+              "name": "weather"
+            }
+          }
+        ],
+        "role": "model"
+      },
+      "finish_reason": "STOP",
+      "usage_metadata": {
+        "candidates_token_count": 3,
+        "prompt_token_count": 8,
+        "total_token_count": 11
+      }
+    }
+  ],
+  "stream": false
+}

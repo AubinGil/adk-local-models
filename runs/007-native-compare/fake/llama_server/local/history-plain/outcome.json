@@ -1,0 +1,91 @@
+{
+  "exchanges": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:58617/v1/models",
+      "headers": {
+        "host": "127.0.0.1:58617",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1",
+        "content-type": "application/json",
+        "accept-encoding": "identity"
+      },
+      "status": 200,
+      "response_headers": {
+        "server": "BaseHTTP/0.6 Python/3.11.9",
+        "date": "Wed, 28 Oct 2026 17:46:24 GMT",
+        "content-type": "application/json",
+        "content-length": "85"
+      },
+      "request_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "request_length": 0,
+      "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+      "reply_length": 85
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:58617/v1/chat/completions",
+      "headers": {
+        "host": "127.0.0.1:58617",
+        "accept": "*/*",
+        "connection": "keep-alive",
+        "user-agent": "python-httpx/0.28.1",
+        "content-type": "application/json",
+        "accept-encoding": "identity",
+        "content-length": "668"
+      },
+      "status": 200,
+      "response_headers": {
+        "server": "BaseHTTP/0.6 Python/3.11.9",
+        "date": "Wed, 28 Oct 2026 17:46:24 GMT",
+        "content-type": "application/json",
+        "content-length": "163"
+      },
+      "request_sha256": "aeee76463065fd479fc9435454d9e945c3f3ab92be94d67479e276e87b4b2f59",
+      "request_length": 668,
+      "reply_sha256": "cc9f14cfa6fbce47fbcda88f49bf588d729afb55ec3269b74c72164458d9ac9e",
+      "reply_length": 163
+    }
+  ],
+  "responses": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Hello café!"
+          }
+        ],
+        "role": "model"
+      },
+      "partial": false,
+      "finish_reason": "STOP",
+      "custom_metadata": {
+        "request_sha256": "aeee76463065fd479fc9435454d9e945c3f3ab92be94d67479e276e87b4b2f59",
+        "reply_sha256": "cc9f14cfa6fbce47fbcda88f49bf588d729afb55ec3269b74c72164458d9ac9e",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "fake-model",
+                "object": "model",
+                "owned_by": "fixture"
+              }
+            ]
+          },
+          "reply_sha256": "e757ded437bb25d5429a08fbbedf8ad9992c4a623340965eecc424c0cb52f43d",
+          "server": "BaseHTTP/0.6 Python/3.11.9"
+        },
+        "profile": "llama_server",
+        "reply_complete": true
+      },
+      "usage_metadata": {
+        "candidates_token_count": 3,
+        "prompt_token_count": 8,
+        "total_token_count": 11
+      }
+    }
+  ],
+  "stream": false
+}
