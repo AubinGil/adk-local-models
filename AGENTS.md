@@ -4,7 +4,7 @@ A Google ADK model adapter for local OpenAI-compatible servers (vLLM, Ollama, ll
 through LiteLLM. Parked side project of the owner (2026-10-28); harness-core stays the main track. Codex executes
 the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner types "go".
 
-**No open assignment for Codex (2026-10-28).** Brief 002 ran with no server answering and is gated as a record of absence (`briefs/002-result.md`). Brief 003 is the same smoke, `briefs/002-live-smoke.md` step by step, run only once the owner has started a listed server and says so; Codex never starts one.
+**Current assignment for Codex: brief 003 (`briefs/003-live-smoke-8038.md`).** Brief 002's smoke against the owner's vLLM on `http://localhost:8038/v1` (model `nemotron-3.5-bolt-e4b`), offered by the owner on 2026-10-28; readings under `runs/`; no code change; the server is never touched.
 
 ## Why this exists
 
