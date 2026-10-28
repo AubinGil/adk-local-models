@@ -4,7 +4,7 @@ A Google ADK model adapter for local OpenAI-compatible servers (vLLM, Ollama, ll
 through LiteLLM. Parked side project of the owner (2026-10-28); harness-core stays the main track. Codex executes
 the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner types "go".
 
-**No open assignment for Codex (2026-10-28).** Brief 001 is delivered and gated (`briefs/001-delivery.md`); brief 002, the live smoke against the owner's servers, is not written and needs the owner's word.
+**Current assignment for Codex: brief 002 (`briefs/002-live-smoke.md`), the live smoke.** One text and one tool request per profile against the owner's servers that already answer; nothing started; readings under `runs/`; no code change. The owner's word is given (2026-10-28).
 
 ## Why this exists
 
