@@ -124,3 +124,22 @@ readable evidence and stay as recorded.
 Live evidence covers one model each on vLLM and Ollama and nothing on llama-server. The repository stays private,
 nothing is published, the draft is unsubmitted; the owner decides all three points above and writes any post.
 
+## Gate of the owner's decisions (reviewer, 2026-10-28, at d486b2f): accepted; one step remains at publication
+
+Reproduced on `feature/008-owner-decisions`: 17 tests, all four fake-server examples, every relative link,
+`git diff --check` clean, and no personal identifier left in any public file (the only match for the owner's name
+is the repository URL in the draft). The three edits are what the gate asked for. `SECURITY.md` follows GitHub's
+own steps word for word: the "Security and quality" tab, then "Report a vulnerability", with the documentation
+linked. The README records the two accepted transitive licences and the notice-retention duty, linked to the
+inventory. `AGENTS.md` carries the disclosure decision, names the sibling repository without a path and the
+commit identity without an address.
+
+Codex's 404 on the private-vulnerability-reporting endpoint is expected, not a defect: GitHub offers that feature
+on public repositories only, and the repository is private today (`visibility: private`, checked over the API at
+the gate). The instructions in `SECURITY.md` therefore work only after two owner actions in that order: make the
+repository public, then enable private vulnerability reporting in its security settings. Until the second is
+done, a reporter following `SECURITY.md` finds no button. The reviewer changed one phrase in the README's licence
+sentence from "The owner accepts" to "This project accepts", since the file speaks to the public.
+
+Nothing else blocks on the repository side. The release is a v0.1.0 GitHub release, no PyPI, as the owner decided.
+
