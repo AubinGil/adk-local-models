@@ -1,4 +1,4 @@
-# Brief 008 ? work in progress
+# Brief 008 - release preparation
 
 The release gate is **not complete**. Do not publish on the strength of this report.
 
@@ -36,3 +36,54 @@ point, not the deliverable); the licence list of the installed closure; `COMPARI
 one citation per row; the final checks and the release-readiness report. The private security route in
 `SECURITY.md` is the owner's to supply and stays a listed blocker until then.
 
+## Continuation: release gate evidence
+
+Files changed: README.md, COMPARISON.md, this report, and runs/008-release-check/. The announcement remains [SHOW_AND_TELL_DRAFT.md](../SHOW_AND_TELL_DRAFT.md). Package implementation and runtime dependencies are unchanged.
+
+### Inventory recommendations
+
+Directory entries cover every tracked member. No archive or exclusion is applied here.
+
+| Path | Recommendation | Reason |
+| --- | --- | --- |
+| README.md, COMPARISON.md, CONTRIBUTING.md, SECURITY.md, LICENSE, pyproject.toml | Keep public | Release information; SECURITY needs a private contact. |
+| .gitignore, .gitattributes | Keep public | Repository hygiene. |
+| AGENTS.md | Archive or exclude, owner decision | Owner email, local path and internal workflow; history retains these. |
+| briefs/README.md and briefs/001-* through briefs/006-* | Archive, owner decision | Internal project history. |
+| briefs/007-native-comparison.md, briefs/007-result.md | Keep public | Comparison supporting the README. |
+| briefs/008-* | Archive, owner decision | Internal release process and privacy findings. |
+| runs/002-live-smoke/, runs/003-live-smoke-8038/, runs/004-tool-call-8038/, runs/005-runner-8038/, runs/006-ollama/ | Archive, owner decision | Live reproducibility evidence; review disclosure. |
+| runs/007-native-compare/ | Keep public after privacy review | Comparison evidence; pip list exposes a local path and native exchanges include an inert placeholder. |
+| runs/008-release-check/ | Keep public | Verification evidence and license metadata. |
+| tools/compare007.py, tools/dependencies007.py, tools/verify007.py | Keep public | Reproducibility tools. |
+| tests/fixtures/ including golden/ | Keep public | Synthetic test evidence. |
+| src/ and tests/ | Keep public | Implementation and tests; test-only secret is inert. |
+| SHOW_AND_TELL_DRAFT.md | Archive, owner decision | Unsubmitted draft. |
+
+### Security and privacy
+
+The reviewer reported scanning added lines in all commits and finding no actual credential, token, key, Tailscale address or Mac path. A further git log --all -p --text pattern scan checked bearer strings, private-key markers, personal paths, private and Tailscale IP ranges and email. It found no private-key markers or private/Tailscale IP matches. Pattern matching is not proof of absence, and this scan did not establish complete review of private evaluation data or all host names.
+
+| Commit and path | Finding and proposed remedy |
+| --- | --- |
+| 95c10f0, AGENTS.md | Owner email and local harness-core path; owner decides disclosure and any separately authorized history treatment. Commit author metadata also includes the specified email. |
+| c7c9545, runs/007-native-compare/dependencies/project-pip-list.json | Editable path identifies Windows user and project location. Redact only with separate authorization; history retains it. |
+| c7c9545, runs/007-native-compare/{fake,live}/**/native/**/{exchange.json,outcome.json} | Bearer comparison-placeholder is deliberately inert. No rotation needed; retain with explanation or redact to avoid confusion. |
+| c5798de, tests/test_adapter.py | test-only-secret is synthetic and can remain for the auth test. |
+| Various runs and briefs | Loopback host names, local ports, model names, prompts and replies disclose test configuration. Review recorded live data before publication; archive or redact only with authorization. |
+
+The ignore rules cover .venv, .cache, runs/*/raw, build, dist and egg-info. git rev-list --all plus git ls-tree -r found no matching paths in reachable commits. No history or run evidence was removed.
+
+### Dependencies and licences
+
+The declared requirement is google-adk>=2.13.0,<3. The [installed closure and license metadata](../runs/008-release-check/licenses.md) lists all 48 active ADK dependencies and versions; [the original inventory and dependency edges](../runs/007-native-compare/dependencies/project.json) records the closure. Neither litellm nor openai is importable in the project environment, verified by the test. The project license file and pyproject both specify Apache-2.0. Metadata declares certifi MPL-2.0 and typing_extensions PSF-2.0, outside the specified Apache/MIT/BSD classes; owner must decide whether these transitive dependencies meet the rule. This is metadata inspection, not a legal determination.
+
+### Reproducibility and final checks
+
+- Project environment: .venv/Scripts/python -m unittest discover -v passed 17 tests.
+- Fresh .cache/release-check: python -m venv .cache/release-check, then pip install -e .; pip wheel . --no-deps -w .cache/release-check/wheels built a wheel, installed with pip install --no-deps --force-reinstall before all 17 tests passed. Editable installation was restored and all 17 tests passed again; [output](../runs/008-release-check/editable-tests.txt). No build package was added.
+- .cache/release-check/Scripts/python runs/008-release-check/examples.py executed all README Python examples and the draft example against the fake server: [script](../runs/008-release-check/examples.py), [output](../runs/008-release-check/examples-output.txt).
+- Relative links in README, COMPARISON, CONTRIBUTING, SECURITY and draft resolve; git diff --check passed. The comparison cites tests, run evidence or brief 007 for each row.
+- Limitations: no image or audio input, live bidirectional API, strict schema enforcement or reasoning-token usage mapping; llama-server has no live validation. Live evidence is limited to recorded models and configurations.
+
+Release blockers: owner must provide a private security reporting route, decide on the two license declarations and review privacy/disclosure and archive choices. Comprehensive human review of history and private evaluation content remains incomplete; do not treat the pattern scan as clearance. Repository remains private; no post was submitted or release published. Final commit SHA and status are supplied in the handoff because a commit cannot contain its own SHA.

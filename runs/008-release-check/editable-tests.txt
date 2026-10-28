@@ -1,0 +1,38 @@
+.cache/release-check/Scripts/python : test_auth_and_extensions 
+(tests.test_adapter.AdapterTests.test_auth_and_extensions) ... ok
+At line:2 char:68
++ ...  --no-deps; .cache/release-check/Scripts/python -m unittest discover  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_auth_and_e...ensions) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_errors (tests.test_adapter.AdapterTests.test_errors) ... ok
+test_finish_reasons_and_bad_tool_arguments 
+(tests.test_adapter.AdapterTests.test_finish_reasons_and_bad_tool_arguments) ... ok
+test_golden_requests_all_profiles (tests.test_adapter.AdapterTests.test_golden_requests_all_profiles) ... ok
+test_identity_failure_is_cached_without_blocking_generation 
+(tests.test_adapter.AdapterTests.test_identity_failure_is_cached_without_blocking_generation) ... ok
+test_identity_once_for_concurrent_calls (tests.test_adapter.AdapterTests.test_identity_once_for_concurrent_calls) ... 
+ok
+test_idless_history_and_ambiguous_response 
+(tests.test_adapter.AdapterTests.test_idless_history_and_ambiguous_response) ... ok
+test_incomplete_stream_and_invalid_tool_reply 
+(tests.test_adapter.AdapterTests.test_incomplete_stream_and_invalid_tool_reply) ... ok
+test_invalid_request_does_not_contact_server 
+(tests.test_adapter.AdapterTests.test_invalid_request_does_not_contact_server) ... ok
+test_optional_sdks_are_not_importable (tests.test_adapter.AdapterTests.test_optional_sdks_are_not_importable) ... ok
+test_parallel_stream_tool_calls_and_split_names 
+(tests.test_adapter.AdapterTests.test_parallel_stream_tool_calls_and_split_names) ... ok
+test_plain_and_streamed_outputs (tests.test_adapter.AdapterTests.test_plain_and_streamed_outputs) ... ok
+test_registry_and_capabilities (tests.test_adapter.AdapterTests.test_registry_and_capabilities) ... ok
+test_request_mapping_does_not_mutate_input 
+(tests.test_adapter.AdapterTests.test_request_mapping_does_not_mutate_input) ... ok
+test_runner_tool_turn_reaches_session (tests.test_adapter.AdapterTests.test_runner_tool_turn_reaches_session) ... ok
+test_schema_conversion (tests.test_adapter.AdapterTests.test_schema_conversion) ... ok
+test_tool_requests_exclude_json_response_format 
+(tests.test_adapter.AdapterTests.test_tool_requests_exclude_json_response_format) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 21.854s
+
+OK
