@@ -1,0 +1,12 @@
+data: {"id":"chatcmpl-b81ce44658bc5722","object":"chat.completion.chunk","created":1793199506,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"role":"assistant","content":""},"logprobs":null,"finish_reason":null}],"prompt_token_ids":null,"prompt_text":null}
+
+data: {"id":"chatcmpl-b81ce44658bc5722","object":"chat.completion.chunk","created":1793199506,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"{\"ci"},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-b81ce44658bc5722","object":"chat.completion.chunk","created":1793199506,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"ty"},"logprobs":null,"finish_reason":null,"token_ids":null}]}
+
+data: {"id":"chatcmpl-b81ce44658bc5722","object":"chat.completion.chunk","created":1793199506,"model":"nemotron-3.5-bolt-e4b","choices":[{"index":0,"delta":{"content":"\": \"Paris\"}"},"logprobs":null,"finish_reason":"stop","stop_reason":106,"token_ids":null}]}
+
+data: {"id":"chatcmpl-b81ce44658bc5722","object":"chat.completion.chunk","created":1793199506,"model":"nemotron-3.5-bolt-e4b","choices":[],"usage":{"prompt_tokens":66,"total_tokens":73,"completion_tokens":7,"completion_tokens_details":{"reasoning_tokens":0}},"system_fingerprint":"vllm-0.31.0-5ad08979"}
+
+data: [DONE]
+

@@ -1,0 +1,40 @@
+{
+  "verification": "offline; no HTTP calls",
+  "exchanges": [
+    {
+      "exchange": "probe-1",
+      "status_200": true,
+      "entity_hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "text-plain",
+      "status_200": true,
+      "entity_hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "text-stream",
+      "status_200": true,
+      "entity_hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "tools-plain",
+      "status_200": true,
+      "entity_hashes_and_lengths_match": true
+    },
+    {
+      "exchange": "tools-stream",
+      "status_200": true,
+      "entity_hashes_and_lengths_match": true
+    }
+  ],
+  "identity_hash_matches": true,
+  "fixture_request_shapes_match": true,
+  "all_response_metadata_match": true,
+  "partial_hashes_match_reply_prefixes": true,
+  "semantic_final_equality": {
+    "text": true,
+    "tools": true
+  },
+  "completion_count": 4,
+  "parsed_tool_call_count": 0
+}

@@ -1,0 +1,400 @@
+{
+  "started_utc": "2026-10-28T14:58:25.723208+00:00",
+  "method": "POST",
+  "url": "http://localhost:8038/v1/chat/completions",
+  "status": 200,
+  "response_headers": {
+    "date": "Wed, 28 Oct 2026 14:58:25 GMT",
+    "server": "uvicorn",
+    "content-type": "text/event-stream; charset=utf-8",
+    "transfer-encoding": "chunked"
+  },
+  "adapter_responses": [
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "{\"ci",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "381e25146d0f0cc8178fd7f661edb01976db391d8df4aaf3623d118fd52b47f6",
+        "reply_sha256": "bab79a2f8af9fef1cf184c9b2c71fcc31e1cd4092802a4fc4fcdf10b0f75c6eb",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793199502,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-87c7a059f4e006ed",
+                    "object": "model_permission",
+                    "created": 1793199502,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "reply_sha256": "3dd19048c50e7169dd3d5537be853c3990b9dd34eadb342daa48f002a64d2695",
+          "server": "uvicorn"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "ty",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "381e25146d0f0cc8178fd7f661edb01976db391d8df4aaf3623d118fd52b47f6",
+        "reply_sha256": "1ca3f194b6e0702c3d267049bd56871a8d8d434feca6d10f5eb44b489d6f2c69",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793199502,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-87c7a059f4e006ed",
+                    "object": "model_permission",
+                    "created": 1793199502,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "reply_sha256": "3dd19048c50e7169dd3d5537be853c3990b9dd34eadb342daa48f002a64d2695",
+          "server": "uvicorn"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "\": \"Paris\"}",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "381e25146d0f0cc8178fd7f661edb01976db391d8df4aaf3623d118fd52b47f6",
+        "reply_sha256": "312a7e3d7acb1805b96559c09246aaf25e794fb49f702c52666b8ea4276226da",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793199502,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-87c7a059f4e006ed",
+                    "object": "model_permission",
+                    "created": 1793199502,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "reply_sha256": "3dd19048c50e7169dd3d5537be853c3990b9dd34eadb342daa48f002a64d2695",
+          "server": "uvicorn"
+        },
+        "profile": "vllm",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "{\"city\": \"Paris\"}",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": false,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": "STOP",
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "381e25146d0f0cc8178fd7f661edb01976db391d8df4aaf3623d118fd52b47f6",
+        "reply_sha256": "1503830a89ce46edf4059259375b786e7dbef99959f919f370f4249188b6618c",
+        "server_identity": {
+          "models": {
+            "object": "list",
+            "data": [
+              {
+                "id": "nemotron-3.5-bolt-e4b",
+                "object": "model",
+                "created": 1793199502,
+                "owned_by": "vllm",
+                "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                "parent": null,
+                "max_model_len": 16384,
+                "permission": [
+                  {
+                    "id": "modelperm-87c7a059f4e006ed",
+                    "object": "model_permission",
+                    "created": 1793199502,
+                    "allow_create_engine": false,
+                    "allow_sampling": true,
+                    "allow_logprobs": true,
+                    "allow_search_indices": false,
+                    "allow_view": true,
+                    "allow_fine_tuning": false,
+                    "organization": "*",
+                    "group": null,
+                    "is_blocking": false
+                  }
+                ]
+              }
+            ]
+          },
+          "reply_sha256": "3dd19048c50e7169dd3d5537be853c3990b9dd34eadb342daa48f002a64d2695",
+          "server": "uvicorn"
+        },
+        "profile": "vllm",
+        "reply_complete": true
+      },
+      "usage_metadata": {
+        "cache_tokens_details": null,
+        "cached_content_token_count": null,
+        "candidates_token_count": 7,
+        "candidates_tokens_details": null,
+        "prompt_token_count": 66,
+        "prompt_tokens_details": null,
+        "thoughts_token_count": null,
+        "tool_use_prompt_token_count": null,
+        "tool_use_prompt_tokens_details": null,
+        "total_token_count": 73,
+        "traffic_type": null
+      },
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    }
+  ],
+  "checks": {
+    "request_hash_matches": true,
+    "reply_hash_matches": true,
+    "error_code": null,
+    "partial_count": 3,
+    "final_partial": false,
+    "finish_reason": "STOP",
+    "text_present": true,
+    "tool_call_count": 0,
+    "tool_arguments_are_objects": false,
+    "tools_only_final": true,
+    "wall_seconds": 0.5212910000118427
+  },
+  "wall_seconds": 0.5212910000118427,
+  "request_sha256": "381e25146d0f0cc8178fd7f661edb01976db391d8df4aaf3623d118fd52b47f6",
+  "reply_sha256": "1503830a89ce46edf4059259375b786e7dbef99959f919f370f4249188b6618c",
+  "request_length": 544,
+  "reply_length": 1321
+}

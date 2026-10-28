@@ -1,0 +1,2 @@
+# Recorded HTTP entities are opaque bytes; preserve SSE and UTF-8 exactly.
+*.bin -text -diff

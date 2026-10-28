@@ -1,0 +1,132 @@
+{
+  "started_utc": "2026-10-28T14:58:22.255512+00:00",
+  "source_commit": "558fcbd",
+  "completion_timeout_seconds": 120,
+  "probe_timeout_seconds": 3,
+  "retries": 0,
+  "versions": {
+    "google-adk": "2.13.0",
+    "google-genai": "2.33.0",
+    "httpx": "0.28.1"
+  },
+  "profiles": {
+    "vllm": {
+      "reachable": true,
+      "probes": [
+        {
+          "base_url": "http://localhost:8038/v1",
+          "identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "nemotron-3.5-bolt-e4b",
+                  "object": "model",
+                  "created": 1793199502,
+                  "owned_by": "vllm",
+                  "root": "D:\\huggingface_cache\\hub\\models--nvidia--NVIDIA-Nemotron-3.5-Bolt-E4B-BF16\\snapshots\\49843eed8db1f1c616c47af75cfd36e07aec0667",
+                  "parent": null,
+                  "max_model_len": 16384,
+                  "permission": [
+                    {
+                      "id": "modelperm-87c7a059f4e006ed",
+                      "object": "model_permission",
+                      "created": 1793199502,
+                      "allow_create_engine": false,
+                      "allow_sampling": true,
+                      "allow_logprobs": true,
+                      "allow_search_indices": false,
+                      "allow_view": true,
+                      "allow_fine_tuning": false,
+                      "organization": "*",
+                      "group": null,
+                      "is_blocking": false
+                    }
+                  ]
+                }
+              ]
+            },
+            "reply_sha256": "3dd19048c50e7169dd3d5537be853c3990b9dd34eadb342daa48f002a64d2695",
+            "server": "uvicorn"
+          },
+          "record": "runs/003-live-smoke-8038/vllm/probe-1"
+        }
+      ],
+      "samples": [
+        {
+          "name": "text-plain",
+          "request_hash_matches": true,
+          "reply_hash_matches": true,
+          "error_code": null,
+          "partial_count": 0,
+          "final_partial": false,
+          "finish_reason": "MAX_TOKENS",
+          "text_present": true,
+          "tool_call_count": 0,
+          "tool_arguments_are_objects": false,
+          "tools_only_final": true,
+          "wall_seconds": 1.7511944999860134
+        },
+        {
+          "name": "text-stream",
+          "request_hash_matches": true,
+          "reply_hash_matches": true,
+          "error_code": null,
+          "partial_count": 10,
+          "final_partial": false,
+          "finish_reason": "MAX_TOKENS",
+          "text_present": true,
+          "tool_call_count": 0,
+          "tool_arguments_are_objects": false,
+          "tools_only_final": true,
+          "wall_seconds": 0.6658566999831237
+        },
+        {
+          "name": "tools-plain",
+          "request_hash_matches": true,
+          "reply_hash_matches": true,
+          "error_code": null,
+          "partial_count": 0,
+          "final_partial": false,
+          "finish_reason": "STOP",
+          "text_present": true,
+          "tool_call_count": 0,
+          "tool_arguments_are_objects": false,
+          "tools_only_final": true,
+          "wall_seconds": 0.5393758999998681
+        },
+        {
+          "name": "tools-stream",
+          "request_hash_matches": true,
+          "reply_hash_matches": true,
+          "error_code": null,
+          "partial_count": 3,
+          "final_partial": false,
+          "finish_reason": "STOP",
+          "text_present": true,
+          "tool_call_count": 0,
+          "tool_arguments_are_objects": false,
+          "tools_only_final": true,
+          "wall_seconds": 0.5212910000118427
+        }
+      ],
+      "base_url": "http://localhost:8038/v1",
+      "advertised_models": [
+        "nemotron-3.5-bolt-e4b"
+      ],
+      "identity_sha256": "3dd19048c50e7169dd3d5537be853c3990b9dd34eadb342daa48f002a64d2695",
+      "model": "nemotron-3.5-bolt-e4b"
+    }
+  },
+  "thinking_source": {
+    "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "section": "Quick Start Guide / API Client / Reasoning Off",
+    "extra_body": {
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "accessed_date": "2026-10-28"
+  },
+  "finished_utc": "2026-10-28T14:58:26.246917+00:00"
+}
