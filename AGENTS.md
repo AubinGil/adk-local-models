@@ -4,11 +4,7 @@ A Google ADK model adapter for local OpenAI-compatible servers (vLLM, Ollama, ll
 through LiteLLM. Parked side project of the owner (2026-10-28); harness-core stays the main track. Codex executes
 the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner types "go".
 
-**No open assignment for Codex (2026-10-28, after brief 005's gate).** The adapter is model-free tested (17 tests)
-and proven live on the owner's vLLM: text, streaming, tool calls with ids, and a full `Runner` round trip. Parked
-here until the owner returns. Candidates when they do: live smokes of the `ollama` and `llama_server` profiles once
-such a server is up; reasoning-content replay; and, in harness-core rather than here, ADK as a host for the MCP
-checkpoint.
+**Current assignment for Codex: brief 006 (`briefs/006-ollama-live.md`).** The `ollama` profile live against the owner's main Ollama with `gemma4:12b`: identity, the documented thinking knob, text and tool requests plain and streamed, a `Runner` round trip; at most twelve requests; readings under `runs/`; the server is the owner's and is never started, pulled or changed by Codex.
 
 ## Why this exists
 
