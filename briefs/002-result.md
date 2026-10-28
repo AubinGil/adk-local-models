@@ -78,3 +78,16 @@ and SHA-256 values; all profiles have zero completion samples. Source, tests,
 fixtures, dependencies and the gated 16-test suite are unchanged from `main`;
 tests were not rerun because this brief changes only readings and documentation.
 `git diff --check` and the staged diff check pass. Nothing was pushed.
+
+## Gate (reviewer, 2026-10-28): accepted as a record of absence; the smoke itself is still owed
+
+Reproduced at 531a271 on `feature/002-live-smoke`: fifteen files, all readings and notes, no source, test or
+fixture changed; `git diff --check` clean; the four probe records carry the adapter's cached `ConnectError` marker,
+empty request and reply entities with their lengths and hashes, and wall times. The reviewer re-probed the same four
+endpoints read-only at the gate: none answered, and no Ollama process was running on the workstation. Codex did
+what the brief asked when nothing answers: recorded, skipped, started nothing, diagnosed nothing. The note is
+right that the empty-byte hashes are not identity hashes and that no adapter change follows from this.
+
+**Bounds.** No live evidence exists yet about any server's field names, finish reasons, usage, reasoning fields,
+SSE framing or tool parsing; the model names in the tables are configured, not verified. Brief 003 is the same
+smoke, run only after the owner makes a listed server available; the owner starts it, never Codex.

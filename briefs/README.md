@@ -3,4 +3,5 @@
 | # | Title | Status |
 |---|---|---|
 | 001 | The model-free adapter (`OpenAICompatibleLlm`, fake server, golden request bodies, ADK end-to-end turn) | delivered c5798de, gated 2026-10-28 within bounds (`001-delivery.md`) |
-| 002 | Live smoke against the owner's servers (Ollama `gemma4:12b`; vLLM if up; llama-server if up), one text and one tool request per profile, plain and streamed, readings under `runs/002-live-smoke/` | written 2026-10-28, owner's word given, not started |
+| 002 | Live smoke: all four configured endpoints unreachable, zero completion requests, readings under `runs/002-live-smoke/` | delivered 531a271, gated 2026-10-28 as a record of absence (`002-result.md`) |
+| 003 | The same smoke as 002, run once the owner has a listed server up (Ollama `gemma4:12b`, a vLLM port, or a chat-capable llama-server) | waits on the owner |
