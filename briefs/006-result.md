@@ -167,3 +167,20 @@ Source, tests, fixtures and dependencies are unchanged. The gated 17 tests were
 not rerun for this evidence-only result. Captured hashes/lengths, missing-model
 status, and empty completion samples verify offline; working-tree and staged
 diff checks pass. No secrets supplied; nothing pushed.
+
+## Gate (reviewer, 2026-10-28): accepted within stated bounds; the `ollama` profile holds live on Gemma 4 E4B
+
+Reproduced at c534f31 on `feature/006-ollama-live`: readings and notes only, no source, test, fixture or dependency
+changed; `git diff --check` clean. The brief's stop condition was honoured first: commit 6e291a1 recorded that
+`gemma4:12b` was absent and stopped; the continuation on `gemma4:e4b` rests on the owner's direct word to Codex,
+and the model list on the server shows that tag present since 2026-10-26, so nothing was pulled. The reviewer
+recomputed every recorded hash from the raw bytes: ten exchanges, ten matches; the identity reply lists
+`gemma4:e4b` and not `gemma4:12b`. Both `Runner` round trips carry the tool message back under the id the server
+issued (`call_hd5znadm`, `call_5xrbedan`) with the function's result, and the final text reached each session.
+The thinking knob is the one Ollama's compatibility page documents, `reasoning_effort`, accepted on every request
+with no reasoning fields in the replies. Ten requests, under the brief's twelve.
+
+**Bounds.** One model, not the one the brief named; Ollama reports no reasoning-token count, so "thinking off" is
+acceptance plus absence, not a measurement; the llama-server profile still has no live evidence. The adapter now
+has live evidence on two of its three profiles with no code change between them. As briefed, Codex touched
+nothing on the server and stopped.
