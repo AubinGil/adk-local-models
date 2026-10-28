@@ -87,3 +87,40 @@ The declared requirement is google-adk>=2.13.0,<3. The [installed closure and li
 - Limitations: no image or audio input, live bidirectional API, strict schema enforcement or reasoning-token usage mapping; llama-server has no live validation. Live evidence is limited to recorded models and configurations.
 
 Release blockers: owner must provide a private security reporting route, decide on the two license declarations and review privacy/disclosure and archive choices. Comprehensive human review of history and private evaluation content remains incomplete; do not treat the pattern scan as clearance. Repository remains private; no post was submitted or release published. Final commit SHA and status are supplied in the handoff because a commit cannot contain its own SHA.
+
+## Gate (reviewer, 2026-10-28): accepted within stated bounds as a release candidate; three decisions are the owner's
+
+Reproduced at 24eee49 on `feature/008-oss-release`: 17 tests pass in the project environment; neither `litellm`
+nor `openai` is importable; every relative link in the six public files resolves; no comparative claim (faster,
+safer, better, more efficient) appears in the README, the comparison or the draft; LiteLLM's history is absent
+from all three, as briefed. The three interim fixes are in: the README opens by naming the package, the lost
+quotation marks are restored, the body now has the sections the brief listed, and the example run is recorded
+under `runs/008-release-check/` with a script that executes every Python block of the README and the draft
+against the fake server and asserts one request each (four pass). The wheel path and the editable path both ran
+the suite. The licence table matches the installed metadata: certifi declares MPL-2.0 and typing_extensions
+PSF-2.0, every other distribution of the 48 declares MIT, Apache or BSD.
+
+Two blemishes, not blockers: `runs/008-release-check/editable-tests.txt` carries CRLF endings and PowerShell's
+wrapper around one stderr line, so `git diff --check` flags it although the report says the check passed; and
+`examples-output.txt` is UTF-16, the shell's redirection encoding, so it shows as binary in diffs. Both are
+readable evidence and stay as recorded.
+
+**The reviewer's recommendations on the three open decisions, for the owner.**
+
+1. *Security route.* `SECURITY.md` needs one line: GitHub private vulnerability reporting on the repository, or an
+   address. Nothing else blocks on the package side.
+2. *Licences.* Accept both. Neither is this package's dependency; both arrive through `google-adk`, and both sit in
+   effectively every Python environment. PSF-2.0 is the Python licence itself, permissive. MPL-2.0 on certifi is
+   file-level copyleft on an unmodified CA bundle that this package neither vendors nor modifies. Record the
+   decision in `COMPARISON.md` or the README's dependency paragraph in one sentence.
+3. *Disclosure.* Keep the briefs and the runs public as they are: they are the evidence behind every claim, and
+   the live records hold loopback addresses, local ports, model names, prompts and replies, nothing private.
+   Edit `AGENTS.md` before publishing: replace the harness-core path with a plain reference to the sibling
+   repository and drop the e-mail from the commit rule, since the commit identity is already in every commit's
+   author field and scrubbing one file changes nothing about history. Leave the editable path in the brief 007
+   pip list; it is an accurate record of where the measurement ran. No history rewrite.
+
+**Bounds.** The audit is a pattern scan plus the reviewer's read of every added line; neither is a legal review.
+Live evidence covers one model each on vLLM and Ollama and nothing on llama-server. The repository stays private,
+nothing is published, the draft is unsubmitted; the owner decides all three points above and writes any post.
+

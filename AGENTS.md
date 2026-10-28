@@ -4,13 +4,15 @@ A Google ADK model adapter for local OpenAI-compatible servers (vLLM, Ollama, ll
 through LiteLLM. Parked side project of the owner (2026-10-28); harness-core stays the main track. Codex executes
 the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner types "go".
 
-**Open assignment for Codex (2026-10-28): brief 008, `briefs/008-oss-release.md`**, the first public release
-preparation and the Show and Tell draft; the owner types "go". Brief 007's comparison with ADK's native `OpenAILlm`
-is in `briefs/007-result.md`; Codex and the reviewer both recommended keeping this package, parked, with the narrowed
-description: a lightweight, direct alternative for connecting Google ADK to local OpenAI-compatible servers without
-LiteLLM or the OpenAI SDK, useful where errors as responses, final-only tool calls, rejected truncated streams,
-documented knobs and attached request/reply hashes are requirements, and not needed merely to reach a local server.
-The owner decided to prepare a release on that description; the owner writes or submits any public post.
+**No open assignment for Codex (2026-10-28, after brief 008's gate).** The release candidate is on `main`: README,
+`COMPARISON.md`, `CONTRIBUTING.md`, `SECURITY.md`, `SHOW_AND_TELL_DRAFT.md` and recorded checks under
+`runs/008-release-check/`. Three decisions are the owner's before publishing, with the reviewer's recommendations in
+`briefs/008-result.md`: the private security route, the two transitive licences (certifi MPL-2.0, typing_extensions
+PSF-2.0, recommended accept), and disclosure (recommended: keep briefs and runs, edit this file's path and e-mail
+lines). The narrowed description from brief 007 stands: a lightweight, direct alternative for connecting Google ADK
+to local OpenAI-compatible servers without LiteLLM or the OpenAI SDK, useful where errors as responses, final-only
+tool calls, rejected truncated streams, documented knobs and attached request/reply hashes are requirements, and not
+needed merely to reach a local server. The owner writes or submits any public post.
 
 ## Why this exists
 
