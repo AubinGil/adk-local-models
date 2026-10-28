@@ -1,0 +1,2 @@
+# Recorded HTTP entity bytes must survive checkout unchanged.
+*.bin -text -diff

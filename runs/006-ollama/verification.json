@@ -1,0 +1,13 @@
+{
+  "verification": "offline; no HTTP requests",
+  "status_200": true,
+  "entity_hashes_and_lengths_match": true,
+  "adapter_identity_hash_matches_raw_reply": true,
+  "required_model": "gemma4:12b",
+  "required_model_advertised": false,
+  "advertised_model_count": 24,
+  "http_requests_sent": 1,
+  "completion_requests_sent": 0,
+  "runner_turns": 0,
+  "stop_rule_followed": true
+}

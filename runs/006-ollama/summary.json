@@ -1,0 +1,224 @@
+{
+  "started_utc": "2026-10-28T16:22:16.554096+00:00",
+  "source_commit": "2e9f363",
+  "completion_timeout_seconds": 120,
+  "probe_timeout_seconds": 3,
+  "retries": 0,
+  "versions": {
+    "google-adk": "2.13.0",
+    "google-genai": "2.33.0",
+    "httpx": "0.28.1"
+  },
+  "profiles": {
+    "ollama": {
+      "reachable": true,
+      "probes": [
+        {
+          "base_url": "http://127.0.0.1:11434/v1",
+          "identity": {
+            "models": {
+              "object": "list",
+              "data": [
+                {
+                  "id": "gemma4:26b",
+                  "object": "model",
+                  "created": 1793060113,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "gemma4:e4b",
+                  "object": "model",
+                  "created": 1793057170,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "nemotron-3.5-bolt:e4b",
+                  "object": "model",
+                  "created": 1792788114,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "flint:latest",
+                  "object": "model",
+                  "created": 1792723429,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "minimax-m3.1-flash:cloud",
+                  "object": "model",
+                  "created": 1792499206,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "gpt-oss:latest",
+                  "object": "model",
+                  "created": 1792368120,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "gpt-oss:120b-cloud",
+                  "object": "model",
+                  "created": 1792367469,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "d1:latest",
+                  "object": "model",
+                  "created": 1792102975,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "muse-spark-open:cloud",
+                  "object": "model",
+                  "created": 1792097018,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "qwen38-citation-16k:latest",
+                  "object": "model",
+                  "created": 1791759338,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "gemma4:31b-cloud",
+                  "object": "model",
+                  "created": 1791684862,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "mistral-large-4:cloud",
+                  "object": "model",
+                  "created": 1791348995,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "glm-5.3-flash:cloud",
+                  "object": "model",
+                  "created": 1791167207,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "kimi-k3:cloud",
+                  "object": "model",
+                  "created": 1790972939,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "glm-5.3:cloud",
+                  "object": "model",
+                  "created": 1790629687,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "deepseek-v4.1-flash:cloud",
+                  "object": "model",
+                  "created": 1790348165,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "minimax-m3:cloud",
+                  "object": "model",
+                  "created": 1782240006,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "kimi-k2.6:cloud",
+                  "object": "model",
+                  "created": 1776791365,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "nemotron-3-super:cloud",
+                  "object": "model",
+                  "created": 1774034506,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "minimax-m2.7:cloud",
+                  "object": "model",
+                  "created": 1773872537,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "qwen3.5:cloud",
+                  "object": "model",
+                  "created": 1771604337,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "glm-5:cloud",
+                  "object": "model",
+                  "created": 1770896104,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "qwen3-coder-next:cloud",
+                  "object": "model",
+                  "created": 1770561613,
+                  "owned_by": "library"
+                },
+                {
+                  "id": "kimi-k2.5:cloud",
+                  "object": "model",
+                  "created": 1770516648,
+                  "owned_by": "library"
+                }
+              ]
+            },
+            "reply_sha256": "6f8406583ae727e268c0ff1f9b86b52fbc59ebd3d9fe578cd7a725d8cbfb4ce0",
+            "server": null
+          },
+          "record": "runs/006-ollama/ollama/probe-1"
+        }
+      ],
+      "samples": [],
+      "base_url": "http://127.0.0.1:11434/v1",
+      "advertised_models": [
+        "gemma4:26b",
+        "gemma4:e4b",
+        "nemotron-3.5-bolt:e4b",
+        "flint:latest",
+        "minimax-m3.1-flash:cloud",
+        "gpt-oss:latest",
+        "gpt-oss:120b-cloud",
+        "d1:latest",
+        "muse-spark-open:cloud",
+        "qwen38-citation-16k:latest",
+        "gemma4:31b-cloud",
+        "mistral-large-4:cloud",
+        "glm-5.3-flash:cloud",
+        "kimi-k3:cloud",
+        "glm-5.3:cloud",
+        "deepseek-v4.1-flash:cloud",
+        "minimax-m3:cloud",
+        "kimi-k2.6:cloud",
+        "nemotron-3-super:cloud",
+        "minimax-m2.7:cloud",
+        "qwen3.5:cloud",
+        "glm-5:cloud",
+        "qwen3-coder-next:cloud",
+        "kimi-k2.5:cloud"
+      ],
+      "identity_sha256": "6f8406583ae727e268c0ff1f9b86b52fbc59ebd3d9fe578cd7a725d8cbfb4ce0",
+      "model": "gemma4:12b",
+      "skip_reason": "Configured model is not advertised; no completion sent"
+    }
+  },
+  "authorization": "Owner: go ollama is available; brief 002 Ollama steps only, with gated brief 005 fixtures",
+  "thinking_source": {
+    "url": "https://docs.ollama.com/api/openai-compatibility",
+    "field": "reasoning_effort",
+    "value": "none",
+    "accessed_date": "2026-10-28"
+  },
+  "finished_utc": "2026-10-28T16:22:16.850230+00:00",
+  "updated_brief_disposition": {
+    "brief": "briefs/006-ollama-live.md",
+    "brief_base_commit": "5620915",
+    "required_action": "Stop if gemma4:12b absent; never pull",
+    "action_taken": "Stopped; reused existing identity reading; no further requests",
+    "http_requests_sent": 1,
+    "completion_requests_sent": 0,
+    "original_recording_directory": "runs/006-ollama-smoke"
+  }
+}
