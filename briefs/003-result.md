@@ -84,3 +84,22 @@ reasoning remain unproven. The 16 gated tests are unchanged and were not rerun
 for this readings-only brief. Source/test/dependency diffs against `main` are
 empty; artifact verification and working-tree/staged whitespace checks pass.
 No secrets were supplied or recorded. Nothing was pushed.
+
+## Gate (reviewer, 2026-10-28): accepted within stated bounds; the missing tool call is explained by the request
+
+Reproduced at 770e227 on `feature/003-live-smoke`: readings and notes only, no source, test, fixture or dependency
+changed; `git diff --check` clean. The reviewer recomputed every recorded hash from the raw bytes: five exchanges,
+five matches, the identity reply hashing to the value in the table and naming `nemotron-3.5-bolt-e4b`. The text
+pair ended at the fixtures' 32-token cap with `length`, mapped to `MAX_TOKENS`; the streamed final equals the plain
+reply in content, finish reason and usage; the thinking knob was taken from the model card and accepted with zero
+reasoning tokens reported.
+
+**The tool call.** The recorded request bytes show `response_format: json_object` sent together with `tools` and no
+`tool_choice`, because the fixtures' shared config sets a JSON mime type on all three requests. JSON mode
+constrains the reply to a JSON object, and the model returned the argument object as plain content with
+`finish_reason` `stop`. The note was right not to promote that text to a tool call and right that these readings
+cannot separate the causes; the request shape is the first cause to remove, which is brief 004, before any question
+about the server's parser reaches the owner.
+
+**Bounds.** One server, one model, one request shape; no live tool call yet; no nonempty reasoning fields seen;
+the other two profiles untouched. As briefed, Codex changed nothing and stopped.

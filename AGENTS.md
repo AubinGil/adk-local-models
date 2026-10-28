@@ -4,7 +4,7 @@ A Google ADK model adapter for local OpenAI-compatible servers (vLLM, Ollama, ll
 through LiteLLM. Parked side project of the owner (2026-10-28); harness-core stays the main track. Codex executes
 the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner types "go".
 
-**Current assignment for Codex: brief 003 (`briefs/003-live-smoke-8038.md`).** Brief 002's smoke against the owner's vLLM on `http://localhost:8038/v1` (model `nemotron-3.5-bolt-e4b`), offered by the owner on 2026-10-28; readings under `runs/`; no code change; the server is never touched.
+**Current assignment for Codex: brief 004 (`briefs/004-tool-call.md`).** The tool request against the owner's vLLM on 8038 without JSON mode, then with the documented required tool choice; at most four requests; readings under `runs/`; no code change; the server is never touched.
 
 ## Why this exists
 
