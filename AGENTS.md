@@ -4,7 +4,7 @@ A Google ADK model adapter for local OpenAI-compatible servers (vLLM, Ollama, ll
 through LiteLLM. Parked side project of the owner (2026-10-28); harness-core stays the main track. Codex executes
 the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner types "go".
 
-**Current assignment for Codex: brief 007 (`briefs/007-native-comparison.md`).** Compare this package with ADK's own `google.adk.integrations.openai.OpenAILlm` (needs the OpenAI SDK) on the same fixtures and the same live servers, wire bodies captured on both sides, and recommend keep, reduce or retire; the owner decides.
+**No open assignment for Codex (2026-10-28, after brief 007's gate).** The comparison with ADK's native `OpenAILlm` is in `briefs/007-result.md`; Codex and the reviewer both recommend keeping this package, parked, with the narrowed description: a lightweight, direct alternative for connecting Google ADK to local OpenAI-compatible servers without LiteLLM or the OpenAI SDK, useful where errors as responses, final-only tool calls, rejected truncated streams, documented knobs and attached request/reply hashes are requirements, and not needed merely to reach a local server. The owner decides and writes any public post.
 
 ## Why this exists
 

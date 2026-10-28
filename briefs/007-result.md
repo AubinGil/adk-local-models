@@ -51,3 +51,30 @@ After the owner switched servers, vLLM at `localhost:8038/v1` advertised `nemotr
 Why keep rather than reduce or retire: native text/tool mapping and Runner support substantially eliminate the original motivation. Recording alone can indeed be implemented around the native HTTP client, as this experiment demonstrates, and avoiding four packages is a modest saving compared with ADK itself. However, a recording transport alone does not give the native class this package's response-level error contract, final-only tool-call contract, explicit non-stream partial flag, truncated-stream rejection, profile validation or metadata attachment. Replacing the adapter while preserving that contract would require a behavioral wrapper as well as transport recording. Keeping this small, already tested adapter as an optional, narrowly described package preserves the SDK-free choice without claiming broader feature parity. Its omitted reasoning usage and image/schema features are real limitations. This recommendation does not justify expanding the project or diverting effort from harness-core.
 
 Validation: 17 existing project unittests passed, including dependency isolation. The model-free matrix covers three fixed requests, both stream modes, three profiles and both classes, plus HTTP 500, malformed JSON, truncated SSE, connection refusal, bad tool arguments, reasoning usage and length/filter finish reasons: 84 adapter invocations. Existing fixture bytes were replayed unchanged; added reasoning/finish fixtures are under this run's `fixtures/`. `verification.json` verified 300 saved entity files, 78 fake replies, 47 complete local response metadata records and 18 plain/stream final comparisons. It independently hashes every saved entity file, compares fake replies to source fixtures, and checks complete local response hashes against transport captures. HTTP chunk framing and headers are outside the entity-byte hashes. Evidence is observational, not a throughput benchmark; one model and one native non-stream Runner round trip per reachable server are the scope.
+
+## Gate (reviewer, 2026-10-28): accepted; the comparison is fair and its recommendation is the reviewer's too
+
+Reproduced at c7c9545 on `feature/007-native-comparison`: readings, tools and the report only; the package, its
+tests and its dependencies untouched; `git diff --check` clean. The project environment still has neither the
+OpenAI SDK nor LiteLLM importable, the isolated environment has the SDK at 2.54.0, and the 17 tests pass. The
+reviewer recomputed the hash of every one of the 300 saved entity files against the records beside them: 300
+matches. The live folders hold both classes' exchanges on Ollama and on the vLLM server the owner restarted, plus
+the failed llama-server probe. The comparison table reads true against the installed native source: the native
+class maps the same fields and tools and runs the `Runner` round trip; it raises SDK exceptions where this package
+returns ADK responses with codes, exposes tool calls on partial responses where this package holds them to the
+final, accepts a truncated stream where this package rejects it, carries reasoning-token usage and image and
+strict-schema paths that this package lacks, and attaches no bytes or identity to its responses, which a
+configured client can capture but the class does not record.
+
+**The recommendation.** Keep, parked, with the narrowed description and the qualification the report states:
+not necessary to connect ADK to a local server; useful where the response-level error contract, the final-only
+tool-call contract, the rejected truncated stream, the documented-knob validation and the attached hashes and
+identity are requirements. That is the reviewer's reading as well, and for harness-core specifically the attached
+hashes are the requirement, since the thirty-seventh joins them to the trace. The native class could serve that
+role only with a recording transport and a behavioural wrapper, which would be this package again.
+
+**Bounds.** One model per server; llama-server model-free only; the broader native features reviewed in source,
+not exercised; "lightweight" means the four transport packages, 12.7 MiB, against ADK's own closure on both sides.
+The owner switched the GPU from Ollama to vLLM during the run and authorised a one-line repair to their own
+launcher, both outside this commit. As briefed, Codex changed nothing in the package and stopped; the owner
+decides, and writes any public post.
