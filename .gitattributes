@@ -1,0 +1,4 @@
+tests/fixtures/*.json -text
+# SSE requires a blank line to dispatch the final event.
+tests/fixtures/*.sse -text whitespace=-blank-at-eof
+tests/fixtures/golden/*.json -text
