@@ -4,7 +4,7 @@ A Google ADK model adapter for local OpenAI-compatible servers (vLLM, Ollama, ll
 through LiteLLM. Parked side project of the owner (2026-10-28); harness-core stays the main track. Codex executes
 the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner types "go".
 
-**Current assignment for Codex: brief 004 (`briefs/004-tool-call.md`).** The tool request against the owner's vLLM on 8038 without JSON mode, then with the documented required tool choice; at most four requests; readings under `runs/`; no code change; the server is never touched.
+**Current assignment for Codex: brief 005 (`briefs/005-runner-round-trip.md`).** The fixture split (JSON mode off the tool requests, goldens regenerated deliberately, one new test) and a live `Runner` round trip on the owner's vLLM on 8038, non-streamed and streamed, at most six requests; readings under `runs/`; the server is never touched.
 
 ## Why this exists
 

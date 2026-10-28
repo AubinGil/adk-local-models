@@ -67,3 +67,17 @@ successful calls.
 Source, tests, fixtures and dependencies are unchanged from `main`; the gated
 16 tests were not rerun for this readings-only brief. Artifact verification,
 working-tree and staged diff checks pass. No secrets supplied; nothing pushed.
+
+## Gate (reviewer, 2026-10-28): accepted; live tool parsing and id preservation established for this server
+
+Reproduced at e80c037 on `feature/004-tool-call`: readings and notes only, no source, test, fixture or dependency
+changed; `git diff --check` clean. The reviewer recomputed every recorded hash from the raw bytes, five exchanges,
+five matches, against both the exchange records and the adapter metadata inside them. The raw replies each hold
+exactly one `weather` call with the JSON-object argument and a server-issued id; the streamed replies carry the
+call as three indexed deltas that the adapter assembled, with the id preserved. The required tool choice value is
+cited to vLLM 0.31.0's documentation; the thinking knob to the model card. Removing JSON mode alone was
+sufficient, which settles brief 003's open question without any server-side change.
+
+**Bounds.** One server, one model, one tool; no tool executed and no function response returned to the server,
+so the live `Runner` round trip is brief 005's; the fixtures still send JSON mode with tools until that brief
+splits them. As briefed, Codex changed nothing and stopped.
