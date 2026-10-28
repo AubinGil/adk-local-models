@@ -201,10 +201,12 @@ class AdapterTests(unittest.IsolatedAsyncioTestCase):
         with self.assertRaises(NotImplementedError):
             OpenAICompatibleLlm(model="test").connect(LlmRequest())
 
-    def test_litellm_is_not_importable(self):
-        self.assertIsNone(importlib.util.find_spec("litellm"))
-        with self.assertRaises(ModuleNotFoundError):
-            __import__("litellm")
+    def test_optional_sdks_are_not_importable(self):
+        for module in ("litellm", "openai"):
+            with self.subTest(module=module):
+                self.assertIsNone(importlib.util.find_spec(module))
+                with self.assertRaises(ModuleNotFoundError):
+                    __import__(module)
 
     def test_schema_conversion(self):
         schema = types.Schema(type="OBJECT", properties={"type": types.Schema(type="STRING", nullable=True),

@@ -1,8 +1,12 @@
 # adk-local-models
 
-`OpenAICompatibleLlm(BaseLlm)` maps Google ADK text and function tools directly to
-local OpenAI-compatible chat completions. No LiteLLM or OpenAI SDK is installed.
-Python 3.11+, Apache-2.0. Brief 001 is model-free; no owner's server was contacted.
+a lightweight, direct alternative for connecting Google ADK to local OpenAI-compatible servers without LiteLLM or the OpenAI SDK, useful where errors as responses, final-only tool calls, rejected truncated streams, documented knobs and attached request/reply hashes are requirements, and not needed merely to reach a local server.
+
+The adapter maps ADK text and function tools to chat completions. It exists for those specific response, validation and recording requirements. ?Lightweight? refers to the four additional transport packages measured for the native alternative (12.7 MiB), not the ADK dependency closure. See the [comparison](briefs/007-result.md) and its [brief](briefs/007-native-comparison.md).
+
+ADK's native `google.adk.integrations.openai.OpenAILlm` is a good default for most users and connects to local servers with the OpenAI SDK. It supports image parts, strict response schema, reasoning-model handling and reasoning token counts; ADK also has a Responses API sibling. These broader paths were reviewed in source, not exercised in the comparison. This adapter provides profile validation, final-only streamed tool calls, error responses, truncated-stream rejection and attached hashes and advertised identity. The [comparison](briefs/007-result.md) records differences and evidence.
+
+Profiles cover vLLM, Ollama and llama-server. vLLM and Ollama were validated live with one model each; llama-server was tested model-free only. See [live comparison](runs/007-native-compare/live/) and [test fixtures](tests/fixtures/). Python 3.11+ is supported; ADK 2.13.0 was tested and `>=2.13.0,<3` is declared.
 
 Install in an isolated environment (do not install ADK's `extensions` extra):
 
@@ -122,7 +126,6 @@ Not covered: live/bidirectional API (`connect()` remains unimplemented), images,
 audio, reasoning-content replay, server lifecycle management, or structured-output
 enforcement beyond `application/json` mapping to `response_format=json_object`.
 ADK output schemas are not enforced; `capabilities.output_schema_and_tools=False`.
-Unsupported content parts yield errors rather than being discarded. No live
-compatibility claims are made before brief 002.
+Unsupported content parts yield errors rather than being discarded.
 
 Review design issues and dependency licenses in [the delivery note](briefs/001-delivery.md).
