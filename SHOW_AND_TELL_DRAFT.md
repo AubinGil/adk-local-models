@@ -1,8 +1,26 @@
-# Show and Tell draft
+# adk-local-models: A direct alternative for local inference with Google ADK
 
-I made [adk-local-models](https://github.com/AubinGil/adk-local-models), a direct adapter for Google ADK and local OpenAI-compatible chat-completions servers. ADK's native `OpenAILlm` is the default path for most users. This package is for cases that need no OpenAI SDK, errors as ADK responses, final-only streamed tool calls, truncated-stream rejection, documented profile knobs, and request/reply hashes with advertised server identity.
+Hi everyone!
 
-It supports vLLM, Ollama and llama-server. The vLLM and Ollama profiles were exercised live with one model each; llama-server was tested with fixtures only. Text, streaming, tools, errors and recording are covered by the [tests](tests/test_adapter.py) and [comparison evidence](briefs/007-result.md).
+I've been experimenting with running Google ADK agents using locally hosted models through vLLM and Ollama.
+
+Google ADK already provides options for non-Gemini models, including LiteLLM and its native `OpenAILlm`
+integration. I wanted to explore a more direct approach with a small, explicit integration layer, using neither
+LiteLLM nor the OpenAI Python SDK.
+
+So I built adk-local-models, an Apache 2.0-licensed Python adapter implementing ADK's `BaseLlm` interface.
+
+What it supports:
+
+- vLLM, Ollama, and llama-server profiles
+- Streaming and function calling
+- Integration with ADK's `LlmAgent` and `Runner`
+- Tool calls held until the final streamed response
+- Detection of truncated streams
+- ADK-compatible error responses
+- Request/reply byte hashes and server identity metadata
+
+A minimal example:
 
 ```python
 import asyncio
@@ -18,4 +36,16 @@ async def main():
 asyncio.run(main())
 ```
 
-I'd welcome testing, reports and contributions, especially with other server configurations.
+I also compared the adapter against Google's native `OpenAILlm`. Both completed live ADK `Runner` tests with
+Ollama and vLLM. The native implementation offers additional functionality, including image inputs,
+reasoning-token usage, and strict schema output. My adapter focuses on a narrower set of requirements,
+particularly explicit local-server behavior and traceability.
+
+This isn't intended to replace LiteLLM or Google's native integration. It's simply another option for developers
+who prefer these specific behaviors when working with local inference servers.
+
+The llama-server profile is implemented but hasn't yet been validated through live inference.
+
+Repository: https://github.com/AubinGil/adk-local-models
+
+I'd welcome feedback, compatibility testing, and contributions from anyone working with local models in ADK!

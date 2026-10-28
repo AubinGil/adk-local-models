@@ -14,6 +14,11 @@ to local OpenAI-compatible servers without LiteLLM or the OpenAI SDK, useful whe
 tool calls, rejected truncated streams, documented knobs and attached request/reply hashes are requirements, and not
 needed merely to reach a local server. The owner writes or submits any public post.
 
+**Release scope (owner's decision, 2026-10-28):** a v0.1.0 public GitHub release only, no PyPI publication, no release
+automation and no governance files. The bar is that another developer can find the repository, understand its
+trade-offs, install it in a clean environment and reproduce its basic behaviour. The announcement text in
+`SHOW_AND_TELL_DRAFT.md` is the owner's, checked claim by claim against the evidence at the brief 008 gate.
+
 ## Why this exists
 
 - ADK (Apache-2.0, Python/Java/Go/TS) runs locally; only Gemini is a native model class. Every other model,
