@@ -1,4 +1,9 @@
-# Brief 006: reachable Ollama, required model absent
+# Brief 006 Ollama readings
+
+**Continuation:** the owner subsequently authorized an available Gemma model.
+The completed `gemma4:e4b` smoke and Runner readings are in
+[gemma4-e4b/](gemma4-e4b/README.md). This parent directory preserves the initial
+missing-12b check described below; its summary/verification are historical.
 
 One actual adapter `GET http://127.0.0.1:11434/v1/models` was performed on
 2026-10-28 at 16:22:16 UTC. It succeeded, but `gemma4:12b` was not listed.

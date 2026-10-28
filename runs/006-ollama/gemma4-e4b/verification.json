@@ -1,0 +1,87 @@
+{
+  "verification": "offline; no HTTP requests",
+  "exchanges": [
+    {
+      "exchange": "fixtures/text-plain",
+      "http_status": 200,
+      "hashes_lengths_metadata_verified": true
+    },
+    {
+      "exchange": "fixtures/text-stream",
+      "http_status": 200,
+      "hashes_lengths_metadata_verified": true
+    },
+    {
+      "exchange": "fixtures/tools-plain",
+      "http_status": 200,
+      "hashes_lengths_metadata_verified": true
+    },
+    {
+      "exchange": "fixtures/tools-stream",
+      "http_status": 200,
+      "hashes_lengths_metadata_verified": true
+    },
+    {
+      "exchange": "plain/exchange-1",
+      "http_status": 200,
+      "hashes_lengths_metadata_verified": true
+    },
+    {
+      "exchange": "plain/exchange-2",
+      "http_status": 200,
+      "hashes_lengths_metadata_verified": true
+    },
+    {
+      "exchange": "probe-1",
+      "http_status": 200,
+      "hashes_lengths_metadata_verified": true
+    },
+    {
+      "exchange": "stream/exchange-1",
+      "http_status": 200,
+      "hashes_lengths_metadata_verified": true
+    },
+    {
+      "exchange": "stream/exchange-2",
+      "http_status": 200,
+      "hashes_lengths_metadata_verified": true
+    }
+  ],
+  "identity_hash_matches": true,
+  "authorized_model_present": true,
+  "fixture_shapes_match_gated_goldens": true,
+  "partial_prefix_hashes_match": true,
+  "raw_tool_ids_preserved": {
+    "fixtures/tools-plain": "call_6dd7cnst",
+    "fixtures/tools-stream": "call_8ueolpu5",
+    "plain/exchange-1": "call_hd5znadm",
+    "stream/exchange-1": "call_5xrbedan"
+  },
+  "all_tool_arguments": {
+    "city": "Paris"
+  },
+  "tools_only_in_final_responses": true,
+  "all_plain_stream_final_pairs_equal_excluding_metadata_and_distinct_tool_ids": true,
+  "runner_turns": {
+    "plain": {
+      "completed": true,
+      "executions": 1,
+      "city": "Paris",
+      "received_adk_history_tool_message_session_id": "call_hd5znadm",
+      "persisted_events": 4,
+      "final_text": "The weather in Paris is 20 degrees."
+    },
+    "stream": {
+      "completed": true,
+      "executions": 1,
+      "city": "Paris",
+      "received_adk_history_tool_message_session_id": "call_5xrbedan",
+      "persisted_events": 4,
+      "final_text": "The weather in Paris is 20 degrees."
+    }
+  },
+  "continuation_http_requests": 9,
+  "total_including_original_identity": 10,
+  "request_cap": 12,
+  "no_retries": true
+}

@@ -1,0 +1,277 @@
+{
+  "source_commit": "6e291a1",
+  "started_utc": "2026-10-28T16:50:40.156623+00:00",
+  "base_url": "http://127.0.0.1:11434/v1",
+  "model": "gemma4:e4b",
+  "retries": 0,
+  "http_request_cap": 12,
+  "prior_identity_requests": 1,
+  "max_llm_calls_per_turn": 2,
+  "versions": {
+    "google-adk": "2.13.0",
+    "google-genai": "2.33.0",
+    "httpx": "0.28.1"
+  },
+  "thinking_source": "https://docs.ollama.com/api/openai-compatibility",
+  "turns": {
+    "plain": {
+      "exchanges": [
+        {
+          "path": "runs/006-ollama/gemma4-e4b/plain/exchange-1",
+          "wall_seconds": 0.28140010000788607,
+          "status": 200,
+          "response_count": 1
+        },
+        {
+          "path": "runs/006-ollama/gemma4-e4b/plain/exchange-2",
+          "wall_seconds": 0.2662424000154715,
+          "status": 200,
+          "response_count": 1
+        }
+      ],
+      "tool_executions": [
+        {
+          "city": "Paris",
+          "result": {
+            "temperature": 20
+          }
+        }
+      ],
+      "error": null,
+      "wall_seconds": 0.9256759000127204,
+      "yielded_event_count": 3,
+      "session_event_count": 4,
+      "final_texts": [
+        "The weather in Paris is 20 degrees."
+      ]
+    },
+    "stream": {
+      "exchanges": [
+        {
+          "path": "runs/006-ollama/gemma4-e4b/stream/exchange-1",
+          "wall_seconds": 0.2673992000054568,
+          "status": 200,
+          "response_count": 2
+        },
+        {
+          "path": "runs/006-ollama/gemma4-e4b/stream/exchange-2",
+          "wall_seconds": 0.26439050000044517,
+          "status": 200,
+          "response_count": 11
+        }
+      ],
+      "tool_executions": [
+        {
+          "city": "Paris",
+          "result": {
+            "temperature": 20
+          }
+        }
+      ],
+      "error": null,
+      "wall_seconds": 0.5561517000023741,
+      "yielded_event_count": 14,
+      "session_event_count": 4,
+      "final_texts": [
+        "The weather in Paris is 20 degrees."
+      ]
+    }
+  },
+  "identity": {
+    "models": {
+      "object": "list",
+      "data": [
+        {
+          "id": "gemma4:26b",
+          "object": "model",
+          "created": 1793060113,
+          "owned_by": "library"
+        },
+        {
+          "id": "gemma4:e4b",
+          "object": "model",
+          "created": 1793057170,
+          "owned_by": "library"
+        },
+        {
+          "id": "nemotron-3.5-bolt:e4b",
+          "object": "model",
+          "created": 1792788114,
+          "owned_by": "library"
+        },
+        {
+          "id": "flint:latest",
+          "object": "model",
+          "created": 1792723429,
+          "owned_by": "library"
+        },
+        {
+          "id": "minimax-m3.1-flash:cloud",
+          "object": "model",
+          "created": 1792499206,
+          "owned_by": "library"
+        },
+        {
+          "id": "gpt-oss:latest",
+          "object": "model",
+          "created": 1792368120,
+          "owned_by": "library"
+        },
+        {
+          "id": "gpt-oss:120b-cloud",
+          "object": "model",
+          "created": 1792367469,
+          "owned_by": "library"
+        },
+        {
+          "id": "d1:latest",
+          "object": "model",
+          "created": 1792102975,
+          "owned_by": "library"
+        },
+        {
+          "id": "muse-spark-open:cloud",
+          "object": "model",
+          "created": 1792097018,
+          "owned_by": "library"
+        },
+        {
+          "id": "qwen38-citation-16k:latest",
+          "object": "model",
+          "created": 1791759338,
+          "owned_by": "library"
+        },
+        {
+          "id": "gemma4:31b-cloud",
+          "object": "model",
+          "created": 1791684862,
+          "owned_by": "library"
+        },
+        {
+          "id": "mistral-large-4:cloud",
+          "object": "model",
+          "created": 1791348995,
+          "owned_by": "library"
+        },
+        {
+          "id": "glm-5.3-flash:cloud",
+          "object": "model",
+          "created": 1791167207,
+          "owned_by": "library"
+        },
+        {
+          "id": "kimi-k3:cloud",
+          "object": "model",
+          "created": 1790972939,
+          "owned_by": "library"
+        },
+        {
+          "id": "glm-5.3:cloud",
+          "object": "model",
+          "created": 1790629687,
+          "owned_by": "library"
+        },
+        {
+          "id": "deepseek-v4.1-flash:cloud",
+          "object": "model",
+          "created": 1790348165,
+          "owned_by": "library"
+        },
+        {
+          "id": "minimax-m3:cloud",
+          "object": "model",
+          "created": 1782240006,
+          "owned_by": "library"
+        },
+        {
+          "id": "kimi-k2.6:cloud",
+          "object": "model",
+          "created": 1776791365,
+          "owned_by": "library"
+        },
+        {
+          "id": "nemotron-3-super:cloud",
+          "object": "model",
+          "created": 1774034506,
+          "owned_by": "library"
+        },
+        {
+          "id": "minimax-m2.7:cloud",
+          "object": "model",
+          "created": 1773872537,
+          "owned_by": "library"
+        },
+        {
+          "id": "qwen3.5:cloud",
+          "object": "model",
+          "created": 1771604337,
+          "owned_by": "library"
+        },
+        {
+          "id": "glm-5:cloud",
+          "object": "model",
+          "created": 1770896104,
+          "owned_by": "library"
+        },
+        {
+          "id": "qwen3-coder-next:cloud",
+          "object": "model",
+          "created": 1770561613,
+          "owned_by": "library"
+        },
+        {
+          "id": "kimi-k2.5:cloud",
+          "object": "model",
+          "created": 1770516648,
+          "owned_by": "library"
+        }
+      ]
+    },
+    "reply_sha256": "6f8406583ae727e268c0ff1f9b86b52fbc59ebd3d9fe578cd7a725d8cbfb4ce0",
+    "server": null
+  },
+  "authorization": "Owner: just use a gemma model there theres a coupke; selected advertised gemma4:e4b",
+  "gemma_thinking_source": "https://ollama.com/library/gemma4",
+  "fixture_samples": [
+    {
+      "name": "text-plain",
+      "error_code": null,
+      "finish_reason": "MAX_TOKENS",
+      "parsed_tool_count": 0,
+      "object_arguments": false,
+      "partial_count": 0,
+      "status": 200
+    },
+    {
+      "name": "text-stream",
+      "error_code": null,
+      "finish_reason": "MAX_TOKENS",
+      "parsed_tool_count": 0,
+      "object_arguments": false,
+      "partial_count": 32,
+      "status": 200
+    },
+    {
+      "name": "tools-plain",
+      "error_code": null,
+      "finish_reason": "STOP",
+      "parsed_tool_count": 1,
+      "object_arguments": true,
+      "partial_count": 0,
+      "status": 200
+    },
+    {
+      "name": "tools-stream",
+      "error_code": null,
+      "finish_reason": "STOP",
+      "parsed_tool_count": 1,
+      "object_arguments": true,
+      "partial_count": 1,
+      "status": 200
+    }
+  ],
+  "http_requests_sent_this_continuation": 5,
+  "http_requests_sent": 9,
+  "http_requests_including_prior_identity": 10,
+  "finished_utc": "2026-10-28T16:50:52.284658+00:00"
+}
