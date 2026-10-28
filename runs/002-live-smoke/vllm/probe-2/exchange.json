@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-10-28T14:16:25.189611+00:00",
+  "method": "GET",
+  "url": "http://localhost:8037/v1/models",
+  "adapter_identity": {
+    "error": "ConnectError"
+  },
+  "wall_seconds": 2.4418877999996766,
+  "request_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "request_length": 0,
+  "reply_length": 0
+}

@@ -1,0 +1,61 @@
+{
+  "started_utc": "2026-10-28T14:16:20.529043+00:00",
+  "source_commit": "29a84cc",
+  "completion_timeout_seconds": 120,
+  "probe_timeout_seconds": 3,
+  "retries": 0,
+  "versions": {
+    "google-adk": "2.13.0",
+    "google-genai": "2.33.0",
+    "httpx": "0.28.1"
+  },
+  "profiles": {
+    "ollama": {
+      "reachable": false,
+      "probes": [
+        {
+          "base_url": "http://127.0.0.1:11434/v1",
+          "identity": {
+            "error": "ConnectError"
+          },
+          "record": "runs/002-live-smoke/ollama/probe-1"
+        }
+      ],
+      "samples": []
+    },
+    "vllm": {
+      "reachable": false,
+      "probes": [
+        {
+          "base_url": "http://localhost:8004/v1",
+          "identity": {
+            "error": "ConnectError"
+          },
+          "record": "runs/002-live-smoke/vllm/probe-1"
+        },
+        {
+          "base_url": "http://localhost:8037/v1",
+          "identity": {
+            "error": "ConnectError"
+          },
+          "record": "runs/002-live-smoke/vllm/probe-2"
+        }
+      ],
+      "samples": []
+    },
+    "llama_server": {
+      "reachable": false,
+      "probes": [
+        {
+          "base_url": "http://localhost:8080/v1",
+          "identity": {
+            "error": "ConnectError"
+          },
+          "record": "runs/002-live-smoke/llama_server/probe-1"
+        }
+      ],
+      "samples": []
+    }
+  },
+  "finished_utc": "2026-10-28T14:16:30.093366+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-10-28T14:16:20.532041+00:00",
+  "method": "GET",
+  "url": "http://127.0.0.1:11434/v1/models",
+  "adapter_identity": {
+    "error": "ConnectError"
+  },
+  "wall_seconds": 2.224654699995881,
+  "request_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "request_length": 0,
+  "reply_length": 0
+}
