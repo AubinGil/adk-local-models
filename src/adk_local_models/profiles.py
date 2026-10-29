@@ -17,7 +17,10 @@ DEFAULT_URLS = {
 # https://docs.ollama.com/api/openai-compatibility#v1chatcompletions
 # keep_alive and native think are NOT documented chat-completions fields:
 # https://docs.ollama.com/api/chat (native endpoint; outside this adapter).
-# llama-server: extra_body={"reasoning_format": "none"} returns raw text.
+# llama-server: reasoning_format="none" returns raw text, not thinking control.
+# On llama.cpp 0.8.0 it must not be combined with JSON response mode:
+# recorded HTTP 400 in runs/009-llama-server/; isolated in runs/010-llama-server-knob/.
+# https://github.com/ggml-org/llama.cpp/blob/b11960/tools/server/README.md
 # Tools require an owner-configured --jinja and a compatible tool-use template.
 # https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md
 # No thinking defaults: support and valid values depend on the served model.
@@ -36,6 +39,9 @@ def apply_extra(body: dict, profile: Profile, extra_body: dict) -> dict:
         raise ValueError("extra_body must not override mapped request fields")
     if profile == "ollama" and extra_body.keys() & {"keep_alive", "think"}:
         raise ValueError("Ollama chat completions documents reasoning_effort, not keep_alive/think")
+    if (profile == "llama_server" and extra_body.get("reasoning_format") == "none"
+            and body.get("response_format", {}).get("type") == "json_object"):
+        raise ValueError("llama.cpp 0.8.0: reasoning_format none cannot be combined with JSON response mode")
     foreign = set.union(*PROFILE_KNOBS.values()) - PROFILE_KNOBS[profile]
     if extra_body.keys() & foreign:
         raise ValueError(f"Profile knob is not documented for {profile}")

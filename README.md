@@ -12,7 +12,7 @@ ADK's native `google.adk.integrations.openai.OpenAILlm` is a good default for mo
 
 ## Supported servers
 
-Profiles cover vLLM, Ollama and llama-server. vLLM and Ollama were validated live with one model each; llama-server was tested model-free only. See [live comparison](runs/007-native-compare/live/) and [test fixtures](tests/fixtures/). Python 3.11+ is supported; ADK 2.13.0 was tested and `>=2.13.0,<3` is declared.
+Profiles cover vLLM, Ollama and llama-server. vLLM and Ollama were validated live with one model each; llama-server was validated live on LFM3-1.7B Q4_K_M with llama.cpp 0.8.0 (tag b11960), `--jinja --reasoning off` ([recorded run](runs/009-llama-server/)). See [live comparison](runs/007-native-compare/live/) and [test fixtures](tests/fixtures/). Python 3.11+ is supported; ADK 2.13.0 was tested and `>=2.13.0,<3` is declared.
 
 ## Installation and usage
 
@@ -111,7 +111,14 @@ The documented controls and server prerequisites are cited in
 Ollama's `keep_alive` and native `think` fields are not documented for chat
 completions and are rejected here. llama-server tools require an owner-configured
 `--jinja` and a tool-capable template. `reasoning_format="none"` returns raw text;
-it does not itself disable thinking. This package never configures servers.
+it does not itself disable thinking. On llama.cpp 0.8.0, do not combine it with
+`response_mime_type="application/json"`: the adapter returns `INVALID_REQUEST`
+before contacting the server. The combination produced HTTP 400 in the
+[009 run](runs/009-llama-server/); both knob-only requests succeeded among the four
+[010 checks](runs/010-llama-server-knob/). Reasoning can be disabled by the owner
+with server option `--reasoning off`. See the
+[pinned server documentation](https://github.com/ggml-org/llama.cpp/blob/b11960/tools/server/README.md).
+This package never configures servers.
 
 `stream=False` yields exactly one response with `partial=False`. `stream=True`
 yields text deltas or empty progress chunks for tool deltas with `partial=True`,

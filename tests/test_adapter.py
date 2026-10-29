@@ -51,6 +51,8 @@ class AdapterTests(unittest.IsolatedAsyncioTestCase):
                 model = self.model(server, profile, extra_body=knobs)
                 for name, request in fixed_requests().items():
                     with self.subTest(profile=profile, request=name):
+                        # JSON text mode cannot carry llama.cpp 0.8.0's none knob.
+                        model.extra_body = {} if profile == "llama_server" and name == "text" else knobs
                         response, = await self.collect(model, request)
                         self.assertIsNone(response.error_code)
                         self.assertEqual(server.requests[-1],
@@ -189,6 +191,22 @@ class AdapterTests(unittest.IsolatedAsyncioTestCase):
                 self.assertEqual(response.error_code, "INVALID_REQUEST")
                 self.assertFalse(server.requests)
                 self.assertEqual(server.models_reads, 0)
+
+    async def test_llama_none_with_json_is_rejected_before_io(self):
+        for stream in (False, True):
+            with self.subTest(stream=stream), FakeServer("text.sse" if stream else "text.json") as server:
+                model = self.model(server, "llama_server", extra_body={"reasoning_format": "none"})
+                response, = await self.collect(model, stream=stream)
+                self.assertEqual(response.error_code, "INVALID_REQUEST")
+                self.assertIn("JSON", response.error_message)
+                self.assertFalse(server.requests)
+                self.assertEqual(server.models_reads, 0)
+                # The same knob without JSON mode remains supported.
+                request = fixed_requests()["text"]
+                request.config.response_mime_type = None
+                replies = await self.collect(model, request, stream=stream)
+                self.assertIsNone(replies[-1].error_code)
+                self.assertEqual(json.loads(server.requests[-1])["reasoning_format"], "none")
 
     def test_registry_and_capabilities(self):
         LLMRegistry.register(OpenAICompatibleLlm)

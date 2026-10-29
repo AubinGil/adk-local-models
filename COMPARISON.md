@@ -13,4 +13,4 @@ The [full comparison and its scope](briefs/007-result.md) records the experiment
 | Strict output schema | Not enforced | Supported (source review) | [Comparison](briefs/007-result.md) |
 | Reasoning | No reasoning-token usage mapping | Reasoning handling and thoughts_token_count | [Comparison](briefs/007-result.md) |
 | Live bidirectional API | Not implemented | Responses API sibling available | [Comparison](briefs/007-result.md) |
-| Server evidence | vLLM and Ollama live; llama-server model-free only | Same comparison scope | [Live results](runs/007-native-compare/live/), [comparison](briefs/007-result.md) |
+| Server evidence | vLLM and Ollama live; llama-server live on LFM3-1.7B Q4_K_M, llama.cpp 0.8.0 (b11960), `--jinja --reasoning off` ([run](runs/009-llama-server/)) | Same comparison scope | [Live results](runs/007-native-compare/live/), [comparison](briefs/007-result.md) |

@@ -44,7 +44,7 @@ particularly explicit local-server behavior and traceability.
 This isn't intended to replace LiteLLM or Google's native integration. It's simply another option for developers
 who prefer these specific behaviors when working with local inference servers.
 
-The llama-server profile is implemented but hasn't yet been validated through live inference.
+The llama-server profile was validated live on one model, LFM3-1.7B Q4_K_M, with llama.cpp 0.8.0 (tag b11960) and `--jinja --reasoning off`; see the [recorded run](runs/009-llama-server/).
 
 Repository: https://github.com/AubinGil/adk-local-models
 
