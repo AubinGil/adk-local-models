@@ -4,14 +4,14 @@ A Google ADK model adapter for local OpenAI-compatible servers (vLLM, Ollama, ll
 through LiteLLM. Parked side project of the owner (2026-10-28); harness-core stays the main track. Codex executes
 the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner types "go".
 
-**Open assignment for Codex (2026-10-28): brief 010, `briefs/010-llama-server-knob.md`**; the owner types "go". Brief 009
-proved the `llama_server` profile live on llama.cpp 0.8.0 with LFM3-1.7B (`runs/009-llama-server/`), and found that the
-profile's documented knob `reasoning_format: none` draws HTTP 400 when combined with JSON mode. Brief 010 isolates the knob
-in four requests, fixes the profile to the finding, then removes the "model-free only" caveat from the public surfaces and
-sets 0.1.1 for the owner to tag. The narrowed description from brief 007 stands: a lightweight, direct alternative for
-connecting Google ADK to local OpenAI-compatible servers without LiteLLM or the OpenAI SDK, useful where errors as
-responses, final-only tool calls, rejected truncated streams, documented knobs and attached request/reply hashes are
-requirements, and not needed merely to reach a local server. The owner writes or submits any public post.
+**No open assignment for Codex (2026-10-28, after brief 010's gate).** All three profiles are validated live: vLLM and
+Ollama (briefs 003 to 007), llama-server on LFM3-1.7B with llama.cpp 0.8.0 (briefs 009 and 010, `runs/009-llama-server/`
+and `runs/010-llama-server-knob/`). The `llama_server` profile refuses `reasoning_format: none` together with JSON response
+mode before any I/O, since llama.cpp 0.8.0 answers that combination with HTTP 400. `pyproject.toml` is 0.1.1 for the owner
+to tag. The narrowed description from brief 007 stands: a lightweight, direct alternative for connecting Google ADK to
+local OpenAI-compatible servers without LiteLLM or the OpenAI SDK, useful where errors as responses, final-only tool calls,
+rejected truncated streams, documented knobs and attached request/reply hashes are requirements, and not needed merely to
+reach a local server. The owner writes or submits any public post.
 
 **Published (2026-10-28):** the repository is public, private vulnerability reporting is enabled, and `v0.1.0` is tagged at
 `c6f7faa` with a GitHub Release (https://github.com/AubinGil/adk-local-models/releases/tag/v0.1.0). No PyPI. The Show and

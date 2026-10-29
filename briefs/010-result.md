@@ -24,3 +24,29 @@ Validation: 18 model-free tests pass (the prior 17 plus one), including absence 
 Final `pgrep -af "[l]lama-server"`: no output. Both started server PIDs (90653, 90711) and the workstation SSH tunnel were stopped. Ollama resident-model list stayed empty; final available memory 5142 MB. No unrelated service changes.
 
 [Readings](../runs/010-llama-server-knob/README.md), [summary](../runs/010-llama-server-knob/summary.json), [verification](../runs/010-llama-server-knob/verification.json).
+
+## Gate (reviewer, 2026-10-28, at eccdc0f): accepted within bounds; 0.1.1 ready to tag
+
+Reproduced on the branch: 18 tests pass; `git diff --check` clean; all 12 entity hashes of the four completions and
+two identity reads recomputed and matching; every relative link in the public files and both run READMEs resolves;
+the four examples run against the fake server, including the llama-server example that keeps the knob; no
+comparative claim appears. The Jetson was left as found: no llama-server process, port 8111 closed, Ollama idle.
+
+**The finding, read against the records.** Without JSON mode the knob behaves as llama-server's pinned README
+says: `reasoning_format: none` leaves the think tags in the raw content and suppresses the separate
+`reasoning_content`; it does not stop the model thinking. With `--reasoning off` the raw content opens with an
+empty think pair and then the answer. So the knob is a formatting switch, the 400 of brief 009 belongs to its
+combination with `response_format: json_object`, and the fix chosen is the right one of the two the brief allowed:
+keep the knob, refuse the combination for the `llama_server` profile before any network I/O with
+`INVALID_REQUEST`, test both stream modes for zero server contact on rejection and for the knob passing through
+alone. The guard reads the mapped body, so it fires on `response_mime_type="application/json"` and nothing else.
+The golden fixture for the llama-server JSON text request now omits the knob, which is what the adapter sends.
+
+**Public surfaces.** README, `COMPARISON.md` and the draft now state the live evidence narrowly: one model,
+LFM3-1.7B Q4_K_M, llama.cpp 0.8.0 tag b11960, `--jinja --reasoning off`, pointing at `runs/009-llama-server/`.
+The README's llama-server paragraph states the knob rule and cites both runs and the pinned server documentation.
+`pyproject.toml` is 0.1.1; the 0.1.0 release notes are untouched, as briefed.
+
+**Bounds.** One model and one server build; the server-side cause of the sampler error is not established and
+the README does not claim it. The owner tags 0.1.1 and writes the release notes.
+
