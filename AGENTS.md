@@ -14,8 +14,9 @@ rejected truncated streams, documented knobs and attached request/reply hashes a
 reach a local server. The owner writes or submits any public post.
 
 **Published (2026-10-28):** the repository is public, private vulnerability reporting is enabled, and `v0.1.0` is tagged at
-`c6f7faa` with a GitHub Release (https://github.com/AubinGil/adk-local-models/releases/tag/v0.1.0). No PyPI. The Show and
-Tell post is the owner's to submit.
+`c6f7faa` with a GitHub Release (https://github.com/AubinGil/adk-local-models/releases/tag/v0.1.0); `v0.1.1` is tagged at
+`f13764c` (https://github.com/AubinGil/adk-local-models/releases/tag/v0.1.1): llama-server validated live, JSON-mode guard.
+No PyPI. The Show and Tell post is the owner's to submit.
 
 ## Why this exists
 
