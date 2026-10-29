@@ -13,14 +13,9 @@ to local OpenAI-compatible servers without LiteLLM or the OpenAI SDK, useful whe
 tool calls, rejected truncated streams, documented knobs and attached request/reply hashes are requirements, and not
 needed merely to reach a local server. The owner writes or submits any public post.
 
-**At publication (owner, in this order):** make the repository public, then enable private vulnerability reporting
-under its security settings, since `SECURITY.md` points reporters there and GitHub offers it on public repositories only;
-then tag `v0.1.0`. No PyPI.
-
-**Release scope (owner's decision, 2026-10-28):** a v0.1.0 public GitHub release only, no PyPI publication, no release
-automation and no governance files. The bar is that another developer can find the repository, understand its
-trade-offs, install it in a clean environment and reproduce its basic behaviour. The announcement text in
-`SHOW_AND_TELL_DRAFT.md` is the owner's, checked claim by claim against the evidence at the brief 008 gate.
+**Published (2026-10-28):** the repository is public, private vulnerability reporting is enabled, and `v0.1.0` is tagged at
+`c6f7faa` with a GitHub Release (https://github.com/AubinGil/adk-local-models/releases/tag/v0.1.0). No PyPI. The Show and
+Tell post is the owner's to submit.
 
 ## Why this exists
 
