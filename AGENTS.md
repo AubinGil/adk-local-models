@@ -4,14 +4,13 @@ A Google ADK model adapter for local OpenAI-compatible servers (vLLM, Ollama, ll
 through LiteLLM. Parked side project of the owner (2026-10-28); harness-core stays the main track. Codex executes
 the briefs in `briefs/`; the reviewer (Fable) writes them and gates; the owner types "go".
 
-**No open assignment for Codex (2026-10-28, after brief 008's gate).** The release candidate is on `main`: README,
-`COMPARISON.md`, `CONTRIBUTING.md`, `SECURITY.md`, `SHOW_AND_TELL_DRAFT.md` and recorded checks under
-`runs/008-release-check/`. The owner chose GitHub private vulnerability reporting, accepted the certifi MPL-2.0 and typing_extensions
-PSF-2.0 transitive licenses with their notices retained, and chose to keep briefs and synthetic runs public after
-the documented disclosure checks. The narrowed description from brief 007 stands: a lightweight, direct alternative for connecting Google ADK
-to local OpenAI-compatible servers without LiteLLM or the OpenAI SDK, useful where errors as responses, final-only
-tool calls, rejected truncated streams, documented knobs and attached request/reply hashes are requirements, and not
-needed merely to reach a local server. The owner writes or submits any public post.
+**Open assignment for Codex (2026-10-28): brief 009, `briefs/009-llama-server-live.md`**, the `llama_server` profile live
+against the owner's Jetson (llama.cpp 0.8.0, LFM3-1.7B) through an SSH tunnel; the owner types "go". On full success the
+"model-free only" caveat leaves the four public surfaces and the version becomes 0.1.1 for the owner to tag. Brief 008
+delivered the release candidate now published as 0.1.0. The narrowed description from brief 007 stands: a lightweight,
+direct alternative for connecting Google ADK to local OpenAI-compatible servers without LiteLLM or the OpenAI SDK, useful
+where errors as responses, final-only tool calls, rejected truncated streams, documented knobs and attached request/reply
+hashes are requirements, and not needed merely to reach a local server. The owner writes or submits any public post.
 
 **Published (2026-10-28):** the repository is public, private vulnerability reporting is enabled, and `v0.1.0` is tagged at
 `c6f7faa` with a GitHub Release (https://github.com/AubinGil/adk-local-models/releases/tag/v0.1.0). No PyPI. The Show and
