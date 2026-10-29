@@ -1,0 +1,108 @@
+{
+  "exchange_count": 13,
+  "all_hashes_verified": true,
+  "runner_ids_and_once_only_execution_verified": true,
+  "exchanges": [
+    {
+      "path": "fixtures\\text-plain",
+      "status": 200,
+      "hashes_verified": true,
+      "content": "{\"weather\": \"Paris\"}",
+      "reasoning_content_present": false,
+      "finish": "stop",
+      "error": null
+    },
+    {
+      "path": "fixtures\\text-stream",
+      "status": 200,
+      "hashes_verified": true
+    },
+    {
+      "path": "fixtures\\tools-plain",
+      "status": 200,
+      "hashes_verified": true,
+      "content": "",
+      "reasoning_content_present": false,
+      "finish": "tool_calls",
+      "error": null
+    },
+    {
+      "path": "fixtures\\tools-stream",
+      "status": 200,
+      "hashes_verified": true
+    },
+    {
+      "path": "knob-default\\text-default",
+      "status": 200,
+      "hashes_verified": true,
+      "content": "",
+      "reasoning_content_present": true,
+      "finish": "length",
+      "error": null
+    },
+    {
+      "path": "knob-default\\text-none",
+      "status": 400,
+      "hashes_verified": true,
+      "content": null,
+      "reasoning_content_present": false,
+      "finish": null,
+      "error": {
+        "code": 400,
+        "message": "Failed to initialize samplers: std::exception",
+        "type": "invalid_request_error"
+      }
+    },
+    {
+      "path": "knob-off\\text-none",
+      "status": 400,
+      "hashes_verified": true,
+      "content": null,
+      "reasoning_content_present": false,
+      "finish": null,
+      "error": {
+        "code": 400,
+        "message": "Failed to initialize samplers: std::exception",
+        "type": "invalid_request_error"
+      }
+    },
+    {
+      "path": "plain\\exchange-1",
+      "status": 200,
+      "hashes_verified": true,
+      "content": "",
+      "reasoning_content_present": false,
+      "finish": "tool_calls",
+      "error": null
+    },
+    {
+      "path": "plain\\exchange-2",
+      "status": 200,
+      "hashes_verified": true,
+      "content": "The weather in Paris is 20°C.",
+      "reasoning_content_present": false,
+      "finish": "stop",
+      "error": null
+    },
+    {
+      "path": "probe-1",
+      "status": 200,
+      "hashes_verified": true
+    },
+    {
+      "path": "probe-2",
+      "status": 200,
+      "hashes_verified": true
+    },
+    {
+      "path": "stream\\exchange-1",
+      "status": 200,
+      "hashes_verified": true
+    },
+    {
+      "path": "stream\\exchange-2",
+      "status": 200,
+      "hashes_verified": true
+    }
+  ]
+}

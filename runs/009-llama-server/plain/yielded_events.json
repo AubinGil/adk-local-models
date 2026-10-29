@@ -1,0 +1,423 @@
+[
+  {
+    "model_version": null,
+    "content": {
+      "parts": [
+        {
+          "media_resolution": null,
+          "code_execution_result": null,
+          "executable_code": null,
+          "file_data": null,
+          "function_call": {
+            "id": "QHgXQiQ2EdTFkjupvxS9n1ny0LFlzvOK",
+            "args": {
+              "city": "Paris"
+            },
+            "name": "weather",
+            "partial_args": null,
+            "will_continue": null
+          },
+          "function_response": null,
+          "inline_data": null,
+          "text": null,
+          "thought": null,
+          "thought_signature": null,
+          "video_metadata": null,
+          "tool_call": null,
+          "tool_response": null,
+          "part_metadata": null,
+          "audio_transcription": null,
+          "media_processing": null,
+          "speech_metadata": null
+        }
+      ],
+      "role": "model"
+    },
+    "grounding_metadata": null,
+    "partial": false,
+    "turn_complete": null,
+    "turn_complete_reason": null,
+    "interaction_status": null,
+    "finish_reason": "STOP",
+    "error_code": null,
+    "error_message": null,
+    "interrupted": null,
+    "custom_metadata": {
+      "request_sha256": "dc090eb9d7c42734dfedecce04842a45b2af790f5aa81e5dd31bdc7f0aa8eb03",
+      "reply_sha256": "6c793e47b00c792979ca274fce3f1b4c3bb5e879ced685aa989dac58504dcf10",
+      "server_identity": {
+        "models": {
+          "models": [
+            {
+              "name": "lfm3-1.7b",
+              "model": "lfm3-1.7b",
+              "modified_at": "",
+              "size": "",
+              "digest": "",
+              "type": "model",
+              "description": "",
+              "tags": [
+                ""
+              ],
+              "capabilities": [
+                "completion"
+              ],
+              "parameters": "",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "",
+                "families": [
+                  ""
+                ],
+                "parameter_size": "",
+                "quantization_level": ""
+              }
+            }
+          ],
+          "object": "list",
+          "data": [
+            {
+              "id": "lfm3-1.7b",
+              "aliases": [
+                "lfm3-1.7b"
+              ],
+              "tags": [],
+              "object": "model",
+              "architecture": {
+                "input_modalities": [
+                  "text"
+                ],
+                "output_modalities": [
+                  "text"
+                ]
+              },
+              "created": 1793234356,
+              "owned_by": "llamacpp",
+              "meta": {
+                "vocab_type": 2,
+                "n_vocab": 128000,
+                "n_ctx": 4096,
+                "n_ctx_train": 262144,
+                "n_embd": 2048,
+                "n_params": 1728801600,
+                "size": 1091380480,
+                "ftype": "Q4_K - Medium"
+              }
+            }
+          ]
+        },
+        "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+        "server": "llama.cpp"
+      },
+      "profile": "llama_server",
+      "reply_complete": true
+    },
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 16,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 118,
+      "prompt_tokens_details": null,
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 134,
+      "traffic_type": null
+    },
+    "live_session_resumption_update": null,
+    "live_session_id": null,
+    "go_away": null,
+    "voice_activity": null,
+    "input_transcription": null,
+    "output_transcription": null,
+    "avg_logprobs": null,
+    "logprobs_result": null,
+    "cache_metadata": null,
+    "citation_metadata": null,
+    "interaction_id": null,
+    "environment_id": null,
+    "invocation_id": "e-141d306a-1861-46a1-805b-b47d3bcd1c9b",
+    "author": "local",
+    "actions": {
+      "skip_summarization": null,
+      "state_delta": {},
+      "artifact_delta": {},
+      "transfer_to_agent": null,
+      "transfer_reason": null,
+      "escalate": null,
+      "requested_auth_configs": {},
+      "requested_tool_confirmations": {},
+      "compaction": null,
+      "end_of_agent": null,
+      "agent_state": null,
+      "rewind_before_invocation_id": null,
+      "route": null,
+      "render_ui_widgets": null,
+      "set_model_response": null
+    },
+    "output": null,
+    "node_info": {
+      "path": "local@1",
+      "output_for": null,
+      "message_as_output": null
+    },
+    "long_running_tool_ids": [],
+    "branch": null,
+    "isolation_scope": null,
+    "id": "da7fdb03-b8d1-4b6f-b508-41b7c9bd4b39",
+    "timestamp": 1793234358.948308
+  },
+  {
+    "model_version": null,
+    "content": {
+      "parts": [
+        {
+          "media_resolution": null,
+          "code_execution_result": null,
+          "executable_code": null,
+          "file_data": null,
+          "function_call": null,
+          "function_response": {
+            "will_continue": null,
+            "scheduling": null,
+            "parts": null,
+            "id": "QHgXQiQ2EdTFkjupvxS9n1ny0LFlzvOK",
+            "name": "weather",
+            "response": {
+              "temperature": 20
+            }
+          },
+          "inline_data": null,
+          "text": null,
+          "thought": null,
+          "thought_signature": null,
+          "video_metadata": null,
+          "tool_call": null,
+          "tool_response": null,
+          "part_metadata": null,
+          "audio_transcription": null,
+          "media_processing": null,
+          "speech_metadata": null
+        }
+      ],
+      "role": "user"
+    },
+    "grounding_metadata": null,
+    "partial": null,
+    "turn_complete": null,
+    "turn_complete_reason": null,
+    "interaction_status": null,
+    "finish_reason": null,
+    "error_code": null,
+    "error_message": null,
+    "interrupted": null,
+    "custom_metadata": null,
+    "usage_metadata": null,
+    "live_session_resumption_update": null,
+    "live_session_id": null,
+    "go_away": null,
+    "voice_activity": null,
+    "input_transcription": null,
+    "output_transcription": null,
+    "avg_logprobs": null,
+    "logprobs_result": null,
+    "cache_metadata": null,
+    "citation_metadata": null,
+    "interaction_id": null,
+    "environment_id": null,
+    "invocation_id": "e-141d306a-1861-46a1-805b-b47d3bcd1c9b",
+    "author": "local",
+    "actions": {
+      "skip_summarization": null,
+      "state_delta": {},
+      "artifact_delta": {},
+      "transfer_to_agent": null,
+      "transfer_reason": null,
+      "escalate": null,
+      "requested_auth_configs": {},
+      "requested_tool_confirmations": {},
+      "compaction": null,
+      "end_of_agent": null,
+      "agent_state": null,
+      "rewind_before_invocation_id": null,
+      "route": null,
+      "render_ui_widgets": null,
+      "set_model_response": null
+    },
+    "output": null,
+    "node_info": {
+      "path": "local@1",
+      "output_for": null,
+      "message_as_output": null
+    },
+    "long_running_tool_ids": null,
+    "branch": null,
+    "isolation_scope": null,
+    "id": "c729453c-cffd-491b-8234-2ad206dd12af",
+    "timestamp": 1793234359.7200205
+  },
+  {
+    "model_version": null,
+    "content": {
+      "parts": [
+        {
+          "media_resolution": null,
+          "code_execution_result": null,
+          "executable_code": null,
+          "file_data": null,
+          "function_call": null,
+          "function_response": null,
+          "inline_data": null,
+          "text": "The weather in Paris is 20°C.",
+          "thought": null,
+          "thought_signature": null,
+          "video_metadata": null,
+          "tool_call": null,
+          "tool_response": null,
+          "part_metadata": null,
+          "audio_transcription": null,
+          "media_processing": null,
+          "speech_metadata": null
+        }
+      ],
+      "role": "model"
+    },
+    "grounding_metadata": null,
+    "partial": false,
+    "turn_complete": null,
+    "turn_complete_reason": null,
+    "interaction_status": null,
+    "finish_reason": "STOP",
+    "error_code": null,
+    "error_message": null,
+    "interrupted": null,
+    "custom_metadata": {
+      "request_sha256": "6f01263df52f787f4a1d46dc490a72e7171893c9f53a51a06148b37939afdadc",
+      "reply_sha256": "8383f4abf4d9441f6b3c90a3279c22055968dd024c47d279e5b8f0efc72e77c3",
+      "server_identity": {
+        "models": {
+          "models": [
+            {
+              "name": "lfm3-1.7b",
+              "model": "lfm3-1.7b",
+              "modified_at": "",
+              "size": "",
+              "digest": "",
+              "type": "model",
+              "description": "",
+              "tags": [
+                ""
+              ],
+              "capabilities": [
+                "completion"
+              ],
+              "parameters": "",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "",
+                "families": [
+                  ""
+                ],
+                "parameter_size": "",
+                "quantization_level": ""
+              }
+            }
+          ],
+          "object": "list",
+          "data": [
+            {
+              "id": "lfm3-1.7b",
+              "aliases": [
+                "lfm3-1.7b"
+              ],
+              "tags": [],
+              "object": "model",
+              "architecture": {
+                "input_modalities": [
+                  "text"
+                ],
+                "output_modalities": [
+                  "text"
+                ]
+              },
+              "created": 1793234356,
+              "owned_by": "llamacpp",
+              "meta": {
+                "vocab_type": 2,
+                "n_vocab": 128000,
+                "n_ctx": 4096,
+                "n_ctx_train": 262144,
+                "n_embd": 2048,
+                "n_params": 1728801600,
+                "size": 1091380480,
+                "ftype": "Q4_K - Medium"
+              }
+            }
+          ]
+        },
+        "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+        "server": "llama.cpp"
+      },
+      "profile": "llama_server",
+      "reply_complete": true
+    },
+    "usage_metadata": {
+      "cache_tokens_details": null,
+      "cached_content_token_count": null,
+      "candidates_token_count": 10,
+      "candidates_tokens_details": null,
+      "prompt_token_count": 153,
+      "prompt_tokens_details": null,
+      "thoughts_token_count": null,
+      "tool_use_prompt_token_count": null,
+      "tool_use_prompt_tokens_details": null,
+      "total_token_count": 163,
+      "traffic_type": null
+    },
+    "live_session_resumption_update": null,
+    "live_session_id": null,
+    "go_away": null,
+    "voice_activity": null,
+    "input_transcription": null,
+    "output_transcription": null,
+    "avg_logprobs": null,
+    "logprobs_result": null,
+    "cache_metadata": null,
+    "citation_metadata": null,
+    "interaction_id": null,
+    "environment_id": null,
+    "invocation_id": "e-141d306a-1861-46a1-805b-b47d3bcd1c9b",
+    "author": "local",
+    "actions": {
+      "skip_summarization": null,
+      "state_delta": {},
+      "artifact_delta": {},
+      "transfer_to_agent": null,
+      "transfer_reason": null,
+      "escalate": null,
+      "requested_auth_configs": {},
+      "requested_tool_confirmations": {},
+      "compaction": null,
+      "end_of_agent": null,
+      "agent_state": null,
+      "rewind_before_invocation_id": null,
+      "route": null,
+      "render_ui_widgets": null,
+      "set_model_response": null
+    },
+    "output": null,
+    "node_info": {
+      "path": "local@1",
+      "output_for": null,
+      "message_as_output": null
+    },
+    "long_running_tool_ids": null,
+    "branch": null,
+    "isolation_scope": null,
+    "id": "df161615-9ade-4d25-b759-9d0ea5d25149",
+    "timestamp": 1793234359.722633
+  }
+]

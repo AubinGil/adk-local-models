@@ -1,0 +1,223 @@
+{
+  "started_utc": "2026-10-29T00:39:21.689417+00:00",
+  "adapter_request": {
+    "model": null,
+    "contents": [
+      {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "Weather in Paris?",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "user"
+      }
+    ],
+    "config": {
+      "http_options": null,
+      "should_return_http_response": null,
+      "system_instruction": "Be concise.",
+      "temperature": 0.0,
+      "top_p": 0.9,
+      "top_k": null,
+      "candidate_count": null,
+      "max_output_tokens": 32,
+      "stop_sequences": [
+        "END"
+      ],
+      "response_logprobs": null,
+      "logprobs": null,
+      "presence_penalty": null,
+      "frequency_penalty": null,
+      "seed": null,
+      "response_mime_type": "application/json",
+      "response_schema": null,
+      "response_json_schema": null,
+      "routing_config": null,
+      "model_selection_config": null,
+      "safety_settings": null,
+      "tools": null,
+      "tool_config": null,
+      "labels": null,
+      "cached_content": null,
+      "response_modalities": null,
+      "media_resolution": null,
+      "speech_config": null,
+      "audio_timestamp": null,
+      "automatic_function_calling": null,
+      "thinking_config": null,
+      "image_config": null,
+      "enable_enhanced_civic_answers": null,
+      "model_armor_config": null,
+      "service_tier": null,
+      "audio_transcription_config": null,
+      "continuation_token": null,
+      "automatic_continuation": null,
+      "generation_output_config": null,
+      "store": null
+    },
+    "live_connect_config": {
+      "http_options": null,
+      "generation_config": null,
+      "response_modalities": null,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "max_output_tokens": null,
+      "media_resolution": null,
+      "seed": null,
+      "speech_config": null,
+      "thinking_config": null,
+      "enable_affective_dialog": null,
+      "system_instruction": null,
+      "tools": null,
+      "session_resumption": null,
+      "input_audio_transcription": null,
+      "output_audio_transcription": null,
+      "realtime_input_config": null,
+      "context_window_compression": null,
+      "proactivity": null,
+      "explicit_vad_signal": null,
+      "history_config": null,
+      "avatar_config": null,
+      "safety_settings": null,
+      "translation_config": null,
+      "labels": null
+    },
+    "cache_config": null,
+    "cache_metadata": null,
+    "cacheable_contents_token_count": null,
+    "previous_interaction_id": null,
+    "service_tier": null
+  },
+  "requested_stream": false,
+  "method": "POST",
+  "url": "http://127.0.0.1:8111/v1/chat/completions",
+  "status": 400,
+  "response_headers": {
+    "server": "llama.cpp",
+    "access-control-allow-origin": "",
+    "content-type": "application/json; charset=utf-8",
+    "connection": "close",
+    "content-length": "111"
+  },
+  "adapter_responses": [
+    {
+      "model_version": null,
+      "content": null,
+      "grounding_metadata": null,
+      "partial": false,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": "HTTP_400",
+      "error_message": "Client error '400 Bad Request' for url 'http://127.0.0.1:8111/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "5934c888448c60ff48bbec252d5490c20c1fd32ca9b2431a048f62ba1604e1f0",
+        "reply_sha256": "4e317b744f23ef1323fa291b67cbf6f11b86beba77fe95db907304cac9f8cf9f",
+        "server_identity": {
+          "models": {
+            "models": [
+              {
+                "name": "lfm3-1.7b",
+                "model": "lfm3-1.7b",
+                "modified_at": "",
+                "size": "",
+                "digest": "",
+                "type": "model",
+                "description": "",
+                "tags": [
+                  ""
+                ],
+                "capabilities": [
+                  "completion"
+                ],
+                "parameters": "",
+                "details": {
+                  "parent_model": "",
+                  "format": "gguf",
+                  "family": "",
+                  "families": [
+                    ""
+                  ],
+                  "parameter_size": "",
+                  "quantization_level": ""
+                }
+              }
+            ],
+            "object": "list",
+            "data": [
+              {
+                "id": "lfm3-1.7b",
+                "aliases": [
+                  "lfm3-1.7b"
+                ],
+                "tags": [],
+                "object": "model",
+                "architecture": {
+                  "input_modalities": [
+                    "text"
+                  ],
+                  "output_modalities": [
+                    "text"
+                  ]
+                },
+                "created": 1793234356,
+                "owned_by": "llamacpp",
+                "meta": {
+                  "vocab_type": 2,
+                  "n_vocab": 128000,
+                  "n_ctx": 4096,
+                  "n_ctx_train": 262144,
+                  "n_embd": 2048,
+                  "n_params": 1728801600,
+                  "size": 1091380480,
+                  "ftype": "Q4_K - Medium"
+                }
+              }
+            ]
+          },
+          "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+          "server": "llama.cpp"
+        },
+        "profile": "llama_server",
+        "reply_complete": true
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    }
+  ],
+  "wall_seconds": 0.21494060000986792,
+  "request_sha256": "5934c888448c60ff48bbec252d5490c20c1fd32ca9b2431a048f62ba1604e1f0",
+  "reply_sha256": "4e317b744f23ef1323fa291b67cbf6f11b86beba77fe95db907304cac9f8cf9f",
+  "request_length": 265,
+  "reply_length": 111
+}

@@ -1,0 +1,1099 @@
+{
+  "started_utc": "2026-10-29T00:39:16.237432+00:00",
+  "adapter_request": {
+    "model": null,
+    "contents": [
+      {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "Weather in Paris?",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "user"
+      }
+    ],
+    "config": {
+      "http_options": null,
+      "should_return_http_response": null,
+      "system_instruction": "Be concise.",
+      "temperature": 0.0,
+      "top_p": 0.9,
+      "top_k": null,
+      "candidate_count": null,
+      "max_output_tokens": 32,
+      "stop_sequences": [
+        "END"
+      ],
+      "response_logprobs": null,
+      "logprobs": null,
+      "presence_penalty": null,
+      "frequency_penalty": null,
+      "seed": null,
+      "response_mime_type": "application/json",
+      "response_schema": null,
+      "response_json_schema": null,
+      "routing_config": null,
+      "model_selection_config": null,
+      "safety_settings": null,
+      "tools": null,
+      "tool_config": null,
+      "labels": null,
+      "cached_content": null,
+      "response_modalities": null,
+      "media_resolution": null,
+      "speech_config": null,
+      "audio_timestamp": null,
+      "automatic_function_calling": null,
+      "thinking_config": null,
+      "image_config": null,
+      "enable_enhanced_civic_answers": null,
+      "model_armor_config": null,
+      "service_tier": null,
+      "audio_transcription_config": null,
+      "continuation_token": null,
+      "automatic_continuation": null,
+      "generation_output_config": null,
+      "store": null
+    },
+    "live_connect_config": {
+      "http_options": null,
+      "generation_config": null,
+      "response_modalities": null,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "max_output_tokens": null,
+      "media_resolution": null,
+      "seed": null,
+      "speech_config": null,
+      "thinking_config": null,
+      "enable_affective_dialog": null,
+      "system_instruction": null,
+      "tools": null,
+      "session_resumption": null,
+      "input_audio_transcription": null,
+      "output_audio_transcription": null,
+      "realtime_input_config": null,
+      "context_window_compression": null,
+      "proactivity": null,
+      "explicit_vad_signal": null,
+      "history_config": null,
+      "avatar_config": null,
+      "safety_settings": null,
+      "translation_config": null,
+      "labels": null
+    },
+    "cache_config": null,
+    "cache_metadata": null,
+    "cacheable_contents_token_count": null,
+    "previous_interaction_id": null,
+    "service_tier": null
+  },
+  "requested_stream": true,
+  "method": "POST",
+  "url": "http://127.0.0.1:8111/v1/chat/completions",
+  "status": 200,
+  "response_headers": {
+    "server": "llama.cpp",
+    "access-control-allow-origin": "",
+    "x-accel-buffering": "no",
+    "content-type": "text/event-stream",
+    "keep-alive": "timeout=5, max=100",
+    "transfer-encoding": "chunked"
+  },
+  "adapter_responses": [
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "{\"",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "5ee4c16e1d0269e267ed379d442e2c59449a82e394242dced1f50db93d5b7993",
+        "reply_sha256": "f8829d48fb63a5de4ce1624d91ab9dd7cf747877202eb145a40e803bfc02acbf",
+        "server_identity": {
+          "models": {
+            "models": [
+              {
+                "name": "lfm3-1.7b",
+                "model": "lfm3-1.7b",
+                "modified_at": "",
+                "size": "",
+                "digest": "",
+                "type": "model",
+                "description": "",
+                "tags": [
+                  ""
+                ],
+                "capabilities": [
+                  "completion"
+                ],
+                "parameters": "",
+                "details": {
+                  "parent_model": "",
+                  "format": "gguf",
+                  "family": "",
+                  "families": [
+                    ""
+                  ],
+                  "parameter_size": "",
+                  "quantization_level": ""
+                }
+              }
+            ],
+            "object": "list",
+            "data": [
+              {
+                "id": "lfm3-1.7b",
+                "aliases": [
+                  "lfm3-1.7b"
+                ],
+                "tags": [],
+                "object": "model",
+                "architecture": {
+                  "input_modalities": [
+                    "text"
+                  ],
+                  "output_modalities": [
+                    "text"
+                  ]
+                },
+                "created": 1793234356,
+                "owned_by": "llamacpp",
+                "meta": {
+                  "vocab_type": 2,
+                  "n_vocab": 128000,
+                  "n_ctx": 4096,
+                  "n_ctx_train": 262144,
+                  "n_embd": 2048,
+                  "n_params": 1728801600,
+                  "size": 1091380480,
+                  "ftype": "Q4_K - Medium"
+                }
+              }
+            ]
+          },
+          "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+          "server": "llama.cpp"
+        },
+        "profile": "llama_server",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "weather",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "5ee4c16e1d0269e267ed379d442e2c59449a82e394242dced1f50db93d5b7993",
+        "reply_sha256": "b8491c9325246af569b4705a7e6838abb4fd5485c67c860cda60ed7ad31fc79b",
+        "server_identity": {
+          "models": {
+            "models": [
+              {
+                "name": "lfm3-1.7b",
+                "model": "lfm3-1.7b",
+                "modified_at": "",
+                "size": "",
+                "digest": "",
+                "type": "model",
+                "description": "",
+                "tags": [
+                  ""
+                ],
+                "capabilities": [
+                  "completion"
+                ],
+                "parameters": "",
+                "details": {
+                  "parent_model": "",
+                  "format": "gguf",
+                  "family": "",
+                  "families": [
+                    ""
+                  ],
+                  "parameter_size": "",
+                  "quantization_level": ""
+                }
+              }
+            ],
+            "object": "list",
+            "data": [
+              {
+                "id": "lfm3-1.7b",
+                "aliases": [
+                  "lfm3-1.7b"
+                ],
+                "tags": [],
+                "object": "model",
+                "architecture": {
+                  "input_modalities": [
+                    "text"
+                  ],
+                  "output_modalities": [
+                    "text"
+                  ]
+                },
+                "created": 1793234356,
+                "owned_by": "llamacpp",
+                "meta": {
+                  "vocab_type": 2,
+                  "n_vocab": 128000,
+                  "n_ctx": 4096,
+                  "n_ctx_train": 262144,
+                  "n_embd": 2048,
+                  "n_params": 1728801600,
+                  "size": 1091380480,
+                  "ftype": "Q4_K - Medium"
+                }
+              }
+            ]
+          },
+          "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+          "server": "llama.cpp"
+        },
+        "profile": "llama_server",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "\":",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "5ee4c16e1d0269e267ed379d442e2c59449a82e394242dced1f50db93d5b7993",
+        "reply_sha256": "19385ac0a6b77ffa22d5c3273288034948c50ca06140fb7e4302081545255d90",
+        "server_identity": {
+          "models": {
+            "models": [
+              {
+                "name": "lfm3-1.7b",
+                "model": "lfm3-1.7b",
+                "modified_at": "",
+                "size": "",
+                "digest": "",
+                "type": "model",
+                "description": "",
+                "tags": [
+                  ""
+                ],
+                "capabilities": [
+                  "completion"
+                ],
+                "parameters": "",
+                "details": {
+                  "parent_model": "",
+                  "format": "gguf",
+                  "family": "",
+                  "families": [
+                    ""
+                  ],
+                  "parameter_size": "",
+                  "quantization_level": ""
+                }
+              }
+            ],
+            "object": "list",
+            "data": [
+              {
+                "id": "lfm3-1.7b",
+                "aliases": [
+                  "lfm3-1.7b"
+                ],
+                "tags": [],
+                "object": "model",
+                "architecture": {
+                  "input_modalities": [
+                    "text"
+                  ],
+                  "output_modalities": [
+                    "text"
+                  ]
+                },
+                "created": 1793234356,
+                "owned_by": "llamacpp",
+                "meta": {
+                  "vocab_type": 2,
+                  "n_vocab": 128000,
+                  "n_ctx": 4096,
+                  "n_ctx_train": 262144,
+                  "n_embd": 2048,
+                  "n_params": 1728801600,
+                  "size": 1091380480,
+                  "ftype": "Q4_K - Medium"
+                }
+              }
+            ]
+          },
+          "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+          "server": "llama.cpp"
+        },
+        "profile": "llama_server",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": " \"",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "5ee4c16e1d0269e267ed379d442e2c59449a82e394242dced1f50db93d5b7993",
+        "reply_sha256": "4d09d555d84a93cdbe7670ea19bd0416d371a68c732167991cf64dcfaa5546b8",
+        "server_identity": {
+          "models": {
+            "models": [
+              {
+                "name": "lfm3-1.7b",
+                "model": "lfm3-1.7b",
+                "modified_at": "",
+                "size": "",
+                "digest": "",
+                "type": "model",
+                "description": "",
+                "tags": [
+                  ""
+                ],
+                "capabilities": [
+                  "completion"
+                ],
+                "parameters": "",
+                "details": {
+                  "parent_model": "",
+                  "format": "gguf",
+                  "family": "",
+                  "families": [
+                    ""
+                  ],
+                  "parameter_size": "",
+                  "quantization_level": ""
+                }
+              }
+            ],
+            "object": "list",
+            "data": [
+              {
+                "id": "lfm3-1.7b",
+                "aliases": [
+                  "lfm3-1.7b"
+                ],
+                "tags": [],
+                "object": "model",
+                "architecture": {
+                  "input_modalities": [
+                    "text"
+                  ],
+                  "output_modalities": [
+                    "text"
+                  ]
+                },
+                "created": 1793234356,
+                "owned_by": "llamacpp",
+                "meta": {
+                  "vocab_type": 2,
+                  "n_vocab": 128000,
+                  "n_ctx": 4096,
+                  "n_ctx_train": 262144,
+                  "n_embd": 2048,
+                  "n_params": 1728801600,
+                  "size": 1091380480,
+                  "ftype": "Q4_K - Medium"
+                }
+              }
+            ]
+          },
+          "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+          "server": "llama.cpp"
+        },
+        "profile": "llama_server",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "Paris",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "5ee4c16e1d0269e267ed379d442e2c59449a82e394242dced1f50db93d5b7993",
+        "reply_sha256": "fb15dffae507e7612280c734a7823e93ca1bd6cb15880a6d02e52007641ca623",
+        "server_identity": {
+          "models": {
+            "models": [
+              {
+                "name": "lfm3-1.7b",
+                "model": "lfm3-1.7b",
+                "modified_at": "",
+                "size": "",
+                "digest": "",
+                "type": "model",
+                "description": "",
+                "tags": [
+                  ""
+                ],
+                "capabilities": [
+                  "completion"
+                ],
+                "parameters": "",
+                "details": {
+                  "parent_model": "",
+                  "format": "gguf",
+                  "family": "",
+                  "families": [
+                    ""
+                  ],
+                  "parameter_size": "",
+                  "quantization_level": ""
+                }
+              }
+            ],
+            "object": "list",
+            "data": [
+              {
+                "id": "lfm3-1.7b",
+                "aliases": [
+                  "lfm3-1.7b"
+                ],
+                "tags": [],
+                "object": "model",
+                "architecture": {
+                  "input_modalities": [
+                    "text"
+                  ],
+                  "output_modalities": [
+                    "text"
+                  ]
+                },
+                "created": 1793234356,
+                "owned_by": "llamacpp",
+                "meta": {
+                  "vocab_type": 2,
+                  "n_vocab": 128000,
+                  "n_ctx": 4096,
+                  "n_ctx_train": 262144,
+                  "n_embd": 2048,
+                  "n_params": 1728801600,
+                  "size": 1091380480,
+                  "ftype": "Q4_K - Medium"
+                }
+              }
+            ]
+          },
+          "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+          "server": "llama.cpp"
+        },
+        "profile": "llama_server",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "\"",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "5ee4c16e1d0269e267ed379d442e2c59449a82e394242dced1f50db93d5b7993",
+        "reply_sha256": "b77da962c86cad8484855185a8b503aa81b0db216d488dce2adbc8ecd6ed65c0",
+        "server_identity": {
+          "models": {
+            "models": [
+              {
+                "name": "lfm3-1.7b",
+                "model": "lfm3-1.7b",
+                "modified_at": "",
+                "size": "",
+                "digest": "",
+                "type": "model",
+                "description": "",
+                "tags": [
+                  ""
+                ],
+                "capabilities": [
+                  "completion"
+                ],
+                "parameters": "",
+                "details": {
+                  "parent_model": "",
+                  "format": "gguf",
+                  "family": "",
+                  "families": [
+                    ""
+                  ],
+                  "parameter_size": "",
+                  "quantization_level": ""
+                }
+              }
+            ],
+            "object": "list",
+            "data": [
+              {
+                "id": "lfm3-1.7b",
+                "aliases": [
+                  "lfm3-1.7b"
+                ],
+                "tags": [],
+                "object": "model",
+                "architecture": {
+                  "input_modalities": [
+                    "text"
+                  ],
+                  "output_modalities": [
+                    "text"
+                  ]
+                },
+                "created": 1793234356,
+                "owned_by": "llamacpp",
+                "meta": {
+                  "vocab_type": 2,
+                  "n_vocab": 128000,
+                  "n_ctx": 4096,
+                  "n_ctx_train": 262144,
+                  "n_embd": 2048,
+                  "n_params": 1728801600,
+                  "size": 1091380480,
+                  "ftype": "Q4_K - Medium"
+                }
+              }
+            ]
+          },
+          "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+          "server": "llama.cpp"
+        },
+        "profile": "llama_server",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "}",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": true,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": null,
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "5ee4c16e1d0269e267ed379d442e2c59449a82e394242dced1f50db93d5b7993",
+        "reply_sha256": "678a24e9488761a7a507bdde2717ccd223070d05c27b5bfebbbf6b1c203c45cd",
+        "server_identity": {
+          "models": {
+            "models": [
+              {
+                "name": "lfm3-1.7b",
+                "model": "lfm3-1.7b",
+                "modified_at": "",
+                "size": "",
+                "digest": "",
+                "type": "model",
+                "description": "",
+                "tags": [
+                  ""
+                ],
+                "capabilities": [
+                  "completion"
+                ],
+                "parameters": "",
+                "details": {
+                  "parent_model": "",
+                  "format": "gguf",
+                  "family": "",
+                  "families": [
+                    ""
+                  ],
+                  "parameter_size": "",
+                  "quantization_level": ""
+                }
+              }
+            ],
+            "object": "list",
+            "data": [
+              {
+                "id": "lfm3-1.7b",
+                "aliases": [
+                  "lfm3-1.7b"
+                ],
+                "tags": [],
+                "object": "model",
+                "architecture": {
+                  "input_modalities": [
+                    "text"
+                  ],
+                  "output_modalities": [
+                    "text"
+                  ]
+                },
+                "created": 1793234356,
+                "owned_by": "llamacpp",
+                "meta": {
+                  "vocab_type": 2,
+                  "n_vocab": 128000,
+                  "n_ctx": 4096,
+                  "n_ctx_train": 262144,
+                  "n_embd": 2048,
+                  "n_params": 1728801600,
+                  "size": 1091380480,
+                  "ftype": "Q4_K - Medium"
+                }
+              }
+            ]
+          },
+          "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+          "server": "llama.cpp"
+        },
+        "profile": "llama_server",
+        "reply_complete": false
+      },
+      "usage_metadata": null,
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    },
+    {
+      "model_version": null,
+      "content": {
+        "parts": [
+          {
+            "media_resolution": null,
+            "code_execution_result": null,
+            "executable_code": null,
+            "file_data": null,
+            "function_call": null,
+            "function_response": null,
+            "inline_data": null,
+            "text": "{\"weather\": \"Paris\"}",
+            "thought": null,
+            "thought_signature": null,
+            "video_metadata": null,
+            "tool_call": null,
+            "tool_response": null,
+            "part_metadata": null,
+            "audio_transcription": null,
+            "media_processing": null,
+            "speech_metadata": null
+          }
+        ],
+        "role": "model"
+      },
+      "grounding_metadata": null,
+      "partial": false,
+      "turn_complete": null,
+      "turn_complete_reason": null,
+      "interaction_status": null,
+      "finish_reason": "STOP",
+      "error_code": null,
+      "error_message": null,
+      "interrupted": null,
+      "custom_metadata": {
+        "request_sha256": "5ee4c16e1d0269e267ed379d442e2c59449a82e394242dced1f50db93d5b7993",
+        "reply_sha256": "5d840198245b1600e749fb9712008a9cf71f5dda2abee66f38338cc5d8c057cd",
+        "server_identity": {
+          "models": {
+            "models": [
+              {
+                "name": "lfm3-1.7b",
+                "model": "lfm3-1.7b",
+                "modified_at": "",
+                "size": "",
+                "digest": "",
+                "type": "model",
+                "description": "",
+                "tags": [
+                  ""
+                ],
+                "capabilities": [
+                  "completion"
+                ],
+                "parameters": "",
+                "details": {
+                  "parent_model": "",
+                  "format": "gguf",
+                  "family": "",
+                  "families": [
+                    ""
+                  ],
+                  "parameter_size": "",
+                  "quantization_level": ""
+                }
+              }
+            ],
+            "object": "list",
+            "data": [
+              {
+                "id": "lfm3-1.7b",
+                "aliases": [
+                  "lfm3-1.7b"
+                ],
+                "tags": [],
+                "object": "model",
+                "architecture": {
+                  "input_modalities": [
+                    "text"
+                  ],
+                  "output_modalities": [
+                    "text"
+                  ]
+                },
+                "created": 1793234356,
+                "owned_by": "llamacpp",
+                "meta": {
+                  "vocab_type": 2,
+                  "n_vocab": 128000,
+                  "n_ctx": 4096,
+                  "n_ctx_train": 262144,
+                  "n_embd": 2048,
+                  "n_params": 1728801600,
+                  "size": 1091380480,
+                  "ftype": "Q4_K - Medium"
+                }
+              }
+            ]
+          },
+          "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+          "server": "llama.cpp"
+        },
+        "profile": "llama_server",
+        "reply_complete": true
+      },
+      "usage_metadata": {
+        "cache_tokens_details": null,
+        "cached_content_token_count": null,
+        "candidates_token_count": 9,
+        "candidates_tokens_details": null,
+        "prompt_token_count": 23,
+        "prompt_tokens_details": null,
+        "thoughts_token_count": null,
+        "tool_use_prompt_token_count": null,
+        "tool_use_prompt_tokens_details": null,
+        "total_token_count": 32,
+        "traffic_type": null
+      },
+      "live_session_resumption_update": null,
+      "live_session_id": null,
+      "go_away": null,
+      "voice_activity": null,
+      "input_transcription": null,
+      "output_transcription": null,
+      "avg_logprobs": null,
+      "logprobs_result": null,
+      "cache_metadata": null,
+      "citation_metadata": null,
+      "interaction_id": null,
+      "environment_id": null
+    }
+  ],
+  "wall_seconds": 0.7405599000048824,
+  "request_sha256": "5ee4c16e1d0269e267ed379d442e2c59449a82e394242dced1f50db93d5b7993",
+  "reply_sha256": "5d840198245b1600e749fb9712008a9cf71f5dda2abee66f38338cc5d8c057cd",
+  "request_length": 278,
+  "reply_length": 2698
+}

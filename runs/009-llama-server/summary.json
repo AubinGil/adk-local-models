@@ -1,0 +1,199 @@
+{
+  "source_commit": "fa71120d4ef7d68ded08edb613d93ee1938c6373",
+  "started_utc": "2026-10-29T00:39:15.201096+00:00",
+  "base_url": "http://127.0.0.1:8111/v1",
+  "model": "lfm3-1.7b",
+  "retries": 0,
+  "http_request_cap": 19,
+  "max_llm_calls_per_turn": 2,
+  "versions": {
+    "google-adk": "2.13.0",
+    "google-genai": "2.33.0",
+    "httpx": "0.28.1"
+  },
+  "turns": {
+    "plain": {
+      "exchanges": [
+        {
+          "path": "runs/009-llama-server/plain/exchange-1",
+          "wall_seconds": 0.7710463000112213,
+          "status": 200,
+          "response_count": 1
+        },
+        {
+          "path": "runs/009-llama-server/plain/exchange-2",
+          "wall_seconds": 0.617872200004058,
+          "status": 200,
+          "response_count": 1
+        }
+      ],
+      "tool_executions": [
+        {
+          "city": "Paris",
+          "result": {
+            "temperature": 20
+          }
+        }
+      ],
+      "error": null,
+      "wall_seconds": 1.771286200004397,
+      "yielded_event_count": 3,
+      "session_event_count": 4,
+      "final_texts": [
+        "The weather in Paris is 20°C."
+      ]
+    },
+    "stream": {
+      "exchanges": [
+        {
+          "path": "runs/009-llama-server/stream/exchange-1",
+          "wall_seconds": 0.7390833999961615,
+          "status": 200,
+          "response_count": 6
+        },
+        {
+          "path": "runs/009-llama-server/stream/exchange-2",
+          "wall_seconds": 0.5883548999845516,
+          "status": 200,
+          "response_count": 10
+        },
+        {
+          "path": "runs/009-llama-server/knob-off/text-none",
+          "wall_seconds": 0.21494060000986792,
+          "status": 400,
+          "response_count": 1
+        }
+      ],
+      "tool_executions": [
+        {
+          "city": "Paris",
+          "result": {
+            "temperature": 20
+          }
+        }
+      ],
+      "error": null,
+      "wall_seconds": 1.3423856000008527,
+      "yielded_event_count": 17,
+      "session_event_count": 4,
+      "final_texts": [
+        "The weather in Paris is 20°C."
+      ]
+    }
+  },
+  "identity": {
+    "models": {
+      "models": [
+        {
+          "name": "lfm3-1.7b",
+          "model": "lfm3-1.7b",
+          "modified_at": "",
+          "size": "",
+          "digest": "",
+          "type": "model",
+          "description": "",
+          "tags": [
+            ""
+          ],
+          "capabilities": [
+            "completion"
+          ],
+          "parameters": "",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "",
+            "families": [
+              ""
+            ],
+            "parameter_size": "",
+            "quantization_level": ""
+          }
+        }
+      ],
+      "object": "list",
+      "data": [
+        {
+          "id": "lfm3-1.7b",
+          "aliases": [
+            "lfm3-1.7b"
+          ],
+          "tags": [],
+          "object": "model",
+          "architecture": {
+            "input_modalities": [
+              "text"
+            ],
+            "output_modalities": [
+              "text"
+            ]
+          },
+          "created": 1793234356,
+          "owned_by": "llamacpp",
+          "meta": {
+            "vocab_type": 2,
+            "n_vocab": 128000,
+            "n_ctx": 4096,
+            "n_ctx_train": 262144,
+            "n_embd": 2048,
+            "n_params": 1728801600,
+            "size": 1091380480,
+            "ftype": "Q4_K - Medium"
+          }
+        }
+      ]
+    },
+    "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+    "server": "llama.cpp"
+  },
+  "fixture_samples": [
+    {
+      "name": "text-plain",
+      "error_code": null,
+      "finish_reason": "STOP",
+      "parsed_tool_count": 0,
+      "object_arguments": false,
+      "partial_count": 0,
+      "status": 200
+    },
+    {
+      "name": "text-stream",
+      "error_code": null,
+      "finish_reason": "STOP",
+      "parsed_tool_count": 0,
+      "object_arguments": false,
+      "partial_count": 7,
+      "status": 200
+    },
+    {
+      "name": "tools-plain",
+      "error_code": null,
+      "finish_reason": "STOP",
+      "parsed_tool_count": 1,
+      "object_arguments": true,
+      "partial_count": 0,
+      "status": 200
+    },
+    {
+      "name": "tools-stream",
+      "error_code": null,
+      "finish_reason": "STOP",
+      "parsed_tool_count": 1,
+      "object_arguments": true,
+      "partial_count": 5,
+      "status": 200
+    }
+  ],
+  "http_requests_sent": 13,
+  "finished_utc": "2026-10-29T00:39:21.908157+00:00",
+  "completion_request_cap": 16,
+  "identity_requests": 2,
+  "completion_requests": 11,
+  "server_version": "0.8.0-dev (build 1, commit 8642541)",
+  "server_pids": [
+    90256,
+    90300
+  ],
+  "public_surfaces_updated": false,
+  "reason": "Both reasoning_format none requests HTTP 400; conservative failure rule"
+}

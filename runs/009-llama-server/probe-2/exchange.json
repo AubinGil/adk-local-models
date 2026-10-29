@@ -1,0 +1,83 @@
+{
+  "started_utc": "2026-10-29T00:39:37.011387+00:00",
+  "method": "GET",
+  "url": "http://127.0.0.1:8111/v1/models",
+  "status": 200,
+  "response_headers": {
+    "server": "llama.cpp",
+    "access-control-allow-origin": "",
+    "content-type": "application/json; charset=utf-8",
+    "keep-alive": "timeout=5, max=100",
+    "content-length": "665"
+  },
+  "adapter_identity": {
+    "models": {
+      "models": [
+        {
+          "name": "lfm3-1.7b",
+          "model": "lfm3-1.7b",
+          "modified_at": "",
+          "size": "",
+          "digest": "",
+          "type": "model",
+          "description": "",
+          "tags": [
+            ""
+          ],
+          "capabilities": [
+            "completion"
+          ],
+          "parameters": "",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "",
+            "families": [
+              ""
+            ],
+            "parameter_size": "",
+            "quantization_level": ""
+          }
+        }
+      ],
+      "object": "list",
+      "data": [
+        {
+          "id": "lfm3-1.7b",
+          "aliases": [
+            "lfm3-1.7b"
+          ],
+          "tags": [],
+          "object": "model",
+          "architecture": {
+            "input_modalities": [
+              "text"
+            ],
+            "output_modalities": [
+              "text"
+            ]
+          },
+          "created": 1793234378,
+          "owned_by": "llamacpp",
+          "meta": {
+            "vocab_type": 2,
+            "n_vocab": 128000,
+            "n_ctx": 4096,
+            "n_ctx_train": 262144,
+            "n_embd": 2048,
+            "n_params": 1728801600,
+            "size": 1091380480,
+            "ftype": "Q4_K - Medium"
+          }
+        }
+      ]
+    },
+    "reply_sha256": "328df2be5303bc742a7e250aff470ff931a8f89e8531c886c6e32966f0442ae0",
+    "server": "llama.cpp"
+  },
+  "wall_seconds": 0.338074700004654,
+  "request_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reply_sha256": "328df2be5303bc742a7e250aff470ff931a8f89e8531c886c6e32966f0442ae0",
+  "request_length": 0,
+  "reply_length": 665
+}

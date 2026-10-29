@@ -1,0 +1,712 @@
+[
+  {
+    "request_sha256": "b6d25d97432e8aa431e09d25fcb5fa9264890520072822b4f7de5897243a1443",
+    "reply_sha256": "0edc5751ed8cad0ed6aba4f0f49c3b9a90264d9653b41e7f18924660654df6c4",
+    "server_identity": {
+      "models": {
+        "models": [
+          {
+            "name": "lfm3-1.7b",
+            "model": "lfm3-1.7b",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "lfm3-1.7b",
+            "aliases": [
+              "lfm3-1.7b"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1793234356,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 128000,
+              "n_ctx": 4096,
+              "n_ctx_train": 262144,
+              "n_embd": 2048,
+              "n_params": 1728801600,
+              "size": 1091380480,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+      "server": "llama.cpp"
+    },
+    "profile": "llama_server",
+    "reply_complete": false
+  },
+  {
+    "request_sha256": "b6d25d97432e8aa431e09d25fcb5fa9264890520072822b4f7de5897243a1443",
+    "reply_sha256": "8dc8f7da25fdc372af0be3523204a36b77261e644bead54ce3084a280e6c62b4",
+    "server_identity": {
+      "models": {
+        "models": [
+          {
+            "name": "lfm3-1.7b",
+            "model": "lfm3-1.7b",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "lfm3-1.7b",
+            "aliases": [
+              "lfm3-1.7b"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1793234356,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 128000,
+              "n_ctx": 4096,
+              "n_ctx_train": 262144,
+              "n_embd": 2048,
+              "n_params": 1728801600,
+              "size": 1091380480,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+      "server": "llama.cpp"
+    },
+    "profile": "llama_server",
+    "reply_complete": false
+  },
+  {
+    "request_sha256": "b6d25d97432e8aa431e09d25fcb5fa9264890520072822b4f7de5897243a1443",
+    "reply_sha256": "a54812d9c155349a932710ad30fc2a3af5c7033cd96247b8287b1571bea3deff",
+    "server_identity": {
+      "models": {
+        "models": [
+          {
+            "name": "lfm3-1.7b",
+            "model": "lfm3-1.7b",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "lfm3-1.7b",
+            "aliases": [
+              "lfm3-1.7b"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1793234356,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 128000,
+              "n_ctx": 4096,
+              "n_ctx_train": 262144,
+              "n_embd": 2048,
+              "n_params": 1728801600,
+              "size": 1091380480,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+      "server": "llama.cpp"
+    },
+    "profile": "llama_server",
+    "reply_complete": false
+  },
+  {
+    "request_sha256": "b6d25d97432e8aa431e09d25fcb5fa9264890520072822b4f7de5897243a1443",
+    "reply_sha256": "78333fd6e5701e4b7b52619624da7ce0323a2da2c8847cddccf36fce0140690a",
+    "server_identity": {
+      "models": {
+        "models": [
+          {
+            "name": "lfm3-1.7b",
+            "model": "lfm3-1.7b",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "lfm3-1.7b",
+            "aliases": [
+              "lfm3-1.7b"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1793234356,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 128000,
+              "n_ctx": 4096,
+              "n_ctx_train": 262144,
+              "n_embd": 2048,
+              "n_params": 1728801600,
+              "size": 1091380480,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+      "server": "llama.cpp"
+    },
+    "profile": "llama_server",
+    "reply_complete": false
+  },
+  {
+    "request_sha256": "b6d25d97432e8aa431e09d25fcb5fa9264890520072822b4f7de5897243a1443",
+    "reply_sha256": "0178a2c4e40873a5778dceaed2abae9e4603c2cce7e468416839370562ff8f80",
+    "server_identity": {
+      "models": {
+        "models": [
+          {
+            "name": "lfm3-1.7b",
+            "model": "lfm3-1.7b",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "lfm3-1.7b",
+            "aliases": [
+              "lfm3-1.7b"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1793234356,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 128000,
+              "n_ctx": 4096,
+              "n_ctx_train": 262144,
+              "n_embd": 2048,
+              "n_params": 1728801600,
+              "size": 1091380480,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+      "server": "llama.cpp"
+    },
+    "profile": "llama_server",
+    "reply_complete": false
+  },
+  {
+    "request_sha256": "b6d25d97432e8aa431e09d25fcb5fa9264890520072822b4f7de5897243a1443",
+    "reply_sha256": "7d8821a4fb17ce8fbafff2f1f5437567a7c89a134d99db2aa3aabf1e472006f9",
+    "server_identity": {
+      "models": {
+        "models": [
+          {
+            "name": "lfm3-1.7b",
+            "model": "lfm3-1.7b",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "lfm3-1.7b",
+            "aliases": [
+              "lfm3-1.7b"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1793234356,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 128000,
+              "n_ctx": 4096,
+              "n_ctx_train": 262144,
+              "n_embd": 2048,
+              "n_params": 1728801600,
+              "size": 1091380480,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+      "server": "llama.cpp"
+    },
+    "profile": "llama_server",
+    "reply_complete": false
+  },
+  {
+    "request_sha256": "b6d25d97432e8aa431e09d25fcb5fa9264890520072822b4f7de5897243a1443",
+    "reply_sha256": "216bf8cf22183461f5e66d30f4c602f9dd0ce3f8595cc3557e80b2f25877fb49",
+    "server_identity": {
+      "models": {
+        "models": [
+          {
+            "name": "lfm3-1.7b",
+            "model": "lfm3-1.7b",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "lfm3-1.7b",
+            "aliases": [
+              "lfm3-1.7b"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1793234356,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 128000,
+              "n_ctx": 4096,
+              "n_ctx_train": 262144,
+              "n_embd": 2048,
+              "n_params": 1728801600,
+              "size": 1091380480,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+      "server": "llama.cpp"
+    },
+    "profile": "llama_server",
+    "reply_complete": false
+  },
+  {
+    "request_sha256": "b6d25d97432e8aa431e09d25fcb5fa9264890520072822b4f7de5897243a1443",
+    "reply_sha256": "80962dc5878d6b3a449ec4a0baad034c61d38f09a0636bdd5b960abbdccf3150",
+    "server_identity": {
+      "models": {
+        "models": [
+          {
+            "name": "lfm3-1.7b",
+            "model": "lfm3-1.7b",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "lfm3-1.7b",
+            "aliases": [
+              "lfm3-1.7b"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1793234356,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 128000,
+              "n_ctx": 4096,
+              "n_ctx_train": 262144,
+              "n_embd": 2048,
+              "n_params": 1728801600,
+              "size": 1091380480,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+      "server": "llama.cpp"
+    },
+    "profile": "llama_server",
+    "reply_complete": false
+  },
+  {
+    "request_sha256": "b6d25d97432e8aa431e09d25fcb5fa9264890520072822b4f7de5897243a1443",
+    "reply_sha256": "4a48e4a58007b943617f63b76b0a1cf80c4f0c4474ef66ce87aad5f6401893dc",
+    "server_identity": {
+      "models": {
+        "models": [
+          {
+            "name": "lfm3-1.7b",
+            "model": "lfm3-1.7b",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "lfm3-1.7b",
+            "aliases": [
+              "lfm3-1.7b"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1793234356,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 128000,
+              "n_ctx": 4096,
+              "n_ctx_train": 262144,
+              "n_embd": 2048,
+              "n_params": 1728801600,
+              "size": 1091380480,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+      "server": "llama.cpp"
+    },
+    "profile": "llama_server",
+    "reply_complete": false
+  },
+  {
+    "request_sha256": "b6d25d97432e8aa431e09d25fcb5fa9264890520072822b4f7de5897243a1443",
+    "reply_sha256": "a060bc4ffd3a64d851cc379f4b8098c61745c477b5039b990a823b3d517722f2",
+    "server_identity": {
+      "models": {
+        "models": [
+          {
+            "name": "lfm3-1.7b",
+            "model": "lfm3-1.7b",
+            "modified_at": "",
+            "size": "",
+            "digest": "",
+            "type": "model",
+            "description": "",
+            "tags": [
+              ""
+            ],
+            "capabilities": [
+              "completion"
+            ],
+            "parameters": "",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "",
+              "families": [
+                ""
+              ],
+              "parameter_size": "",
+              "quantization_level": ""
+            }
+          }
+        ],
+        "object": "list",
+        "data": [
+          {
+            "id": "lfm3-1.7b",
+            "aliases": [
+              "lfm3-1.7b"
+            ],
+            "tags": [],
+            "object": "model",
+            "architecture": {
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ]
+            },
+            "created": 1793234356,
+            "owned_by": "llamacpp",
+            "meta": {
+              "vocab_type": 2,
+              "n_vocab": 128000,
+              "n_ctx": 4096,
+              "n_ctx_train": 262144,
+              "n_embd": 2048,
+              "n_params": 1728801600,
+              "size": 1091380480,
+              "ftype": "Q4_K - Medium"
+            }
+          }
+        ]
+      },
+      "reply_sha256": "fd24055b9d9f3a9e8e7520479a9fd7daa6a7af45ba6c321e24d37ab91c0db554",
+      "server": "llama.cpp"
+    },
+    "profile": "llama_server",
+    "reply_complete": true
+  }
+]
